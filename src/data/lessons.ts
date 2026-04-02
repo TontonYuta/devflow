@@ -13,20 +13,24 @@ import { testingLesson } from './lessons/testing';
 import { nodejsLesson } from './lessons/nodejs';
 import { databaseLesson } from './lessons/database';
 import { nextjsLesson } from './lessons/nextjs';
+import { networkingLesson } from './lessons/networking';
+import { cybersecurityLesson} from './lessons/cybersecurity';
 
 export const lessons: Lesson[] = [
   htmlLesson,
   cssLesson,
   jsLesson,
+  gitLesson,
   typescriptLesson,
   reactLesson,
-  nextjsLesson,
   tailwindLesson,
+  nextjsLesson,
   nodejsLesson,
   databaseLesson,
-  gitLesson,
-  testingLesson,
+  networkingLesson,
+  cybersecurityLesson,  
   securityLesson,
+  testingLesson,
   optimizationLesson,
-  aiLesson
+  aiLesson,
 ];
