@@ -5,722 +5,889 @@ export const tailwindLesson: Lesson = {
   icon: 'zap',
   title: 'Tailwind CSS 4',
   description:
-    'Lộ trình 20 buổi học Tailwind CSS 4 từ cơ bản đến chuyên sâu, chia nhỏ dễ học, có bài tập thực hành và mini project để giúp người học xây giao diện nhanh, đẹp, responsive và dễ bảo trì.',
+    'Lộ trình Tailwind CSS 4 theo phong cách tự học cùng AI mentor. Mỗi buổi học đi kèm prompt cực chi tiết để học viên chỉ cần copy vào AI là có thể học từ bản chất, hiểu utility-first, dựng UI nhanh, responsive, dễ bảo trì và được review như học cùng mentor 1-1.',
   points: [
-    'Hiểu tư duy Utility-First và cách viết UI bằng class tiện ích',
-    'Làm chủ spacing, màu sắc, typography, layout, responsive và states',
-    'Biết dùng Tailwind 4 theo hướng CSS-first với @theme',
-    'Biết tổ chức code Tailwind gọn gàng trong React/Next.js',
-    'Có bài tập và project để luyện xây giao diện thực tế'
+    'Mỗi buổi có prompt cực chi tiết để copy vào AI và học ngay',
+    'AI đóng vai mentor Tailwind, dạy từ bản chất chứ không chỉ liệt kê class',
+    'Có prompt học lý thuyết, prompt build UI, prompt review và prompt phản biện',
+    'Tập trung vào năng lực thật: spacing, typography, layout, responsive, state, theme và component composition',
+    'Có bài tập theo kiểu dựng giao diện thực tế thay vì học class rời rạc',
+    'Học xong có thể tự xây giao diện bằng Tailwind CSS 4 nhanh, sạch và có hệ thống'
   ],
   chapters: [
     {
       id: 'tw-01',
-      title: 'Buổi 1: Tailwind CSS là gì? Vì sao nên học?',
+      title: 'Buổi 1: Tailwind CSS là gì và tư duy Utility-First hoạt động ra sao?',
       level: 'beginner',
       content: `
-# Buổi 1: Tailwind CSS là gì? Vì sao nên học?
+# Buổi 1: Tailwind CSS là gì và tư duy Utility-First hoạt động ra sao?
 
 ## Mục tiêu
 - Hiểu Tailwind CSS là gì
-- Biết Tailwind khác CSS truyền thống ở điểm nào
-- Hiểu tư duy Utility-First
+- Hiểu Utility-First là gì
+- Biết Tailwind khác CSS truyền thống ở đâu
+- Bắt đầu nhìn UI như tập hợp các quyết định nhỏ về style
 
-## Nội dung chính
-- Tailwind là framework CSS theo hướng utility-first
-- Không cần đặt quá nhiều class tùy chỉnh
-- Ghép các utility class để tạo giao diện
-- Khi nào nên dùng Tailwind
+## Cách học buổi này
+Bạn sẽ copy từng prompt bên dưới vào AI theo đúng thứ tự.
+Không học lướt. Sau mỗi prompt phải tự giải thích lại bằng lời của bạn.
 
-## Ví dụ
-\`\`\`html
-<button class="bg-blue-500 text-white px-4 py-2 rounded">
-  Lưu thay đổi
-</button>
+## Prompt 1 - Nhờ AI dạy lý thuyết từ gốc
+\`\`\`
+Bạn hãy đóng vai một mentor Front-end/UI cực giỏi, chuyên dạy Tailwind CSS cho người đã biết HTML và CSS cơ bản.
+
+Hôm nay hãy dạy tôi buổi đầu tiên về Tailwind CSS theo phong cách:
+- cực dễ hiểu nhưng không hời hợt
+- giải thích từ bản chất
+- luôn nói vì sao kiến thức này quan trọng
+- gắn với ví dụ UI thực tế
+- không dùng thuật ngữ khó nếu chưa giải thích
+
+Chủ đề hôm nay:
+- Tailwind CSS là gì?
+- Utility-First là gì?
+- Tailwind khác CSS truyền thống ở đâu?
+- Khi nào Tailwind đặc biệt hữu ích?
+- Vì sao nhiều người thích Tailwind dù code nhìn nhiều class?
+
+Tôi muốn bạn dạy theo format:
+1. Tailwind CSS là gì?
+2. Utility-First nghĩa là gì?
+3. So sánh thật rõ giữa:
+   - CSS truyền thống
+   - Tailwind CSS
+4. Vì sao ghép utility class lại có thể tạo UI nhanh?
+5. Cho 5 ví dụ UI nhỏ viết bằng Tailwind và giải thích từng class
+6. Khi nào Tailwind phù hợp và khi nào có thể không phải lựa chọn tốt nhất?
+7. Chỉ ra 8 hiểu lầm phổ biến của người mới về Tailwind
+8. Đặt cho tôi 5 câu hỏi kiểm tra hiểu bài
+9. Sau khi tôi trả lời, bạn phải chấm và sửa thật kỹ
+
+Dùng tiếng Việt và dạy như mentor thật sự.
 \`\`\`
 
-## Bài tập luyện tập
-1. So sánh CSS thường và Tailwind
-2. Viết lại một nút bấm đơn giản bằng Tailwind
-3. Giải thích ý nghĩa của 4 utility class đầu tiên bạn dùng
+## Prompt 2 - Nhờ AI luyện tư duy utility-first
+\`\`\`
+Tôi muốn luyện tư duy utility-first.
 
-## Bài tập thử thách
-- Tạo 2 nút có giao diện khác nhau chỉ bằng utility class
+Hãy cho tôi 8 UI rất nhỏ, ví dụ:
+- nút bấm
+- badge
+- card
+- input
+- alert
+- menu item
+- avatar box
+- section title
+
+Với mỗi UI:
+1. hỏi tôi cần những quyết định style nào
+2. hỏi tôi chúng có thể tương ứng với utility nào
+3. bắt tôi giải thích theo từng nhóm:
+   - spacing
+   - màu
+   - chữ
+   - border/shadow
+4. sau đó bạn mới chữa
+
+Mục tiêu là để tôi hiểu Tailwind là cách nghĩ về UI bằng các quyết định cụ thể, không chỉ học thuộc class.
+\`\`\`
+
+## Prompt 3 - Nhờ AI kiểm tra hiểu bài
+\`\`\`
+Hãy kiểm tra xem tôi đã thật sự hiểu Tailwind CSS buổi 1 chưa.
+
+Tôi muốn có:
+- 3 câu hỏi trắc nghiệm có giải thích đáp án
+- 3 câu hỏi tự luận ngắn
+- 2 bài tập nhỏ phân tích utility class
+- 1 câu hỏi tư duy: vì sao code nhiều class chưa chắc là code “xấu” trong Tailwind?
+
+Sau khi tôi trả lời, bạn hãy:
+- chấm điểm từng câu
+- giải thích chỗ sai
+- nói tôi đang ở mức nào: chưa hiểu / hiểu cơ bản / hiểu chắc
+\`\`\`
+
+## Bài tập buổi này
+1. Giải thích Tailwind bằng lời của bạn
+2. So sánh Tailwind và CSS thường
+3. Viết lại 2 nút đơn giản bằng utility class và tự giải thích từng class
+
+## Tiêu chuẩn hoàn thành
+- Hiểu Utility-First là gì
+- Thấy được logic đằng sau các class
+- Không còn nghĩ Tailwind chỉ là “viết class cho nhanh”
       `
     },
     {
       id: 'tw-02',
-      title: 'Buổi 2: Cài đặt Tailwind CSS 4',
+      title: 'Buổi 2: Cài đặt Tailwind CSS 4 và hiểu cách Tailwind chạy trong project',
       level: 'beginner',
       content: `
-# Buổi 2: Cài đặt Tailwind CSS 4
+# Buổi 2: Cài đặt Tailwind CSS 4 và hiểu cách Tailwind chạy trong project
 
 ## Mục tiêu
-- Biết cách cài Tailwind vào project
-- Hiểu cách import Tailwind trong CSS
-- Chạy được ví dụ đầu tiên
+- Cài được Tailwind CSS 4
+- Hiểu \`@import "tailwindcss";\`
+- Biết Tailwind được nối vào HTML/React/Vite như thế nào
+- Bắt đầu hiểu hướng CSS-first của Tailwind 4
 
-## Nội dung chính
-- Cài Tailwind vào dự án
-- Dùng \`@import "tailwindcss";\`
-- Kết nối Tailwind với HTML, React hoặc Vite
-- Kiểm tra Tailwind đã hoạt động
+## Prompt 1 - Nhờ AI hướng dẫn setup như mentor kỹ thuật
+\`\`\`
+Hãy đóng vai mentor kỹ thuật và hướng dẫn tôi cài Tailwind CSS 4 từ đầu.
 
-## Ví dụ
-\`\`\`css
-@import "tailwindcss";
+Tôi muốn bạn hướng dẫn theo cách:
+1. giải thích Tailwind 4 khác gì về tư duy setup so với các phiên bản cũ ở mức cơ bản
+2. hướng dẫn tôi cài Tailwind vào project Vite hoặc React
+3. giải thích vai trò của file CSS global
+4. giải thích vì sao chỉ cần @import "tailwindcss";
+5. hướng dẫn tôi kiểm tra Tailwind đã hoạt động hay chưa
+6. nếu có lỗi setup thường gặp, hãy nói luôn cách xử lý
+
+Dùng tiếng Việt và hướng dẫn như mentor đang ngồi cạnh tôi.
 \`\`\`
 
-\`\`\`html
-<h1 class="text-3xl font-bold text-blue-600">Hello Tailwind</h1>
+## Prompt 2 - Nhờ AI giải thích Tailwind flow trong project
+\`\`\`
+Tôi vừa cài xong Tailwind CSS 4. Hãy giúp tôi hiểu Tailwind đang hoạt động thế nào trong project.
+
+Tôi muốn bạn giải thích:
+1. file CSS global có vai trò gì
+2. @import "tailwindcss"; đang làm gì
+3. vì sao khi tôi gõ class trong JSX/HTML thì giao diện thay đổi
+4. Tailwind 4 theo hướng CSS-first nghĩa là gì ở mức dễ hiểu
+5. phần nào người mới cần hiểu trước, phần nào có thể học sau
+
+Đừng chỉ nói khái niệm. Hãy giúp tôi thật sự hình dung luồng hoạt động.
 \`\`\`
 
-## Bài tập luyện tập
-1. Cài Tailwind vào project mẫu
-2. Tạo một tiêu đề màu xanh
-3. Tạo một nút có padding và bo góc
+## Prompt 3 - Nhờ AI kiểm tra setup của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn file CSS global và đoạn code HTML/React đầu tiên của tôi.
+Bạn hãy review:
+1. Tailwind đã được cài đúng chưa?
+2. Tôi có đang import đúng chưa?
+3. Có dấu hiệu setup lỗi hoặc thiếu bước nào không?
+4. Tôi đã hiểu đúng cách Tailwind hoạt động chưa?
+\`\`\`
 
-## Bài tập thử thách
-- Tạo một trang chào mừng nhỏ chỉ với Tailwind
+## Bài tập buổi này
+- Cài Tailwind vào một project
+- Tạo 1 tiêu đề, 1 nút, 1 box dùng class Tailwind
+- Tự giải thích vì sao UI đã đổi style
+
+## Tiêu chuẩn hoàn thành
+- Tailwind hoạt động được
+- Hiểu file CSS global là gì
+- Không còn mù về setup cơ bản
       `
     },
     {
       id: 'tw-03',
-      title: 'Buổi 3: Spacing, sizing và Box Model trong Tailwind',
+      title: 'Buổi 3: Spacing, sizing, màu sắc, border, shadow và box model trong Tailwind',
       level: 'beginner',
       content: `
-# Buổi 3: Spacing, sizing và Box Model trong Tailwind
+# Buổi 3: Spacing, sizing, màu sắc, border, shadow và box model trong Tailwind
 
 ## Mục tiêu
-- Biết dùng padding, margin, width, height
-- Hiểu cách Tailwind biểu diễn khoảng cách
-- Làm chủ các class kích thước cơ bản
+- Dùng được padding, margin, width, height
+- Dùng được màu nền, màu chữ, border, shadow
+- Hiểu box model khi viết bằng utility class
+- Bắt đầu tạo được card và block UI cơ bản
 
-## Nội dung chính
-- \`p-\`, \`px-\`, \`py-\`
-- \`m-\`, \`mx-\`, \`my-\`
-- \`w-\`, \`h-\`
-- \`max-w-\`
-- Box Model khi viết bằng utility class
+## Prompt 1 - Nhờ AI dạy nền tảng visual building blocks
+\`\`\`
+Hãy dạy tôi Tailwind CSS buổi 3 như một mentor UI.
 
-## Ví dụ
-\`\`\`html
-<div class="p-4 m-6 w-64 h-32 bg-gray-100">
-  Nội dung
-</div>
+Chủ đề:
+- p-, px-, py-
+- m-, mx-, my-
+- w-, h-, max-w-
+- bg-
+- text-
+- border
+- rounded
+- shadow
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao spacing là thứ quyết định UI nhìn non hay chắc tay?
+2. Tailwind biểu diễn spacing như thế nào?
+3. padding và margin khác nhau ra sao trong tư duy utility?
+4. width, height, max-width nên dùng khi nào?
+5. Màu nền, màu chữ, border, shadow phối hợp tạo cảm giác UI thế nào?
+6. Cho ví dụ thực tế:
+   - card
+   - nút
+   - alert
+   - section box
+7. Chỉ ra lỗi phổ biến:
+   - spacing quá chật hoặc quá loạn
+   - dùng màu không có hệ thống
+   - shadow và border dùng quá tay
+8. Tạo checklist dựng block UI cơ bản
+
+Dạy như mentor đang sửa mắt UI nền tảng cho người mới.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo 3 box có padding khác nhau
-2. Tạo 2 box có margin khác nhau
-3. Tạo một card có chiều rộng cố định
+## Prompt 2 - Nhờ AI giao bài thực hành block UI
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 3:
+1. tạo 3 box với spacing khác nhau
+2. tạo 1 card có nền trắng, viền, bo góc và shadow
+3. tạo 1 alert box màu sắc rõ ràng
+4. tạo 1 nút có padding đẹp và text dễ đọc
 
-## Bài tập thử thách
-- Tạo thẻ thông báo có khoảng cách trong ngoài hài hòa
+Yêu cầu:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - spacing có ổn chưa
+  - width/height có hợp lý không
+  - màu, border, shadow có cân đối không
+  - UI có đang nhìn non tay không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review eye for spacing của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn HTML/JSX dùng Tailwind.
+Bạn hãy review:
+1. spacing có hài hòa không?
+2. box model có đang bị rối không?
+3. màu sắc có nhất quán không?
+4. border/shadow có dùng quá tay không?
+5. nếu cần sửa 3 điểm đầu tiên để UI nhìn đẹp hơn, đó là gì?
+\`\`\`
+
+## Bài tập buổi này
+- Tạo ít nhất 4 block UI cơ bản
+- Mỗi block phải dùng spacing, màu, border/shadow có chủ đích
+- Tự giải thích từng nhóm class chính
+
+## Tiêu chuẩn hoàn thành
+- Dùng được spacing và sizing
+- Dùng được màu/border/shadow
+- Bắt đầu cảm được UI block cơ bản
       `
     },
     {
       id: 'tw-04',
-      title: 'Buổi 4: Màu sắc, nền, viền và đổ bóng',
+      title: 'Buổi 4: Typography và cách làm giao diện dễ đọc bằng Tailwind',
       level: 'beginner',
       content: `
-# Buổi 4: Màu sắc, nền, viền và đổ bóng
+# Buổi 4: Typography và cách làm giao diện dễ đọc bằng Tailwind
 
 ## Mục tiêu
-- Biết tô màu giao diện bằng Tailwind
-- Biết dùng border và shadow
-- Làm phần tử trông hiện đại hơn
+- Dùng được cỡ chữ, độ đậm, leading, tracking, căn lề
+- Tạo phân cấp rõ cho tiêu đề, phụ đề, nội dung
+- Làm UI dễ đọc hơn
+- Bắt đầu có tư duy “design text system” cơ bản
 
-## Nội dung chính
-- \`text-\`
-- \`bg-\`
-- \`border\`, \`border-\`
-- \`rounded\`
-- \`shadow\`
+## Prompt 1 - Nhờ AI dạy typography mindset
+\`\`\`
+Hãy dạy tôi Tailwind CSS buổi 4 như mentor UI/Typography.
 
-## Ví dụ
-\`\`\`html
-<div class="bg-white border border-gray-200 rounded-xl shadow p-4">
-  Card đơn giản
-</div>
+Chủ đề:
+- text-sm, text-base, text-lg, text-2xl...
+- font-medium, font-semibold, font-bold
+- leading-
+- tracking-
+- text-left, text-center
+- text-gray...
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao typography là thứ quyết định UI dễ đọc hay không?
+2. Cỡ chữ và độ đậm nên phối hợp thế nào?
+3. leading ảnh hưởng gì tới khả năng đọc?
+4. tracking nên dùng khi nào?
+5. Khi nào nên căn giữa, khi nào nên căn trái?
+6. Cho ví dụ thực tế:
+   - hero section
+   - card tiêu đề + mô tả
+   - form label + hint text
+7. Chỉ ra lỗi phổ biến:
+   - mọi text đều cùng cỡ
+   - dùng quá nhiều font-weight
+   - line-height quá bí
+   - text màu quá nhạt hoặc quá gắt
+8. Tạo checklist typography cơ bản bằng Tailwind
+
+Dạy như mentor đang nâng mắt chữ cho junior UI.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo card có nền trắng và shadow
-2. Tạo nút nền xanh chữ trắng
-3. Tạo 3 khối với 3 màu nền khác nhau
+## Prompt 2 - Nhờ AI giao bài thực hành typography
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 4:
+1. tạo một hero text block gồm tiêu đề, subtitle, mô tả
+2. tạo một card có title + description
+3. tạo một form label + helper text
+4. tạo một đoạn text dài dễ đọc hơn
 
-## Bài tập thử thách
-- Tạo card sản phẩm có viền, bo góc và đổ bóng đẹp mắt
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - phân cấp text có rõ không
+  - line-height có ổn không
+  - font-weight có quá tay không
+  - màu chữ có hợp lý không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review typography của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn một đoạn UI dùng Tailwind.
+Bạn hãy review:
+1. Typography có rõ phân cấp không?
+2. Phần nào đang khó đọc?
+3. Cỡ chữ/độ đậm/leading có hợp lý không?
+4. Màu chữ có hỗ trợ readability không?
+5. Nếu chỉ sửa 3 điểm để UI trông chuyên nghiệp hơn, đó là gì?
+\`\`\`
+
+## Bài tập buổi này
+- Tạo ít nhất 3 block typography khác nhau
+- Tự giải thích vì sao chọn cỡ chữ và weight đó
+
+## Tiêu chuẩn hoàn thành
+- Dùng được typography utilities
+- Tạo được phân cấp chữ rõ ràng
+- UI nhìn dễ đọc hơn rõ rệt
       `
     },
     {
       id: 'tw-05',
-      title: 'Buổi 5: Typography trong Tailwind',
-      level: 'beginner',
+      title: 'Buổi 5: Flexbox, Grid và tư duy layout trong Tailwind',
+      level: 'intermediate',
       content: `
-# Buổi 5: Typography trong Tailwind
+# Buổi 5: Flexbox, Grid và tư duy layout trong Tailwind
 
 ## Mục tiêu
-- Biết chỉnh cỡ chữ, độ đậm, căn lề
-- Biết tạo hệ thống chữ dễ đọc
-- Làm chủ nhóm class typography cơ bản
+- Dùng được Flexbox và Grid bằng Tailwind
+- Biết khi nào nên dùng Flex, khi nào dùng Grid
+- Tạo layout thực tế nhanh hơn
+- Bắt đầu có tư duy bố cục thay vì ghép box rời
 
-## Nội dung chính
-- \`text-sm\`, \`text-lg\`, \`text-2xl\`
-- \`font-bold\`, \`font-medium\`
-- \`leading-\`
-- \`tracking-\`
-- \`text-center\`, \`text-left\`
+## Prompt 1 - Nhờ AI dạy layout thinking
+\`\`\`
+Hãy dạy tôi Tailwind CSS buổi 5 như mentor layout/UI.
 
-## Ví dụ
-\`\`\`html
-<h1 class="text-3xl font-bold tracking-tight">
-  Tiêu đề chính
-</h1>
-<p class="text-base leading-7 text-gray-700">
-  Đoạn mô tả dễ đọc hơn.
-</p>
+Chủ đề:
+- flex
+- items-center
+- justify-center
+- justify-between
+- flex-col
+- gap-
+- grid
+- grid-cols-
+- col-span-
+- row-span-
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Flexbox phù hợp với bài toán nào?
+2. Grid phù hợp với bài toán nào?
+3. Khi nào nên chọn Flex, khi nào nên chọn Grid?
+4. gap giúp gì trong Tailwind layout?
+5. Cho ví dụ thực tế:
+   - header
+   - cụm nút
+   - card ngang
+   - gallery
+   - dashboard mini
+6. Chỉ ra lỗi phổ biến:
+   - dùng Flex cho bài toán nhiều cột phức tạp
+   - dùng Grid cho thứ rất đơn giản
+   - spacing layout không đều
+7. Tạo checklist chọn layout đúng
+
+Dạy như mentor đang xây nền bố cục cho junior UI.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo tiêu đề chính và tiêu đề phụ
-2. Tạo một đoạn mô tả dễ đọc
-3. Căn giữa một tiêu đề và căn trái phần nội dung
+## Prompt 2 - Nhờ AI giao bài thực hành layout
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 5:
+1. tạo header bằng flex
+2. tạo cụm 3 button nằm ngang có spacing đẹp
+3. tạo card ngang ảnh trái - nội dung phải
+4. tạo grid 3 cột
+5. tạo gallery hoặc dashboard mini bằng grid
 
-## Bài tập thử thách
-- Thiết kế một khối giới thiệu sản phẩm bằng typography Tailwind
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - layout chọn đúng chưa
+  - gap và spacing có đều không
+  - flex/grid có đang bị dùng sai chỗ không
+  - bố cục có dễ mở rộng không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review layout của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn code Tailwind của một layout.
+Bạn hãy review:
+1. Nên dùng Flex hay Grid cho phần này?
+2. Tôi đã chọn đúng chưa?
+3. Layout có cân đối không?
+4. Có chỗ nào spacing chưa đều?
+5. Có cách nào bố cục sạch hơn không?
+
+Hãy review như mentor layout khó tính.
+\`\`\`
+
+## Bài tập buổi này
+- Tạo ít nhất 4 layout nhỏ bằng flex và grid
+- Mỗi layout phải tự giải thích vì sao chọn flex hoặc grid
+
+## Tiêu chuẩn hoàn thành
+- Dùng được Flex và Grid
+- Bắt đầu có tư duy bố cục
+- Không còn ghép UI theo kiểu mò class
       `
     },
     {
       id: 'tw-06',
-      title: 'Buổi 6: Flexbox trong Tailwind',
-      level: 'beginner',
+      title: 'Buổi 6: Responsive, state, group, peer và UI có tương tác',
+      level: 'intermediate',
       content: `
-# Buổi 6: Flexbox trong Tailwind
+# Buổi 6: Responsive, state, group, peer và UI có tương tác
 
 ## Mục tiêu
-- Biết dùng Flexbox bằng utility class
-- Căn chỉnh phần tử theo hàng ngang và dọc
-- Tạo layout nhỏ nhanh hơn
+- Dùng được breakpoint responsive
+- Dùng được hover, focus, active, disabled
+- Dùng được group và peer
+- Tạo UI responsive và có trạng thái tương tác đầy đủ
 
-## Nội dung chính
-- \`flex\`
-- \`items-center\`
-- \`justify-center\`
-- \`justify-between\`
-- \`gap-\`
-- \`flex-col\`
+## Prompt 1 - Nhờ AI dạy responsive + interaction mindset
+\`\`\`
+Hãy dạy tôi Tailwind CSS buổi 6 như mentor UI thực chiến.
 
-## Ví dụ
-\`\`\`html
-<div class="flex items-center justify-between gap-4">
-  <span>Logo</span>
-  <nav>Menu</nav>
-</div>
+Chủ đề:
+- sm:, md:, lg:, xl:
+- mobile-first
+- hover:
+- focus:
+- active:
+- disabled:
+- group
+- group-hover:
+- peer
+- peer-focus:
+- peer-checked:
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Mobile-first trong Tailwind nghĩa là gì?
+2. Breakpoint nên nghĩ như thế nào?
+3. Trạng thái hover/focus/active/disabled giúp UX tốt hơn ra sao?
+4. group dùng khi nào?
+5. peer dùng khi nào?
+6. Cho ví dụ thực tế:
+   - button hover
+   - input focus ring
+   - card đổi màu tiêu đề khi hover cha
+   - checkbox đổi style label
+   - grid 1 cột mobile, 3 cột desktop
+7. Chỉ ra lỗi phổ biến:
+   - quên focus state
+   - responsive làm theo kiểu vá lỗi
+   - group/peer dùng máy móc
+8. Tạo checklist responsive + interactive UI
+
+Dạy như mentor UI đang chuẩn hóa trải nghiệm người dùng cho junior.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo thanh header đơn giản
-2. Căn giữa một box cả ngang lẫn dọc
-3. Tạo 3 nút nằm ngang với khoảng cách đều
+## Prompt 2 - Nhờ AI giao bài thực hành responsive + state
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 6:
+1. tạo grid responsive 1 cột -> 3 cột
+2. tạo button có hover/active/disabled
+3. tạo input có focus ring
+4. tạo card dùng group-hover cho title
+5. tạo checkbox hoặc radio dùng peer
 
-## Bài tập thử thách
-- Tạo layout card gồm ảnh bên trái và nội dung bên phải
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - responsive có đúng mobile-first không
+  - states có đủ chưa
+  - focus có rõ không
+  - group/peer có dùng đúng chỗ không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review trải nghiệm UI của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn code UI Tailwind của tôi.
+Bạn hãy review:
+1. Responsive có ổn không?
+2. Focus/hover/disabled có đủ rõ không?
+3. Có trạng thái nào đang bị thiếu?
+4. group/peer có giúp UI linh hoạt hơn thật không?
+5. Có điểm nào làm trải nghiệm vẫn còn non tay không?
+
+Hãy review như mentor UI/UX khó tính.
+\`\`\`
+
+## Bài tập buổi này
+- Tạo ít nhất 3 component responsive có state
+- Test trên nhiều kích thước màn hình
+- Tự mô tả UX state của từng component
+
+## Tiêu chuẩn hoàn thành
+- Dùng được responsive prefixes
+- UI có trạng thái tương tác tử tế
+- Biết group/peer không chỉ là “mẹo class”
       `
     },
     {
       id: 'tw-07',
-      title: 'Buổi 7: Grid trong Tailwind',
-      level: 'intermediate',
+      title: 'Buổi 7: Form UI, navbar, card, modal và các component phổ biến bằng Tailwind',
+      level: 'advanced',
       content: `
-# Buổi 7: Grid trong Tailwind
+# Buổi 7: Form UI, navbar, card, modal và các component phổ biến bằng Tailwind
 
 ## Mục tiêu
-- Biết tạo layout nhiều cột bằng Grid
-- Hiểu khi nào nên dùng Grid thay vì Flex
-- Tạo gallery và danh sách card
+- Ráp utility thành component UI hoàn chỉnh
+- Biết dựng các pattern giao diện phổ biến
+- Tăng tốc xây giao diện thực tế
+- Bắt đầu nghĩ theo “component recipe” thay vì class rời
 
-## Nội dung chính
-- \`grid\`
-- \`grid-cols-\`
-- \`gap-\`
-- \`col-span-\`
-- \`row-span-\`
+## Prompt 1 - Nhờ AI dạy component recipe mindset
+\`\`\`
+Hãy dạy tôi Tailwind CSS buổi 7 như mentor UI implementation.
 
-## Ví dụ
-\`\`\`html
-<div class="grid grid-cols-3 gap-4">
-  <div class="bg-gray-100 p-4">1</div>
-  <div class="bg-gray-100 p-4">2</div>
-  <div class="bg-gray-100 p-4">3</div>
-</div>
+Chủ đề:
+- form UI
+- input
+- select
+- textarea
+- button
+- navbar
+- card
+- modal
+- badge
+- alert
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao khi học Tailwind nên chuyển từ “class lẻ” sang “recipe cho component”?
+2. Form đẹp cần những quyết định nào?
+3. Navbar tốt cần những phần nào?
+4. Card đẹp thường cần những lớp style nào?
+5. Modal cần lưu ý gì về layout và layer?
+6. Cho ví dụ component recipe cho:
+   - button
+   - input
+   - card
+   - navbar
+   - modal
+7. Chỉ ra lỗi phổ biến:
+   - class dài nhưng không có cấu trúc
+   - component nhìn đẹp ở một chỗ nhưng không tái dùng được
+   - modal/card/form thiếu consistency
+8. Tạo checklist dựng UI component bằng Tailwind
+
+Dạy như mentor đang giúp junior build design system mini.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo lưới 3 cột
-2. Tạo gallery ảnh đơn giản
-3. Tạo một item chiếm 2 cột
+## Prompt 2 - Nhờ AI giao bài thực hành UI components
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 7:
+1. tạo form đăng nhập đẹp
+2. tạo navbar responsive đơn giản
+3. tạo product card
+4. tạo badge hoặc alert
+5. tạo modal demo đơn giản bằng Tailwind class
 
-## Bài tập thử thách
-- Tạo layout dashboard nhỏ bằng Grid
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự dựng từng component
+- sau mỗi component, review:
+  - cấu trúc class đã gọn chưa
+  - visual consistency có ổn không
+  - spacing/Typography/states có đủ chưa
+  - component có thể tái dùng được không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review component recipes của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn code Tailwind của một số UI component.
+Bạn hãy review:
+1. Component nào đã thành “recipe” tốt?
+2. Component nào vẫn là đống class ghép tạm?
+3. Có inconsistency nào giữa các component không?
+4. Có class nào lặp nhiều nên chuẩn hóa lại không?
+5. Nếu muốn tiến gần design system hơn, tôi nên làm gì?
+\`\`\`
+
+## Bài tập buổi này
+- Tạo ít nhất 5 UI component phổ biến
+- Chuẩn hóa spacing, radius, shadow, state giữa các component
+
+## Tiêu chuẩn hoàn thành
+- Biết dựng component UI thực tế
+- Bắt đầu có consistency giữa các component
+- Không còn nhìn Tailwind như các class rời rạc
       `
     },
     {
       id: 'tw-08',
-      title: 'Buổi 8: Responsive Design với Tailwind',
-      level: 'intermediate',
+      title: 'Buổi 8: Tailwind CSS 4, @theme, design tokens và dark mode',
+      level: 'advanced',
       content: `
-# Buổi 8: Responsive Design với Tailwind
+# Buổi 8: Tailwind CSS 4, @theme, design tokens và dark mode
 
 ## Mục tiêu
-- Biết làm giao diện thích ứng theo màn hình
-- Biết dùng breakpoint của Tailwind
-- Tạo layout mobile-first
+- Hiểu Tailwind 4 theo hướng CSS-first
+- Biết dùng \`@theme\`
+- Biết tạo color/font token riêng
+- Biết thiết kế dark mode hoặc theme riêng có hệ thống
 
-## Nội dung chính
-- Prefix responsive:
-  - \`sm:\`
-  - \`md:\`
-  - \`lg:\`
-  - \`xl:\`
-- Tư duy mobile-first
-- Thay đổi width, font, layout theo màn hình
+## Prompt 1 - Nhờ AI dạy theme system mindset
+\`\`\`
+Hãy dạy tôi Tailwind CSS buổi 8 như mentor UI system.
 
-## Ví dụ
-\`\`\`html
-<div class="w-full md:w-1/2 lg:w-1/3">
-  Nội dung responsive
-</div>
+Chủ đề:
+- Tailwind 4 CSS-first
+- @theme
+- custom color tokens
+- custom font tokens
+- dark:
+- design tokens
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Tailwind 4 CSS-first nghĩa là gì?
+2. @theme giúp gì?
+3. Design tokens là gì ở mức dễ hiểu?
+4. Vì sao màu và font nên được chuẩn hóa thành token?
+5. Dark mode nên được nghĩ như một hệ thống ra sao?
+6. Cho ví dụ thực tế:
+   - color primary
+   - text color
+   - background token
+   - font token
+   - dark/light pairing
+7. Chỉ ra lỗi phổ biến:
+   - dùng màu tùy hứng khắp nơi
+   - dark mode chắp vá
+   - token đặt tên mơ hồ
+8. Tạo checklist theme system cơ bản
+
+Dạy như mentor đang giúp junior đi từ “làm UI” sang “xây hệ thống UI”.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo khối full width trên mobile, 1/2 trên tablet
-2. Tạo grid 1 cột trên mobile, 3 cột trên desktop
-3. Thay đổi cỡ chữ theo màn hình
+## Prompt 2 - Nhờ AI giao bài thực hành theme
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 8:
+1. tạo file CSS có @theme
+2. khai báo màu thương hiệu riêng
+3. khai báo font mặc định cho app
+4. áp dụng token vào button/card/text
+5. thêm dark mode cho ít nhất 2 component
 
-## Bài tập thử thách
-- Tạo landing section responsive cho điện thoại và laptop
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - token đặt tên có rõ không
+  - màu có hệ thống không
+  - dark mode có đồng nhất không
+  - có chỗ nào vẫn hard-code màu quá nhiều không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review theme system của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn file @theme và một số component Tailwind.
+Bạn hãy review:
+1. Token có đặt tên tốt không?
+2. Màu/font có đang được dùng nhất quán không?
+3. Dark mode có đủ logic không?
+4. Có chỗ nào đáng ra nên dùng token mà vẫn hard-code không?
+5. Nếu muốn scale app lớn hơn, hệ thống token này ổn chưa?
+\`\`\`
+
+## Bài tập buổi này
+- Tạo theme cơ bản cho app
+- Áp dụng token vào ít nhất 4 component
+- Thêm dark mode cho ít nhất 2 khu vực UI
+
+## Tiêu chuẩn hoàn thành
+- Hiểu \`@theme\`
+- Biết dùng token thay vì hard-code lung tung
+- Bắt đầu có tư duy design system
       `
     },
     {
       id: 'tw-09',
-      title: 'Buổi 9: States - hover, focus, active, disabled',
-      level: 'intermediate',
+      title: 'Buổi 9: Tailwind trong React/Next.js, props, biến thể và tổ chức code gọn gàng',
+      level: 'advanced',
       content: `
-# Buổi 9: States - hover, focus, active, disabled
+# Buổi 9: Tailwind trong React/Next.js, props, biến thể và tổ chức code gọn gàng
 
 ## Mục tiêu
-- Biết tạo trạng thái tương tác
-- Làm nút, input và link tự nhiên hơn
-- Hiểu cách dùng state prefix
+- Dùng Tailwind hiệu quả trong React/Next.js
+- Biết tạo component nhận props
+- Biết xử lý biến thể UI
+- Biết tổ chức code Tailwind gọn hơn, dễ maintain hơn
 
-## Nội dung chính
-- \`hover:\`
-- \`focus:\`
-- \`active:\`
-- \`disabled:\`
-- \`focus:ring-\`
+## Prompt 1 - Nhờ AI dạy component-driven Tailwind
+\`\`\`
+Hãy dạy tôi Tailwind CSS buổi 9 như mentor Front-end/React.
 
-## Ví dụ
-\`\`\`html
-<button class="bg-blue-500 hover:bg-blue-600 active:scale-95 text-white px-4 py-2 rounded">
-  Nhấn vào tôi
-</button>
+Chủ đề:
+- Tailwind trong JSX/TSX
+- component nhận props
+- biến thể UI
+- class condition
+- refactor class dài
+- reusable component
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Khi dùng Tailwind trong React, lợi thế lớn nhất là gì?
+2. Vì sao Tailwind rất hợp với component-based UI?
+3. Biến thể UI là gì?
+4. Khi nào nên xử lý class condition?
+5. Khi nào nên tách component thay vì nhồi class trong một chỗ?
+6. Cho ví dụ thực tế:
+   - Button primary/secondary
+   - Card có nhiều variant
+   - Badge theo status
+7. Chỉ ra lỗi phổ biến:
+   - JSX đầy class condition rối
+   - cùng một UI lặp lại nhiều chỗ
+   - component thiếu variant strategy
+8. Tạo checklist tổ chức Tailwind trong React/Next.js
+
+Dạy như mentor đang giúp junior code UI sạch hơn.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo nút đổi màu khi hover
-2. Tạo input có ring khi focus
-3. Tạo nút disabled có giao diện khác
+## Prompt 2 - Nhờ AI giao bài thực hành component variants
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 9:
+1. tạo Button component nhận props variant
+2. tạo Card component nhận title/description
+3. tạo Badge theo status
+4. tạo Dashboard mini bằng React/Next.js + Tailwind
+5. refactor một đoạn JSX dài thành component nhỏ hơn
 
-## Bài tập thử thách
-- Tạo form nhỏ có button, input và select với đầy đủ trạng thái
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - component có tái dùng được không
+  - biến thể xử lý có sạch không
+  - class condition có bị rối không
+  - cấu trúc code có dễ maintain không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review cách tôi tổ chức Tailwind trong React
+\`\`\`
+Tôi sẽ gửi cho bạn code React/Next.js dùng Tailwind.
+Bạn hãy review:
+1. Component nào nên tách ra?
+2. Variant handling có sạch không?
+3. Có class nào lặp nhiều không?
+4. JSX có đang bị quá rối không?
+5. Nếu muốn maintain lâu dài, tôi nên refactor gì trước?
+\`\`\`
+
+## Bài tập buổi này
+- Tạo ít nhất 3 component có props/variant
+- Refactor 1 trang JSX dài thành cấu trúc gọn hơn
+
+## Tiêu chuẩn hoàn thành
+- Dùng Tailwind tốt trong React/Next.js
+- Biết tạo component variant
+- Biết giữ code Tailwind sạch hơn
       `
     },
     {
       id: 'tw-10',
-      title: 'Buổi 10: Position, z-index, overflow và layer',
-      level: 'intermediate',
-      content: `
-# Buổi 10: Position, z-index, overflow và layer
-
-## Mục tiêu
-- Biết định vị phần tử trong Tailwind
-- Biết dùng absolute, relative, fixed
-- Tạo badge, popup, nút nổi
-
-## Nội dung chính
-- \`relative\`, \`absolute\`, \`fixed\`, \`sticky\`
-- \`top-\`, \`left-\`, \`right-\`, \`bottom-\`
-- \`z-\`
-- \`overflow-hidden\`
-
-## Ví dụ
-\`\`\`html
-<div class="relative p-4 border rounded-xl">
-  <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
-    Mới
-  </span>
-  Card sản phẩm
-</div>
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo badge ở góc card
-2. Tạo nút chat fixed ở góc màn hình
-3. Tạo card có ảnh bị cắt gọn bằng overflow
-
-## Bài tập thử thách
-- Tạo modal demo đơn giản chỉ bằng Tailwind class
-      `
-    },
-    {
-      id: 'tw-11',
-      title: 'Buổi 11: Group, peer và trạng thái nâng cao',
-      level: 'intermediate',
-      content: `
-# Buổi 11: Group, peer và trạng thái nâng cao
-
-## Mục tiêu
-- Biết điều khiển style phần tử con từ phần tử cha
-- Biết style theo trạng thái của phần tử anh em
-- Tạo tương tác UI linh hoạt hơn
-
-## Nội dung chính
-- \`group\`
-- \`group-hover:\`
-- \`peer\`
-- \`peer-focus:\`
-- \`peer-checked:\`
-
-## Ví dụ
-\`\`\`html
-<div class="group p-4 border rounded-xl hover:bg-gray-50">
-  <h3 class="text-lg font-semibold group-hover:text-blue-600">
-    Tiêu đề card
-  </h3>
-</div>
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo card đổi màu tiêu đề khi hover cha
-2. Tạo checkbox điều khiển style label
-3. Tạo input focus làm đổi màu icon
-
-## Bài tập thử thách
-- Tạo FAQ item có icon đổi màu khi hover hoặc focus
-      `
-    },
-    {
-      id: 'tw-12',
-      title: 'Buổi 12: Dark mode và giao diện nhiều chủ đề',
-      level: 'intermediate',
-      content: `
-# Buổi 12: Dark mode và giao diện nhiều chủ đề
-
-## Mục tiêu
-- Hiểu dark mode trong Tailwind
-- Biết viết class cho light/dark
-- Tạo giao diện thích ứng chủ đề
-
-## Nội dung chính
-- \`dark:\`
-- Màu nền và chữ theo theme
-- Tư duy thiết kế hai chế độ giao diện
-- Đồng nhất màu trong dark mode
-
-## Ví dụ
-\`\`\`html
-<div class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white p-6 rounded-xl">
-  Nội dung hỗ trợ dark mode
-</div>
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo card hỗ trợ dark mode
-2. Tạo navbar có màu khác giữa light và dark
-3. Tạo button hiển thị đẹp ở cả hai chế độ
-
-## Bài tập thử thách
-- Thiết kế một khối profile card hoàn chỉnh có dark mode
-      `
-    },
-    {
-      id: 'tw-13',
-      title: 'Buổi 13: Form UI với Tailwind',
-      level: 'intermediate',
-      content: `
-# Buổi 13: Form UI với Tailwind
-
-## Mục tiêu
-- Biết style form đẹp và dễ dùng
-- Tạo input, textarea, select, checkbox bằng Tailwind
-- Làm form rõ ràng và hiện đại hơn
-
-## Nội dung chính
-- Label + input layout
-- Border, focus ring, spacing
-- Nút submit
-- Thông báo lỗi và gợi ý
-
-## Ví dụ
-\`\`\`html
-<input
-  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-/>
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo form đăng nhập
-2. Tạo form liên hệ
-3. Tạo form đăng ký có 4 trường
-
-## Bài tập thử thách
-- Thiết kế form đăng ký đẹp hơn với trạng thái lỗi và thành công
-      `
-    },
-    {
-      id: 'tw-14',
-      title: 'Buổi 14: Component UI phổ biến với Tailwind',
+      title: 'Buổi 10: Project cuối khóa - xây một giao diện hoàn chỉnh bằng Tailwind CSS 4',
       level: 'advanced',
       content: `
-# Buổi 14: Component UI phổ biến với Tailwind
+# Buổi 10: Project cuối khóa - xây một giao diện hoàn chỉnh bằng Tailwind CSS 4
 
 ## Mục tiêu
-- Biết ráp các utility class thành component hoàn chỉnh
-- Tạo các block UI tái sử dụng
-- Tăng tốc xây giao diện thực tế
-
-## Nội dung chính
-- Button
-- Card
-- Navbar
-- Hero section
-- Badge
-- Alert
-
-## Ví dụ
-\`\`\`html
-<div class="max-w-sm bg-white rounded-2xl shadow p-6">
-  <h3 class="text-xl font-bold mb-2">Card Title</h3>
-  <p class="text-gray-600">Mô tả ngắn</p>
-</div>
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo button component
-2. Tạo product card
-3. Tạo navbar đơn giản
-
-## Bài tập thử thách
-- Tạo trang landing page ngắn gồm hero, feature card và CTA button
-      `
-    },
-    {
-      id: 'tw-15',
-      title: 'Buổi 15: Tailwind CSS 4 và @theme',
-      level: 'advanced',
-      content: `
-# Buổi 15: Tailwind CSS 4 và @theme
-
-## Mục tiêu
-- Hiểu cách tùy chỉnh theme trong Tailwind 4
-- Biết khai báo màu và font riêng
-- Áp dụng tư duy CSS-first của Tailwind 4
-
-## Nội dung chính
-- \`@import "tailwindcss";\`
-- \`@theme\`
-- Custom color
-- Custom font
-- Dùng token mới trong utility class
-
-## Ví dụ
-\`\`\`css
-@import "tailwindcss";
-
-@theme {
-  --color-primary: #2563eb;
-  --font-sans: "Inter", sans-serif;
-}
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo màu thương hiệu riêng
-2. Tạo font mặc định cho toàn app
-3. Dùng màu custom trong button hoặc card
-
-## Bài tập thử thách
-- Tạo theme riêng cho app học lập trình của bạn
-      `
-    },
-    {
-      id: 'tw-16',
-      title: 'Buổi 16: Arbitrary values và tùy biến linh hoạt',
-      level: 'advanced',
-      content: `
-# Buổi 16: Arbitrary values và tùy biến linh hoạt
-
-## Mục tiêu
-- Biết dùng giá trị tùy chỉnh khi class mặc định chưa đủ
-- Viết giao diện linh hoạt hơn
-- Tránh lạm dụng CSS ngoài không cần thiết
-
-## Nội dung chính
-- Cú pháp \`[...]\`
-- Width, color, spacing tùy chỉnh
-- Kết hợp arbitrary value với responsive và states
-
-## Ví dụ
-\`\`\`html
-<div class="w-[320px] bg-[#0f172a] text-[18px] rounded-[20px] p-[18px]">
-  Nội dung tùy chỉnh
-</div>
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo box có width tùy chỉnh
-2. Dùng màu hex tùy chỉnh
-3. Dùng border-radius tùy chỉnh
-
-## Bài tập thử thách
-- Thiết kế một card giao diện theo đúng mockup riêng bằng arbitrary values
-      `
-    },
-    {
-      id: 'tw-17',
-      title: 'Buổi 17: Animation, transition và transform',
-      level: 'advanced',
-      content: `
-# Buổi 17: Animation, transition và transform
-
-## Mục tiêu
-- Tạo giao diện có chuyển động mượt
-- Biết hover effect đẹp hơn
-- Kết hợp animation cơ bản với utility class
-
-## Nội dung chính
-- \`transition\`
-- \`duration-\`
-- \`ease-\`
-- \`hover:scale-\`
-- \`hover:-translate-y-\`
-- \`animate-\`
-
-## Ví dụ
-\`\`\`html
-<div class="transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-  Card có hiệu ứng hover
-</div>
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo nút có hiệu ứng hover
-2. Tạo card nổi lên khi di chuột
-3. Tạo loading đơn giản bằng animate class
-
-## Bài tập thử thách
-- Tạo grid sản phẩm có hover effect đồng nhất và mượt
-      `
-    },
-    {
-      id: 'tw-18',
-      title: 'Buổi 18: Tổ chức code Tailwind gọn gàng',
-      level: 'advanced',
-      content: `
-# Buổi 18: Tổ chức code Tailwind gọn gàng
-
-## Mục tiêu
-- Biết tránh class quá dài và rối
-- Tổ chức UI component tốt hơn
-- Giữ code dễ đọc trong React hoặc Next.js
-
-## Nội dung chính
-- Tách component
-- Gom class theo nhóm
-- Tư duy reusable UI
-- Khi nào nên dùng CSS bổ sung
-- Khi nào nên tạo component riêng thay vì nhồi class
-
-## Ví dụ
-\`\`\`tsx
-function PrimaryButton() {
-  return (
-    <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition">
-      Gửi
-    </button>
-  );
-}
-\`\`\`
-
-## Bài tập luyện tập
-1. Tách một card dài thành component riêng
-2. Viết lại một nút thường dùng thành component tái sử dụng
-3. Chia layout thành section rõ ràng
-
-## Bài tập thử thách
-- Refactor một trang Tailwind dài thành các component gọn hơn
-      `
-    },
-    {
-      id: 'tw-19',
-      title: 'Buổi 19: Tailwind với React và Next.js',
-      level: 'advanced',
-      content: `
-# Buổi 19: Tailwind với React và Next.js
-
-## Mục tiêu
-- Biết dùng Tailwind hiệu quả trong React và Next.js
-- Tổ chức UI component tốt hơn
-- Kết hợp props và class linh hoạt
-
-## Nội dung chính
-- Tailwind trong JSX và TSX
-- UI component nhận props
-- Class thay đổi theo trạng thái
-- Layout app hiện đại với Tailwind
-
-## Ví dụ
-\`\`\`tsx
-type ButtonProps = {
-  label: string;
-  primary?: boolean;
-};
-
-function Button({ label, primary = true }: ButtonProps) {
-  return (
-    <button
-      className={primary
-        ? 'bg-blue-600 text-white px-4 py-2 rounded-lg'
-        : 'bg-gray-200 text-gray-900 px-4 py-2 rounded-lg'}
-    >
-      {label}
-    </button>
-  );
-}
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo Button component nhận props
-2. Tạo Card component nhận title và description
-3. Tạo layout dashboard nhỏ bằng React + Tailwind
-
-## Bài tập thử thách
-- Tạo trang học online mini bằng React hoặc Next.js với Tailwind
-      `
-    },
-    {
-      id: 'tw-20',
-      title: 'Buổi 20: Mini Project và dự án cuối khóa Tailwind CSS 4',
-      level: 'advanced',
-      content: `
-# Buổi 20: Mini Project và dự án cuối khóa Tailwind CSS 4
-
-## Mục tiêu
-- Kết hợp toàn bộ kiến thức Tailwind đã học
-- Tạo giao diện hoàn chỉnh, đẹp và responsive
+- Tổng hợp toàn bộ kiến thức Tailwind đã học
+- Hoàn thiện một giao diện thực tế
+- Biết tự review consistency, responsive và maintainability
 - Tự đánh giá mức độ làm chủ Tailwind
+
+## Prompt 1 - Nhờ AI dẫn tôi làm project từ đầu
+\`\`\`
+Hãy đóng vai mentor Tailwind và dẫn tôi làm project cuối khóa.
+
+Cho tôi chọn 1 trong các project:
+1. Landing page sản phẩm
+2. Trang hồ sơ cá nhân
+3. Dashboard mini
+4. Trang blog
+5. Trang khóa học online
+
+Sau khi tôi chọn, hãy dẫn tôi theo lộ trình:
+1. phân tích bố cục tổng thể
+2. xác định typography system
+3. xác định spacing scale
+4. xác định colors/theme
+5. xác định component cần có
+6. xác định responsive strategy
+7. xác định state/interaction cần có
+8. để tôi tự build từng phần
+9. sau mỗi phần, review rất kỹ như mentor
+10. cuối cùng, giúp tôi audit toàn bộ giao diện
+
+Mục tiêu là để tôi thật sự tự xây được một UI hoàn chỉnh bằng Tailwind.
+\`\`\`
+
+## Prompt 2 - Nhờ AI audit project cuối khóa
+\`\`\`
+Tôi sẽ gửi cho bạn project Tailwind cuối khóa của tôi.
+Bạn hãy audit như mentor UI kỹ tính.
+
+Đánh giá theo 8 nhóm tiêu chí:
+1. Bố cục tổng thể
+2. Spacing và sizing
+3. Typography
+4. Màu sắc và theme
+5. Component consistency
+6. Responsive
+7. States/interaction
+8. Độ sạch và khả năng maintain code Tailwind
+
+Với mỗi nhóm:
+- nêu điểm tốt
+- nêu lỗi cụ thể
+- giải thích vì sao là lỗi
+- cho hướng sửa cụ thể
+- ưu tiên lỗi nghiêm trọng trước
+
+Cuối cùng:
+- chấm điểm tổng trên thang 100
+- xếp loại: yếu / ổn / tốt / rất tốt
+- cho tôi 5 việc cần sửa ngay
+\`\`\`
+
+## Prompt 3 - Nhờ AI đóng vai reviewer cuối khóa
+\`\`\`
+Hãy đóng vai reviewer cuối khóa Tailwind CSS 4.
+
+Tôi sẽ gửi giao diện hoặc code của tôi.
+Bạn phải review như thật, không nể nang.
+
+Cách review mong muốn:
+- đánh giá tư duy utility-first
+- đánh giá consistency giữa các component
+- đánh giá responsive
+- đánh giá state UX
+- đánh giá theme/token nếu có
+- đánh giá độ gọn gàng của code
+- chỉ rõ điểm nào chứng tỏ tôi đã hiểu Tailwind
+- chỉ rõ điểm nào cho thấy tôi vẫn đang ghép class theo kiểu chắp vá
+
+Cuối cùng, hãy nói thật:
+- tôi đã đủ nền tảng để dùng Tailwind trong project thật chưa?
+- nếu chưa, tôi cần luyện thêm phần nào?
+\`\`\`
 
 ## Gợi ý project
 Chọn 1 trong các project:
@@ -734,21 +901,24 @@ Chọn 1 trong các project:
 - Có layout rõ ràng
 - Có responsive
 - Có hover/focus states
-- Có ít nhất 3 component UI
-- Có dark mode hoặc theme riêng
-- Có sử dụng Tailwind 4 theo hướng CSS-first ở mức cơ bản
+- Có ít nhất 5 component UI
+- Có theme hoặc dark mode hoặc token cơ bản
+- Có tổ chức code gọn gàng nếu dùng React/Next.js
 
 ## Checklist tự đánh giá
 - Class có quá rối không?
-- Giao diện có nhất quán không?
+- Spacing có đều không?
+- Typography có nhất quán không?
 - Responsive đã ổn chưa?
-- Màu sắc và khoảng cách có đều không?
-- Có tận dụng được utility class thay vì viết CSS thừa không?
+- Components có đồng bộ không?
+- States có đủ rõ không?
+- Tôi có thể giải thích vì sao mình dùng từng nhóm utility chính không?
 
 ## Bài tập cuối khóa
 - Hoàn thành project
-- Tự refactor class dài và lặp
-- Ghi lại những nhóm utility bạn đã dùng thành thạo nhất
+- Tự audit bằng AI theo các prompt trên
+- Refactor lại những đoạn class dài, lặp hoặc thiếu nhất quán
+- Hoàn thiện phiên bản final đến khi đủ chắc
       `
     }
   ]

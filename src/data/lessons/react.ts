@@ -5,764 +5,912 @@ export const reactLesson: Lesson = {
   icon: 'code',
   title: 'React 19 & TypeScript',
   description:
-    'Lộ trình 20 buổi học React 19 và TypeScript từ cơ bản đến chuyên sâu, chia nhỏ dễ học, có bài tập thực hành và mini project để giúp người học xây dựng giao diện hiện đại, tái sử dụng tốt và dễ mở rộng.',
+    'Lộ trình React 19 & TypeScript theo phong cách tự học cùng AI mentor. Mỗi buổi học đi kèm prompt cực chi tiết để học viên chỉ cần copy vào AI là có thể học từ bản chất, hiểu component, state, hooks, TypeScript, data flow và được review như học cùng mentor 1-1.',
   points: [
-    'Hiểu React là gì và tư duy component',
-    'Nắm chắc JSX, props, state, event và hooks',
-    'Biết tổ chức dữ liệu, form, context và custom hooks',
-    'Làm việc với TypeScript trong React an toàn hơn',
-    'Tiếp cận các kỹ thuật hiện đại như useTransition, useActionState'
+    'Mỗi buổi có prompt cực chi tiết để copy vào AI và học ngay',
+    'AI đóng vai mentor React, dạy từ bản chất chứ không chỉ giải thích API',
+    'Có prompt học lý thuyết, prompt build feature, prompt review và prompt phản biện kiến trúc',
+    'Tập trung vào năng lực thật: component thinking, state flow, form, hooks, context, API, TypeScript',
+    'Có project xuyên suốt để ghép các buổi thành một app React thực tế',
+    'Học xong có thể tự xây một app React nhỏ có cấu trúc rõ ràng, dễ mở rộng và an toàn kiểu dữ liệu hơn'
   ],
   chapters: [
     {
       id: 'react-01',
-      title: 'Buổi 1: React là gì? Vì sao nên học React?',
+      title: 'Buổi 1: React là gì và vì sao nên học React theo tư duy component?',
       level: 'beginner',
       content: `
-# Buổi 1: React là gì? Vì sao nên học React?
+# Buổi 1: React là gì và vì sao nên học React theo tư duy component?
 
 ## Mục tiêu
 - Hiểu React là gì
-- Biết React giải quyết vấn đề gì
-- Hiểu tư duy chia giao diện thành component
+- Hiểu React giải quyết vấn đề gì
+- Bắt đầu tư duy chia giao diện thành component
+- Phân biệt làm UI bằng HTML/CSS/JS thuần và bằng React
 
-## Nội dung chính
-- React là thư viện xây dựng giao diện
-- Tư duy chia nhỏ UI thành các khối tái sử dụng
-- So sánh cách làm HTML/CSS/JS thuần với React
-- React phù hợp khi app lớn dần lên
+## Cách học buổi này
+Bạn sẽ copy từng prompt bên dưới vào AI theo đúng thứ tự.
+Không học lướt. Sau mỗi prompt phải tự giải thích lại bằng lời của bạn.
 
-## Ví dụ
-\`\`\`tsx
-function App() {
-  return <h1>Xin chào React</h1>;
-}
+## Prompt 1 - Nhờ AI dạy lý thuyết từ gốc
+\`\`\`
+Bạn hãy đóng vai một mentor Front-end cực giỏi, chuyên dạy React cho người đã biết HTML, CSS và JavaScript cơ bản.
+
+Hôm nay hãy dạy tôi buổi đầu tiên về React theo phong cách:
+- cực dễ hiểu nhưng không hời hợt
+- giải thích từ bản chất
+- luôn nói vì sao kiến thức này quan trọng
+- gắn với ví dụ giao diện thực tế
+- không dùng thuật ngữ khó nếu chưa giải thích
+
+Chủ đề hôm nay:
+- React là gì?
+- React giải quyết vấn đề gì?
+- Vì sao React phổ biến?
+- Tư duy component là gì?
+- Khi nào nên dùng React thay vì chỉ dùng HTML/CSS/JS thuần?
+
+Tôi muốn bạn dạy theo format:
+1. React là gì?
+2. React khác gì với JavaScript thuần thao tác DOM?
+3. Component là gì?
+4. Vì sao chia giao diện thành component lại mạnh?
+5. Cho 5 ví dụ UI có thể tách thành component
+6. Phân tích lợi ích của React khi app lớn dần
+7. Chỉ ra 8 hiểu lầm phổ biến của người mới về React
+8. Đặt cho tôi 5 câu hỏi kiểm tra hiểu bài
+9. Sau khi tôi trả lời, bạn phải chấm và sửa thật kỹ
+
+Dùng tiếng Việt và dạy như mentor thật sự.
 \`\`\`
 
-## Bài tập luyện tập
-1. Giải thích React bằng lời của bạn
-2. Liệt kê 3 giao diện có thể chia thành component
-3. Viết component đầu tiên hiển thị một tiêu đề
+## Prompt 2 - Nhờ AI luyện tư duy component
+\`\`\`
+Tôi muốn luyện tư duy nhìn một giao diện và chia nó thành component.
 
-## Bài tập thử thách
-- Phân tích một trang web và chia thử thành các component nhỏ
+Hãy cho tôi 6 ví dụ giao diện, ví dụ:
+- landing page
+- trang blog
+- dashboard
+- trang sản phẩm
+- form đăng nhập
+- trang profile cá nhân
+
+Với mỗi giao diện:
+1. yêu cầu tôi chia thành các component nhỏ
+2. hỏi tôi component nào có thể tái sử dụng
+3. hỏi tôi component nào chỉ mang tính bố cục
+4. sau đó bạn mới chữa
+5. nếu tôi chia quá thô hoặc quá vụn, hãy phản biện thật kỹ
+
+Mục tiêu là để tôi bắt đầu nhìn UI theo component, không theo trang lớn.
+\`\`\`
+
+## Prompt 3 - Nhờ AI kiểm tra hiểu bài
+\`\`\`
+Hãy kiểm tra xem tôi đã thật sự hiểu React buổi 1 chưa.
+
+Tôi muốn có:
+- 3 câu hỏi trắc nghiệm có giải thích đáp án
+- 3 câu hỏi tự luận ngắn
+- 2 bài tập chia giao diện thành component
+- 1 câu hỏi tư duy: vì sao React đặc biệt hữu ích khi giao diện lớn dần và phải tái sử dụng nhiều phần?
+
+Sau khi tôi trả lời, bạn hãy:
+- chấm điểm từng câu
+- giải thích chỗ sai
+- nói tôi đang ở mức nào: chưa hiểu / hiểu cơ bản / hiểu chắc
+\`\`\`
+
+## Bài tập buổi này
+1. Giải thích React bằng lời của bạn
+2. Chia một giao diện quen thuộc thành các component
+3. Nêu 3 lợi ích của tư duy component
+
+## Tiêu chuẩn hoàn thành
+- Hiểu React là thư viện UI
+- Hiểu component là đơn vị xây giao diện
+- Bắt đầu có tư duy chia nhỏ UI
       `
     },
     {
       id: 'react-02',
-      title: 'Buổi 2: Cài đặt môi trường React với Vite + TypeScript',
+      title: 'Buổi 2: Tạo project React 19 với Vite + TypeScript và hiểu cấu trúc cơ bản',
       level: 'beginner',
       content: `
-# Buổi 2: Cài đặt môi trường React với Vite + TypeScript
+# Buổi 2: Tạo project React 19 với Vite + TypeScript và hiểu cấu trúc cơ bản
 
 ## Mục tiêu
-- Tạo project React mới
-- Hiểu cấu trúc thư mục cơ bản
-- Chạy được app React đầu tiên
+- Tạo được project React + TypeScript
+- Chạy được dev server
+- Hiểu \`main.tsx\`, \`App.tsx\`, \`index.html\`
+- Bắt đầu làm quen với TypeScript trong môi trường React
 
-## Nội dung chính
-- Tạo project bằng Vite
-- Ý nghĩa của \`main.tsx\`, \`App.tsx\`
-- \`index.html\` và \`#root\`
-- Chạy dev server
+## Prompt 1 - Nhờ AI hướng dẫn setup như mentor kỹ thuật
+\`\`\`
+Hãy đóng vai mentor kỹ thuật và hướng dẫn tôi tạo project React 19 với Vite + TypeScript.
 
-## Ví dụ
-\`\`\`bash
-npm create vite@latest
-npm install
-npm run dev
+Tôi muốn bạn hướng dẫn theo cách:
+1. giải thích vì sao Vite phù hợp cho người mới học React
+2. hướng dẫn lệnh tạo project
+3. giải thích vì sao nên học React cùng TypeScript từ sớm
+4. hướng dẫn chạy app bằng dev server
+5. giải thích các file cơ bản:
+   - index.html
+   - main.tsx
+   - App.tsx
+6. nói rõ luồng render từ main.tsx vào App.tsx
+7. nếu có lỗi setup thường gặp, hãy nói luôn cách xử lý
+
+Dùng tiếng Việt và hướng dẫn như mentor đang ngồi cạnh tôi.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo project React + TypeScript
-2. Chạy app thành công trên trình duyệt
-3. Đổi nội dung \`App.tsx\`
+## Prompt 2 - Nhờ AI giải thích cấu trúc project React
+\`\`\`
+Tôi vừa tạo xong project React + TypeScript. Hãy giúp tôi hiểu cấu trúc project như một mentor.
 
-## Bài tập thử thách
-- Tự giải thích vai trò của \`main.tsx\` và \`App.tsx\`
+Tôi muốn bạn giải thích:
+1. main.tsx làm gì?
+2. App.tsx làm gì?
+3. index.html có vai trò gì trong project React?
+4. tsconfig có vai trò gì ở mức cơ bản?
+5. vì sao React app lại có root element?
+6. phần nào là quan trọng nhất người mới cần hiểu trước?
+7. cuối cùng hãy giúp tôi mô tả sơ đồ render của app bằng lời
+
+Đừng chỉ liệt kê file. Hãy giúp tôi thật sự hiểu app bắt đầu chạy từ đâu.
+\`\`\`
+
+## Prompt 3 - Nhờ AI kiểm tra hiểu cấu trúc project
+\`\`\`
+Tôi sẽ mô tả lại cấu trúc project React bằng lời của tôi.
+Bạn hãy review:
+1. Tôi hiểu đúng file nào?
+2. Tôi đang mơ hồ chỗ nào?
+3. Tôi có nhầm giữa môi trường build và logic React không?
+4. Hãy cho tôi phiên bản giải thích ngắn gọn, dễ nhớ hơn
+\`\`\`
+
+## Bài tập buổi này
+- Tạo project React + TypeScript
+- Chạy thành công dev server
+- Tự giải thích \`main.tsx\` và \`App.tsx\`
+
+## Tiêu chuẩn hoàn thành
+- Project chạy được
+- Hiểu luồng render cơ bản
+- Không còn mù cấu trúc project
       `
     },
     {
       id: 'react-03',
-      title: 'Buổi 3: JSX - cách viết giao diện trong React',
+      title: 'Buổi 3: JSX, component cơ bản và props với TypeScript',
       level: 'beginner',
       content: `
-# Buổi 3: JSX - cách viết giao diện trong React
+# Buổi 3: JSX, component cơ bản và props với TypeScript
 
 ## Mục tiêu
 - Hiểu JSX là gì
-- Biết viết giao diện bằng JSX
-- Biết chèn JavaScript vào JSX
+- Biết tạo function component
+- Biết tách component ra file riêng
+- Biết truyền props và gõ type cho props
+- Bắt đầu thấy React + TypeScript phối hợp thế nào
 
-## Nội dung chính
-- JSX là cú pháp gần giống HTML trong JavaScript
-- Dùng dấu \`{}\` để chèn biến
-- Một component phải trả về một khối hợp lệ
-- \`className\` thay cho \`class\`
+## Prompt 1 - Nhờ AI dạy JSX và props từ bản chất
+\`\`\`
+Hãy dạy tôi React buổi 3 như một mentor Front-end.
 
-## Ví dụ
-\`\`\`tsx
-function Welcome() {
-  const name = 'Lan';
-  return <h1>Xin chào {name}</h1>;
-}
+Chủ đề:
+- JSX
+- function component
+- return JSX
+- className
+- props
+- destructuring props
+- type cho props bằng TypeScript
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. JSX là gì?
+2. JSX khác HTML ở điểm nào?
+3. Vì sao component thường là function?
+4. Props là gì?
+5. Vì sao props giúp component tái sử dụng?
+6. TypeScript giúp gì khi dùng props?
+7. Cho ví dụ thực tế:
+   - Button nhận label
+   - Card nhận title và description
+   - UserCard nhận name và age
+8. Chỉ ra lỗi phổ biến:
+   - viết JSX sai cú pháp
+   - không type props
+   - đặt tên props mơ hồ
+   - tạo component nhưng quá cứng
+9. Tạo checklist viết component + props sạch
+
+Dạy như mentor đang xây nền React + TypeScript cho junior.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo một component hiển thị tên của bạn
-2. Hiển thị tuổi và nghề nghiệp bằng JSX
-3. Dùng \`className\` cho một thẻ
+## Prompt 2 - Nhờ AI dẫn tôi build component thật
+\`\`\`
+Hãy dẫn tôi thực hành buổi 3:
+1. tạo component Header
+2. tạo component Footer
+3. tạo component Card nhận props
+4. render nhiều Card khác nhau từ cùng một component
+5. tách component ra file riêng
+6. thêm type cho props bằng TypeScript
 
-## Bài tập thử thách
-- Tạo một card hồ sơ cá nhân bằng JSX
+Tôi muốn bạn:
+- giải thích từng bước
+- để tôi tự làm trước
+- sau mỗi bước, review:
+  - JSX đã đúng chưa
+  - component có đang tái sử dụng được không
+  - props có rõ ràng không
+  - type có hợp lý không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review component và props của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn component React của tôi.
+Bạn hãy review theo 6 tiêu chí:
+1. JSX có sạch không?
+2. Component có rõ trách nhiệm không?
+3. Props có đặt tên tốt không?
+4. TypeScript cho props có đủ chưa?
+5. Component có tái sử dụng được không?
+6. Có dấu hiệu code non tay nào không?
+
+Hãy review cụ thể như mentor React khó tính.
+\`\`\`
+
+## Bài tập buổi này
+- Tạo ít nhất 4 component
+- Dùng props typed bằng TypeScript
+- Render nhiều biến thể từ cùng một component
+
+## Tiêu chuẩn hoàn thành
+- Hiểu JSX
+- Biết viết component cơ bản
+- Biết props giúp tái sử dụng UI
       `
     },
     {
       id: 'react-04',
-      title: 'Buổi 4: Component cơ bản và cách tái sử dụng',
+      title: 'Buổi 4: Render có điều kiện, render danh sách và key',
       level: 'beginner',
       content: `
-# Buổi 4: Component cơ bản và cách tái sử dụng
+# Buổi 4: Render có điều kiện, render danh sách và key
 
 ## Mục tiêu
-- Hiểu component là gì
-- Biết tạo nhiều component riêng
-- Biết tái sử dụng component
+- Biết hiển thị UI theo điều kiện
+- Biết render danh sách bằng \`map()\`
+- Hiểu vai trò của \`key\`
+- Bắt đầu thấy UI trong React phụ thuộc dữ liệu mạnh thế nào
 
-## Nội dung chính
-- Function component
-- Quy tắc đặt tên component
-- Tách component ra file riêng
-- Dùng component lồng nhau
+## Prompt 1 - Nhờ AI dạy UI theo dữ liệu
+\`\`\`
+Hãy dạy tôi React buổi 4 như mentor Front-end.
 
-## Ví dụ
-\`\`\`tsx
-function Button() {
-  return <button>Nhấn vào tôi</button>;
-}
+Chủ đề:
+- render có điều kiện
+- toán tử 3 ngôi
+- &&
+- map
+- render list
+- key
 
-function App() {
-  return (
-    <div>
-      <Button />
-      <Button />
-    </div>
-  );
-}
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao UI trong React phụ thuộc dữ liệu?
+2. Render có điều kiện nghĩa là gì?
+3. Khi nào dùng if, khi nào dùng ?, khi nào dùng &&?
+4. Render danh sách bằng map hoạt động ra sao?
+5. key dùng để làm gì?
+6. Vì sao không nên dùng index làm key bừa bãi?
+7. Cho ví dụ thực tế:
+   - trạng thái đăng nhập/chưa đăng nhập
+   - danh sách sản phẩm
+   - FAQ
+   - trạng thái đơn hàng
+8. Chỉ ra lỗi phổ biến:
+   - logic điều kiện rối
+   - map nhưng quên return
+   - key không ổn định
+9. Tạo checklist render UI theo dữ liệu
+
+Dạy như mentor đang sửa tư duy data-driven UI cho junior.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo component Header
-2. Tạo component Footer
-3. Gọi lại component nhiều lần trong \`App\`
+## Prompt 2 - Nhờ AI giao bài thực hành dữ liệu -> UI
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 4:
+1. tạo component hiển thị trạng thái online/offline
+2. tạo component hiển thị nút khác nhau cho user/admin
+3. render danh sách sản phẩm từ một mảng dữ liệu
+4. render FAQ từ mảng object
+5. gán key hợp lý cho từng item
 
-## Bài tập thử thách
-- Tạo giao diện trang chủ đơn giản bằng 4 component
+Yêu cầu:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - điều kiện có đúng không
+  - list render có sạch không
+  - key có ổn không
+  - có cách nào dễ đọc hơn không
+\`\`\`
+
+## Prompt 3 - Nhờ AI phản biện cách tôi render UI
+\`\`\`
+Tôi sẽ gửi cho bạn code React có điều kiện và danh sách.
+Bạn hãy review:
+1. Logic điều kiện có rõ không?
+2. Có trường hợp nào tôi chưa xử lý không?
+3. List render có sạch không?
+4. key có đúng tinh thần React không?
+5. Có dấu hiệu code non tay không?
+
+Hãy review cụ thể và yêu cầu tôi sửa phiên bản tốt hơn.
+\`\`\`
+
+## Bài tập buổi này
+- Tạo ít nhất 3 UI có điều kiện
+- Render ít nhất 2 danh sách từ data
+- Giải thích vì sao bạn chọn key đó
+
+## Tiêu chuẩn hoàn thành
+- Biết render theo điều kiện
+- Biết render list bằng \`map()\`
+- Hiểu vai trò của key
       `
     },
     {
       id: 'react-05',
-      title: 'Buổi 5: Props - truyền dữ liệu vào component',
-      level: 'beginner',
+      title: 'Buổi 5: Event, useState và controlled form',
+      level: 'intermediate',
       content: `
-# Buổi 5: Props - truyền dữ liệu vào component
+# Buổi 5: Event, useState và controlled form
 
 ## Mục tiêu
-- Hiểu props là gì
-- Biết truyền dữ liệu từ cha xuống con
-- Biết dùng props với TypeScript
+- Hiểu event trong React
+- Dùng được \`onClick\`, \`onChange\`, \`onSubmit\`
+- Hiểu state là gì
+- Dùng được \`useState\`
+- Biết controlled form hoạt động thế nào
 
-## Nội dung chính
-- Props giúp component linh hoạt hơn
-- Destructuring props
-- Type cho props
-- Optional props cơ bản
+## Prompt 1 - Nhờ AI dạy data flow cơ bản trong React
+\`\`\`
+Hãy dạy tôi React buổi 5 như một mentor Front-end.
 
-## Ví dụ
-\`\`\`tsx
-type UserCardProps = {
-  name: string;
-  age: number;
-};
+Chủ đề:
+- event
+- onClick
+- onChange
+- onSubmit
+- useState
+- controlled input
+- value
+- setState
 
-function UserCard({ name, age }: UserCardProps) {
-  return <p>{name} - {age} tuổi</p>;
-}
+Tôi muốn bạn dạy theo cấu trúc:
+1. Event trong React là gì?
+2. useState là gì?
+3. Vì sao khi state đổi thì UI đổi?
+4. Controlled component là gì?
+5. value + onChange phối hợp ra sao?
+6. onSubmit nên xử lý thế nào?
+7. Cho ví dụ thực tế:
+   - counter
+   - bật/tắt
+   - input live preview
+   - form đăng nhập
+8. Chỉ ra lỗi phổ biến:
+   - quên bind value
+   - state đặt tên mơ hồ
+   - form logic rối
+   - không hiểu controlled/uncontrolled
+9. Tạo checklist state + form cơ bản
+
+Dạy như mentor đang xây nền React interactivity cho junior.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo component Card nhận \`title\`
-2. Tạo component Button nhận \`label\`
-3. Tạo component Product nhận tên và giá
+## Prompt 2 - Nhờ AI dẫn tôi build feature tương tác
+\`\`\`
+Hãy dẫn tôi thực hành buổi 5:
+1. tạo button counter
+2. tạo toggle hiển thị/ẩn nội dung
+3. tạo input hiển thị text đang gõ
+4. tạo form đăng nhập controlled gồm email và password
+5. bắt sự kiện submit và log dữ liệu
 
-## Bài tập thử thách
-- Tạo danh sách 3 card khác nhau bằng cùng một component
+Tôi muốn bạn:
+- giải thích từng bước
+- để tôi tự làm trước
+- sau mỗi bước, review:
+  - event đã đúng chưa
+  - state có đặt đúng chỗ không
+  - controlled form có đúng chưa
+  - code có đang bị rối không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review state flow của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn code React có state và form.
+Bạn hãy review:
+1. State có đặt tên rõ không?
+2. useState đang dùng đúng chưa?
+3. Form đã controlled đúng chưa?
+4. Event handler có rõ ràng không?
+5. Data flow có dễ hiểu không?
+
+Hãy review như mentor React khó tính.
+\`\`\`
+
+## Bài tập buổi này
+- Tạo 3 feature tương tác nhỏ
+- Tạo 1 form controlled
+- Tự giải thích dữ liệu chảy từ đâu đến đâu
+
+## Tiêu chuẩn hoàn thành
+- Hiểu event trong React
+- Hiểu useState
+- Biết làm controlled form cơ bản
       `
     },
     {
       id: 'react-06',
-      title: 'Buổi 6: Render có điều kiện',
-      level: 'beginner',
+      title: 'Buổi 6: useEffect, fetch API và trạng thái loading/error/data',
+      level: 'intermediate',
       content: `
-# Buổi 6: Render có điều kiện
+# Buổi 6: useEffect, fetch API và trạng thái loading/error/data
 
 ## Mục tiêu
-- Biết hiển thị khác nhau theo dữ liệu
-- Biết dùng \`if\`, toán tử 3 ngôi và \`&&\`
-- Tạo UI linh hoạt hơn
+- Hiểu \`useEffect\` ở mức thực chiến
+- Hiểu lifecycle cơ bản của component
+- Biết gọi API trong React
+- Biết quản lý loading, error, data
+- Bắt đầu làm app “sống” thay vì chỉ UI tĩnh
 
-## Nội dung chính
-- Điều kiện trong JSX
-- Hiển thị khi đăng nhập / chưa đăng nhập
-- Hiển thị khi có dữ liệu / không có dữ liệu
+## Prompt 1 - Nhờ AI dạy side effects và data fetching
+\`\`\`
+Hãy dạy tôi React buổi 6 như mentor Front-end thực chiến.
 
-## Ví dụ
-\`\`\`tsx
-function Status({ isLoggedIn }: { isLoggedIn: boolean }) {
-  return <div>{isLoggedIn ? 'Đã đăng nhập' : 'Chưa đăng nhập'}</div>;
-}
+Chủ đề:
+- useEffect
+- mount/update/unmount ở mức dễ hiểu
+- dependency array
+- fetch API
+- async/await
+- loading state
+- error state
+- data state
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. useEffect dùng để làm gì?
+2. Vì sao React cần side effect?
+3. Dependency array ảnh hưởng gì?
+4. Gọi API trong React thường đi theo flow nào?
+5. Vì sao nên tách loading/error/data?
+6. Cho ví dụ thực tế:
+   - fetch users
+   - loading spinner
+   - error message
+7. Chỉ ra lỗi phổ biến:
+   - dependency sai
+   - effect chạy lặp vô hạn
+   - không xử lý loading/error
+8. Tạo checklist fetch data trong React sạch
+
+Dạy như mentor đang dạy junior viết component data-fetching đầu tiên.
 \`\`\`
 
-## Bài tập luyện tập
-1. Hiển thị thông báo theo trạng thái online/offline
-2. Hiển thị nút khác nhau theo vai trò user/admin
-3. Ẩn hiện một khối nội dung bằng \`&&\`
+## Prompt 2 - Nhờ AI giao bài thực hành fetch
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 6:
+1. gọi API lấy danh sách users
+2. tạo state cho users
+3. tạo state loading
+4. tạo state error
+5. hiển thị danh sách ra UI
+6. hiển thị loading và error phù hợp
 
-## Bài tập thử thách
-- Tạo component hiển thị trạng thái đơn hàng theo nhiều mức
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - useEffect đã đúng chưa
+  - state có chia rõ chưa
+  - loading/error có xử lý hợp lý không
+  - TypeScript cho dữ liệu đã tốt chưa
+\`\`\`
+
+## Prompt 3 - Nhờ AI phản biện cách tôi fetch data
+\`\`\`
+Tôi sẽ gửi cho bạn component fetch data của tôi.
+Bạn hãy review:
+1. useEffect có sạch không?
+2. Dependency array có đúng không?
+3. Loading/error/data flow có rõ không?
+4. Có chỗ nào dễ bug không?
+5. Có thể refactor gọn hơn không?
+
+Hãy review như mentor React thực chiến.
+\`\`\`
+
+## Bài tập buổi này
+- Gọi ít nhất 1 API
+- Hiển thị loading, error, success
+- Type dữ liệu trả về bằng TypeScript
+
+## Tiêu chuẩn hoàn thành
+- Hiểu \`useEffect\` ở mức cơ bản
+- Biết fetch data trong React
+- Biết quản lý 3 trạng thái loading/error/data
       `
     },
     {
       id: 'react-07',
-      title: 'Buổi 7: Render danh sách và key',
-      level: 'beginner',
+      title: 'Buổi 7: Lifting state up, custom hooks và tổ chức logic dùng lại',
+      level: 'intermediate',
       content: `
-# Buổi 7: Render danh sách và key
+# Buổi 7: Lifting state up, custom hooks và tổ chức logic dùng lại
 
 ## Mục tiêu
-- Biết hiển thị mảng dữ liệu ra giao diện
-- Hiểu vai trò của \`map()\`
-- Biết vì sao cần \`key\`
+- Hiểu khi nào cần đưa state lên component cha
+- Biết chia sẻ dữ liệu giữa component con
+- Biết custom hook là gì
+- Biết tách logic khỏi UI để code gọn hơn
 
-## Nội dung chính
-- Duyệt danh sách bằng \`map()\`
-- Hiển thị item theo dữ liệu
-- \`key\` trong React
-- Tránh dùng index bừa bãi
+## Prompt 1 - Nhờ AI dạy state architecture
+\`\`\`
+Hãy dạy tôi React buổi 7 như mentor Front-end.
 
-## Ví dụ
-\`\`\`tsx
-const items = ['HTML', 'CSS', 'React'];
+Chủ đề:
+- lifting state up
+- state chung ở component cha
+- truyền data xuống bằng props
+- truyền callback xuống component con
+- custom hooks
+- tách logic khỏi UI
 
-function List() {
-  return (
-    <ul>
-      {items.map((item) => (
-        <li key={item}>{item}</li>
-      ))}
-    </ul>
-  );
-}
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao không nên đặt state bừa ở mọi nơi?
+2. Khi nào state nên nằm ở component cha?
+3. Lifting state up là gì?
+4. Custom hook là gì?
+5. Vì sao custom hook giúp code sạch hơn?
+6. Cho ví dụ thực tế:
+   - input con thay đổi preview ở component khác
+   - filter danh sách từ component con
+   - hook useToggle
+   - hook useCounter
+7. Chỉ ra lỗi phổ biến:
+   - state đặt sai chỗ
+   - prop drilling sớm
+   - custom hook viết nhưng vẫn dính UI
+8. Tạo checklist tổ chức state và logic
+
+Dạy như mentor đang sửa state architecture cho junior.
 \`\`\`
 
-## Bài tập luyện tập
-1. Render danh sách môn học
-2. Render danh sách sản phẩm
-3. Gán key đúng cho từng item
+## Prompt 2 - Nhờ AI dẫn tôi refactor logic
+\`\`\`
+Hãy dẫn tôi thực hành buổi 7:
+1. tạo component cha có state chung
+2. tạo component con nhập dữ liệu
+3. tạo component con hiển thị dữ liệu
+4. truyền callback xuống con để thay đổi state ở cha
+5. viết custom hook useToggle hoặc useCounter
+6. dùng custom hook trong 2 component khác nhau
 
-## Bài tập thử thách
-- Tạo component FAQ hiển thị từ một mảng dữ liệu
+Tôi muốn bạn:
+- giải thích từng bước
+- để tôi tự làm trước
+- sau mỗi bước, review:
+  - state có đang đặt đúng chỗ không
+  - callback flow có rõ không
+  - custom hook có thực sự reusable không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review state organization của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn code React của tôi.
+Bạn hãy review:
+1. State nên nằm ở đâu?
+2. Tôi có đang đặt state quá thấp hoặc quá cao không?
+3. Có logic nào nên tách thành custom hook không?
+4. Có prop drilling nào bắt đầu gây khó chịu không?
+5. Có cách tổ chức nào dễ scale hơn không?
+
+Hãy review như mentor React khó tính.
+\`\`\`
+
+## Bài tập buổi này
+- Tạo ít nhất 1 flow lifting state up
+- Tạo ít nhất 2 custom hooks nhỏ
+- Tự giải thích vì sao state nằm ở vị trí đó
+
+## Tiêu chuẩn hoàn thành
+- Hiểu state ownership
+- Biết custom hook dùng để tách logic
+- Tư duy tổ chức code rõ hơn
       `
     },
     {
       id: 'react-08',
-      title: 'Buổi 8: Event - bắt sự kiện trong React',
-      level: 'intermediate',
+      title: 'Buổi 8: Context API, React Router và tổ chức app nhiều trang',
+      level: 'advanced',
       content: `
-# Buổi 8: Event - bắt sự kiện trong React
+# Buổi 8: Context API, React Router và tổ chức app nhiều trang
 
 ## Mục tiêu
-- Biết xử lý click, change, submit
-- Biết gắn hàm vào sự kiện
-- Hiểu event trong React
+- Hiểu prop drilling là gì
+- Biết Context API giải quyết gì
+- Hiểu app nhiều trang trong SPA
+- Biết routing cơ bản
+- Bắt đầu tổ chức app React lớn hơn
 
-## Nội dung chính
-- \`onClick\`
-- \`onChange\`
-- \`onSubmit\`
-- Viết handler function
-- Event type cơ bản với TypeScript
+## Prompt 1 - Nhờ AI dạy app architecture cơ bản
+\`\`\`
+Hãy dạy tôi React buổi 8 như mentor Front-end thực chiến.
 
-## Ví dụ
-\`\`\`tsx
-function ButtonClick() {
-  const handleClick = () => {
-    console.log('Đã click');
-  };
+Chủ đề:
+- prop drilling
+- Context API
+- createContext
+- Provider
+- useContext
+- React Router
+- page
+- layout
 
-  return <button onClick={handleClick}>Click</button>;
-}
+Tôi muốn bạn dạy theo cấu trúc:
+1. Prop drilling là gì?
+2. Khi nào Context API hữu ích?
+3. Context API không nên bị lạm dụng như thế nào?
+4. SPA routing là gì?
+5. App nhiều trang trong React hoạt động ra sao?
+6. Cho ví dụ thực tế:
+   - theme
+   - auth
+   - navbar điều hướng
+   - trang Home/About/Contact
+7. Chỉ ra lỗi phổ biến:
+   - dùng Context cho mọi state
+   - context value quá to
+   - routing không có cấu trúc
+8. Tạo checklist tổ chức app nhiều trang
+
+Dạy như mentor đang giúp junior vượt qua app một trang đơn giản.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo nút hiện thông báo khi click
-2. Tạo input hiển thị giá trị đang gõ
-3. Tạo form bắt sự kiện submit
+## Prompt 2 - Nhờ AI giao bài thực hành app structure
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 8:
+1. tạo ThemeContext hoặc AuthContext đơn giản
+2. dùng context ở component con sâu
+3. tạo app có ít nhất 3 trang
+4. tạo menu điều hướng
+5. thêm layout dùng chung nếu phù hợp
 
-## Bài tập thử thách
-- Tạo component đếm số lần click
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - context có dùng đúng chỗ không
+  - router có sạch không
+  - page structure có rõ không
+  - có chỗ nào đang over-engineer không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review architecture của app React tôi
+\`\`\`
+Tôi sẽ gửi cho bạn cấu trúc app React có context và router.
+Bạn hãy review:
+1. Context dùng có hợp lý không?
+2. Route chia có rõ không?
+3. Page và shared component có tách đúng không?
+4. Có chỗ nào đang prop drill vô ích không?
+5. Project structure có dễ mở rộng không?
+
+Hãy review như mentor technical lead.
+\`\`\`
+
+## Bài tập buổi này
+- Tạo 1 context đơn giản
+- Tạo app 3-4 trang
+- Tổ chức layout/page/shared component rõ ràng
+
+## Tiêu chuẩn hoàn thành
+- Hiểu Context API ở mức nền tảng
+- Biết routing cơ bản
+- Bắt đầu tổ chức app React rõ hơn
       `
     },
     {
       id: 'react-09',
-      title: 'Buổi 9: State với useState',
-      level: 'intermediate',
+      title: 'Buổi 9: React 19, hiệu năng cơ bản và các hook hiện đại',
+      level: 'advanced',
       content: `
-# Buổi 9: State với useState
+# Buổi 9: React 19, hiệu năng cơ bản và các hook hiện đại
 
 ## Mục tiêu
-- Hiểu state là gì
-- Biết tạo state và cập nhật state
-- Hiểu re-render xảy ra khi nào
+- Hiểu re-render trong React
+- Biết \`useMemo\`, \`useCallback\`
+- Biết \`useTransition\`
+- Biết \`useActionState\` ở mức nền tảng
+- Thấy React 19 giúp trải nghiệm mượt và xử lý form tốt hơn thế nào
 
-## Nội dung chính
-- \`useState\`
-- State kiểu số, chuỗi, boolean
-- Cập nhật state đúng cách
-- Tư duy dữ liệu làm thay đổi UI
+## Prompt 1 - Nhờ AI dạy React 19 và performance mindset
+\`\`\`
+Hãy dạy tôi React buổi 9 như mentor React hiện đại.
 
-## Ví dụ
-\`\`\`tsx
-import { useState } from 'react';
+Chủ đề:
+- re-render
+- useMemo
+- useCallback
+- useTransition
+- isPending
+- useActionState
 
-function Counter() {
-  const [count, setCount] = useState(0);
+Tôi muốn bạn dạy theo cấu trúc:
+1. Re-render là gì?
+2. Khi nào cần tối ưu và khi nào chưa cần?
+3. useMemo giúp gì?
+4. useCallback giúp gì?
+5. useTransition giúp gì cho UX?
+6. useActionState giúp gì cho form flow?
+7. Cho ví dụ thực tế:
+   - filter danh sách lớn
+   - callback truyền xuống con
+   - pending khi xử lý tác vụ nặng
+   - form submit có trạng thái rõ ràng
+8. Chỉ ra lỗi phổ biến:
+   - tối ưu quá sớm
+   - dùng memoization mê tín
+   - không hiểu useTransition thực sự giải quyết gì
+9. Tạo checklist React performance cơ bản + React 19 hooks
 
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      {count}
-    </button>
-  );
-}
+Dạy như mentor React 19 đang nâng chuẩn code cho junior.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo bộ đếm số
-2. Tạo nút bật/tắt trạng thái
-3. Tạo input lưu giá trị vào state
+## Prompt 2 - Nhờ AI giao bài thực hành hook hiện đại
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 9:
+1. tạo danh sách có filter và dùng useMemo
+2. tạo callback truyền xuống component con và dùng useCallback
+3. tạo ô tìm kiếm hoặc filter danh sách lớn và dùng useTransition
+4. tạo form đơn giản có trạng thái submit bằng useActionState hoặc mô phỏng luồng tương tự nếu môi trường chưa hỗ trợ đầy đủ
 
-## Bài tập thử thách
-- Tạo tab đơn giản bằng state
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - tối ưu đã đúng chỗ chưa
+  - useTransition có cải thiện UX thật không
+  - useActionState flow có rõ không
+  - có gì đang overkill không
+\`\`\`
+
+## Prompt 3 - Nhờ AI phản biện cách tôi tối ưu React
+\`\`\`
+Tôi sẽ gửi cho bạn code React đã dùng useMemo/useCallback/useTransition/useActionState.
+Bạn hãy review:
+1. Tôi có hiểu đúng mục đích từng hook không?
+2. Có hook nào đang dùng sai chỗ không?
+3. Có chỗ nào đáng lẽ không cần tối ưu?
+4. UX có thật sự tốt hơn không?
+5. Có cách nào đơn giản và sạch hơn không?
+
+Hãy review như mentor React khó tính nhưng thực tế.
+\`\`\`
+
+## Bài tập buổi này
+- Dùng ít nhất 2 hook tối ưu hoặc hook hiện đại
+- Giải thích vì sao bạn dùng chúng
+- So sánh trước/sau nếu có
+
+## Tiêu chuẩn hoàn thành
+- Hiểu re-render và tối ưu cơ bản
+- Bắt đầu làm quen React 19 mindset
+- Không dùng hook hiện đại theo kiểu học vẹt
       `
     },
     {
       id: 'react-10',
-      title: 'Buổi 10: Form controlled component',
-      level: 'intermediate',
-      content: `
-# Buổi 10: Form controlled component
-
-## Mục tiêu
-- Hiểu controlled component là gì
-- Biết quản lý dữ liệu form bằng state
-- Tạo form React cơ bản
-
-## Nội dung chính
-- Input gắn với state
-- \`value\` và \`onChange\`
-- Form nhiều trường
-- Submit form
-
-## Ví dụ
-\`\`\`tsx
-import { useState } from 'react';
-
-function LoginForm() {
-  const [email, setEmail] = useState('');
-
-  return (
-    <input
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-    />
-  );
-}
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo form đăng nhập
-2. Tạo form liên hệ
-3. Hiển thị dữ liệu đã nhập ra màn hình
-
-## Bài tập thử thách
-- Tạo form đăng ký với 4 trường dữ liệu
-      `
-    },
-    {
-      id: 'react-11',
-      title: 'Buổi 11: useEffect và vòng đời component',
-      level: 'intermediate',
-      content: `
-# Buổi 11: useEffect và vòng đời component
-
-## Mục tiêu
-- Hiểu component mount, update, unmount
-- Biết dùng \`useEffect\`
-- Biết cleanup function
-
-## Nội dung chính
-- \`useEffect(() => {}, [])\`
-- Dependency array
-- Chạy khi state thay đổi
-- Cleanup để tránh rò rỉ bộ nhớ
-
-## Ví dụ
-\`\`\`tsx
-import { useEffect } from 'react';
-
-function PageTitle() {
-  useEffect(() => {
-    document.title = 'React App';
-  }, []);
-
-  return <div>Đã cập nhật title</div>;
-}
-\`\`\`
-
-## Bài tập luyện tập
-1. Đổi title của tab khi component render
-2. Log ra console khi state đổi
-3. Tạo đồng hồ cập nhật mỗi giây
-
-## Bài tập thử thách
-- Tạo component đồng hồ có cleanup interval đúng cách
-      `
-    },
-    {
-      id: 'react-12',
-      title: 'Buổi 12: Lifting State Up và chia sẻ dữ liệu',
-      level: 'intermediate',
-      content: `
-# Buổi 12: Lifting State Up và chia sẻ dữ liệu
-
-## Mục tiêu
-- Hiểu khi nào cần đưa state lên component cha
-- Biết chia sẻ dữ liệu giữa nhiều component con
-- Tổ chức state hợp lý hơn
-
-## Nội dung chính
-- State chung đặt ở component cha
-- Truyền dữ liệu xuống bằng props
-- Truyền hàm xuống để component con thay đổi dữ liệu
-
-## Ví dụ
-\`\`\`tsx
-function Parent() {
-  const [message, setMessage] = useState('Xin chào');
-
-  return (
-    <>
-      <ChildInput onChangeMessage={setMessage} />
-      <ChildPreview message={message} />
-    </>
-  );
-}
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo input ở component con đổi dữ liệu ở cha
-2. Tạo 2 component cùng dùng chung một state
-3. Tạo bộ lọc danh sách từ component con
-
-## Bài tập thử thách
-- Tạo app mini tính tiền với state đặt ở component cha
-      `
-    },
-    {
-      id: 'react-13',
-      title: 'Buổi 13: Custom Hooks',
-      level: 'intermediate',
-      content: `
-# Buổi 13: Custom Hooks
-
-## Mục tiêu
-- Hiểu custom hook là gì
-- Biết tách logic dùng lại
-- Giảm lặp code trong nhiều component
-
-## Nội dung chính
-- Quy tắc đặt tên hook với \`use...\`
-- Hook dùng lại logic state và effect
-- Tách logic khỏi UI
-
-## Ví dụ
-\`\`\`tsx
-import { useState } from 'react';
-
-function useToggle(initialValue = false) {
-  const [value, setValue] = useState(initialValue);
-
-  const toggle = () => setValue((prev) => !prev);
-
-  return { value, toggle };
-}
-\`\`\`
-
-## Bài tập luyện tập
-1. Viết hook \`useToggle\`
-2. Viết hook \`useCounter\`
-3. Dùng custom hook trong 2 component khác nhau
-
-## Bài tập thử thách
-- Tạo custom hook xử lý ô tìm kiếm
-      `
-    },
-    {
-      id: 'react-14',
-      title: 'Buổi 14: useMemo, useCallback và tối ưu cơ bản',
+      title: 'Buổi 10: Project cuối khóa - xây một app React 19 & TypeScript hoàn chỉnh',
       level: 'advanced',
       content: `
-# Buổi 14: useMemo, useCallback và tối ưu cơ bản
+# Buổi 10: Project cuối khóa - xây một app React 19 & TypeScript hoàn chỉnh
 
 ## Mục tiêu
-- Hiểu khi nào app re-render nhiều
-- Biết dùng \`useMemo\` và \`useCallback\`
-- Tối ưu những chỗ cần thiết
+- Tổng hợp toàn bộ kiến thức đã học
+- Hoàn thiện một app React nhỏ nhưng bài bản
+- Biết tự review kiến trúc, state flow và TypeScript
+- Tự đánh giá mức độ sẵn sàng cho project thật
 
-## Nội dung chính
-- Re-render trong React
-- \`useMemo\` ghi nhớ giá trị tính toán
-- \`useCallback\` ghi nhớ hàm
-- Tối ưu vừa đủ, không lạm dụng
+## Prompt 1 - Nhờ AI dẫn tôi làm project từ đầu
+\`\`\`
+Hãy đóng vai mentor React và dẫn tôi làm project cuối khóa.
 
-## Ví dụ
-\`\`\`tsx
-const total = useMemo(() => {
-  return items.reduce((sum, item) => sum + item.price, 0);
-}, [items]);
+Cho tôi chọn 1 trong các project:
+1. To-do app
+2. Ứng dụng ghi chú
+3. App danh sách sản phẩm
+4. Blog mini
+5. Dashboard nhỏ
+
+Sau khi tôi chọn, hãy dẫn tôi theo lộ trình:
+1. phân tích yêu cầu
+2. xác định component tree
+3. xác định dữ liệu và state
+4. xác định chỗ cần props, context hoặc custom hook
+5. xác định form/event/fetch nếu có
+6. xác định chỗ TypeScript cần type rõ
+7. nếu phù hợp, xác định chỗ cần tối ưu hoặc React 19 hook
+8. để tôi tự build từng phần
+9. sau mỗi phần, review rất kỹ như mentor
+10. cuối cùng, giúp tôi audit toàn bộ app
+
+Mục tiêu là để tôi thật sự tự xây được một app React nhỏ nhưng bài bản.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tính tổng giỏ hàng bằng \`useMemo\`
-2. Dùng \`useCallback\` cho hàm click
-3. Quan sát khi component con render lại
+## Prompt 2 - Nhờ AI audit project cuối khóa
+\`\`\`
+Tôi sẽ gửi cho bạn project React cuối khóa của tôi.
+Bạn hãy audit như mentor Front-end kỹ tính.
 
-## Bài tập thử thách
-- Tạo danh sách lớn và thử tối ưu bộ lọc
-      `
-    },
-    {
-      id: 'react-15',
-      title: 'Buổi 15: Context API',
-      level: 'advanced',
-      content: `
-# Buổi 15: Context API
+Đánh giá theo 8 nhóm tiêu chí:
+1. Hiểu bài toán
+2. Component tree
+3. Props/state flow
+4. Form/event/data handling
+5. Hooks và custom hooks
+6. TypeScript
+7. Tối ưu và độ sạch của code
+8. Mức độ trưởng thành tổng thể của app
 
-## Mục tiêu
-- Hiểu vấn đề prop drilling
-- Biết dùng Context để chia sẻ dữ liệu toàn cục
-- Tạo theme hoặc auth đơn giản
+Với mỗi nhóm:
+- nêu điểm tốt
+- nêu lỗi cụ thể
+- giải thích vì sao là lỗi
+- cho hướng sửa cụ thể
+- ưu tiên lỗi nghiêm trọng trước
 
-## Nội dung chính
-- \`createContext\`
-- Provider
-- \`useContext\`
-- Truyền dữ liệu xuống nhiều tầng
-
-## Ví dụ
-\`\`\`tsx
-const ThemeContext = createContext('light');
-
-function ThemeText() {
-  const theme = useContext(ThemeContext);
-  return <p>Theme hiện tại: {theme}</p>;
-}
+Cuối cùng:
+- chấm điểm tổng trên thang 100
+- xếp loại: yếu / ổn / tốt / rất tốt
+- cho tôi 5 việc cần sửa ngay
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo ThemeContext
-2. Tạo AuthContext đơn giản
-3. Hiển thị dữ liệu context trong component con sâu
-
-## Bài tập thử thách
-- Tạo dark mode bằng Context API
-      `
-    },
-    {
-      id: 'react-16',
-      title: 'Buổi 16: Làm việc với API trong React',
-      level: 'advanced',
-      content: `
-# Buổi 16: Làm việc với API trong React
-
-## Mục tiêu
-- Biết lấy dữ liệu từ API
-- Biết hiển thị loading, error, success
-- Tổ chức state dữ liệu rõ ràng hơn
-
-## Nội dung chính
-- \`fetch\`
-- \`async/await\`
-- Gọi API trong \`useEffect\`
-- State cho loading, data, error
-- Type dữ liệu trả về với TypeScript
-
-## Ví dụ
-\`\`\`tsx
-type User = {
-  id: number;
-  name: string;
-};
-
-function UserList() {
-  const [users, setUsers] = useState<User[]>([]);
-
-  useEffect(() => {
-    async function fetchUsers() {
-      const res = await fetch('/api/users');
-      const data = await res.json();
-      setUsers(data);
-    }
-
-    fetchUsers();
-  }, []);
-
-  return <div>{users.length} users</div>;
-}
+## Prompt 3 - Nhờ AI đóng vai reviewer cuối khóa
 \`\`\`
+Hãy đóng vai reviewer cuối khóa React 19 & TypeScript.
 
-## Bài tập luyện tập
-1. Gọi API lấy danh sách user
-2. Hiển thị loading khi đang tải
-3. Hiển thị lỗi khi fetch thất bại
+Tôi sẽ gửi app của tôi.
+Bạn phải review như thật, không nể nang.
 
-## Bài tập thử thách
-- Tạo giao diện danh sách sản phẩm lấy từ API
-      `
-    },
-    {
-      id: 'react-17',
-      title: 'Buổi 17: Router và chia nhiều trang trong React',
-      level: 'advanced',
-      content: `
-# Buổi 17: Router và chia nhiều trang trong React
+Cách review mong muốn:
+- đánh giá tư duy component
+- đánh giá data flow
+- đánh giá state placement
+- đánh giá hooks
+- đánh giá TypeScript
+- đánh giá khả năng mở rộng
+- chỉ rõ điểm nào chứng tỏ tôi đã hiểu React
+- chỉ rõ điểm nào cho thấy tôi vẫn đang ghép UI theo kiểu chắp vá
 
-## Mục tiêu
-- Hiểu app nhiều trang trong SPA
-- Biết định nghĩa route
-- Tổ chức page và layout cơ bản
-
-## Nội dung chính
-- Tư duy routing
-- Trang chủ, trang chi tiết, trang không tìm thấy
-- Link điều hướng
-- Layout dùng chung
-
-## Ví dụ
-\`\`\`tsx
-// Ví dụ ý tưởng
-// /
-// /about
-// /products
-// /products/:id
+Cuối cùng, hãy nói thật:
+- tôi đã đủ nền tảng để làm project React nghiêm túc hơn chưa?
+- nếu chưa, tôi cần luyện thêm phần nào?
 \`\`\`
-
-## Bài tập luyện tập
-1. Tạo 3 trang: Home, About, Contact
-2. Tạo menu điều hướng
-3. Tạo trang 404 đơn giản
-
-## Bài tập thử thách
-- Tạo app blog mini có trang danh sách và trang chi tiết
-      `
-    },
-    {
-      id: 'react-18',
-      title: 'Buổi 18: React 19 - useTransition và trải nghiệm mượt hơn',
-      level: 'advanced',
-      content: `
-# Buổi 18: React 19 - useTransition và trải nghiệm mượt hơn
-
-## Mục tiêu
-- Hiểu cập nhật ưu tiên cao và thấp
-- Biết dùng \`useTransition\`
-- Giúp UI mượt hơn khi xử lý dữ liệu nặng
-
-## Nội dung chính
-- Tương tác quan trọng và cập nhật nền
-- \`useTransition\`
-- \`isPending\`
-- Tình huống tìm kiếm, lọc danh sách lớn
-
-## Ví dụ
-\`\`\`tsx
-const [isPending, startTransition] = useTransition();
-
-startTransition(() => {
-  setFilteredItems(expensiveFilter(items, keyword));
-});
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo ô tìm kiếm lọc danh sách
-2. Dùng \`useTransition\` cho việc lọc
-3. Hiển thị trạng thái đang xử lý
-
-## Bài tập thử thách
-- Tạo danh sách lớn và so sánh trải nghiệm có và không có \`useTransition\`
-      `
-    },
-    {
-      id: 'react-19',
-      title: 'Buổi 19: React 19 - Form hiện đại với useActionState',
-      level: 'advanced',
-      content: `
-# Buổi 19: React 19 - Form hiện đại với useActionState
-
-## Mục tiêu
-- Hiểu cách xử lý form hiện đại hơn
-- Biết trạng thái pending, success, error
-- Viết form rõ ràng hơn
-
-## Nội dung chính
-- \`useActionState\`
-- Action function
-- Pending state
-- Trả kết quả thành công / thất bại
-- Kết hợp TypeScript cho dữ liệu form
-
-## Ví dụ
-\`\`\`tsx
-const [state, formAction, isPending] = useActionState(loginAction, null);
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo form đăng nhập đơn giản
-2. Hiển thị trạng thái đang gửi
-3. Hiển thị thông báo thành công hoặc lỗi
-
-## Bài tập thử thách
-- Tạo form đăng ký có xử lý trạng thái submit rõ ràng
-      `
-    },
-    {
-      id: 'react-20',
-      title: 'Buổi 20: Mini Project và dự án cuối khóa React',
-      level: 'advanced',
-      content: `
-# Buổi 20: Mini Project và dự án cuối khóa React
-
-## Mục tiêu
-- Kết hợp toàn bộ kiến thức React đã học
-- Tạo app nhỏ có cấu trúc tốt
-- Tự đánh giá mức độ làm chủ React
 
 ## Gợi ý project
 Chọn 1 trong các project:
 1. To-do app
-2. App quản lý ghi chú
+2. Ứng dụng ghi chú
 3. App danh sách sản phẩm
-4. App blog mini
+4. Blog mini
 5. Dashboard nhỏ
 
 ## Yêu cầu bắt buộc
@@ -770,19 +918,23 @@ Chọn 1 trong các project:
 - Có props và state
 - Có form hoặc event
 - Có render danh sách
-- Có ít nhất 1 hook tùy chỉnh hoặc context hoặc fetch API
+- Có ít nhất 1 custom hook hoặc context hoặc fetch API
+- Có TypeScript cho dữ liệu chính
+- Có cấu trúc project rõ ràng
 
 ## Checklist tự đánh giá
 - Component có chia nhỏ hợp lý không?
 - Props và state có rõ ràng không?
-- Tên component có dễ hiểu không?
-- Có tách logic khỏi UI ở những chỗ cần thiết không?
+- Tên component, biến, type có dễ hiểu không?
+- Có tách logic khỏi UI ở chỗ cần thiết không?
 - Code có dễ mở rộng không?
+- TypeScript có giúp bắt lỗi sớm không?
+- Tôi có thể giải thích data flow của app không?
 
 ## Bài tập cuối khóa
 - Hoàn thành project
-- Tự refactor code lần 2
-- Ghi lại những phần React bạn đã hiểu chắc và những phần cần luyện thêm
+- Tự audit bằng AI theo các prompt trên
+- Sửa lại bản final đến khi đủ chắc
       `
     }
   ]

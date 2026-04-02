@@ -5,622 +5,1009 @@ export const htmlLesson: Lesson = {
   icon: 'code',
   title: 'HTML',
   description:
-    'Lộ trình 20 buổi học HTML từ cơ bản đến chuyên sâu, chia nhỏ dễ học, có bài tập thực hành và mini project để giúp người mới làm chủ HTML một cách chắc chắn.',
+    'Lộ trình HTML theo phong cách tự học cùng AI mentor. Mỗi buổi học đi kèm prompt cực chi tiết để học viên chỉ cần copy vào AI là có thể học theo từng bước, làm bài, được chữa lỗi, được phản biện và nâng cấp bài làm như học cùng mentor 1-1.',
   points: [
-    'Học HTML theo từng buổi nhỏ, dễ tiếp thu',
-    'Có bài tập luyện tập sau mỗi buổi',
-    'Đi từ cơ bản đến chuyên sâu',
-    'Bao phủ cấu trúc trang web, form, semantic HTML, accessibility, SEO cơ bản',
-    'Có mini project và bài tổng ôn cuối khóa'
+    'Mỗi buổi học có prompt chi tiết để copy vào AI và học ngay',
+    'AI đóng vai mentor, giải thích từ gốc, không dạy qua loa',
+    'Có prompt học lý thuyết, prompt làm bài, prompt chữa bài, prompt nâng cấp',
+    'Tập trung vào năng lực làm được sản phẩm thật, không chỉ nhớ thẻ',
+    'Học viên có thể tự học theo từng bước mà không bị mơ hồ',
+    'Có project xuyên suốt để ghép các buổi học thành sản phẩm hoàn chỉnh'
   ],
   chapters: [
     {
       id: 'html-01',
-      title: 'Buổi 1: HTML là gì? Cấu trúc đầu tiên của trang web',
+      title: 'Buổi 1: Hiểu HTML từ gốc và tạo file HTML đầu tiên',
       level: 'beginner',
       content: `
-# Buổi 1: HTML là gì? Cấu trúc đầu tiên của trang web
+# Buổi 1: Hiểu HTML từ gốc và tạo file HTML đầu tiên
 
 ## Mục tiêu
-- Hiểu HTML là gì
-- Biết vai trò của HTML trong website
-- Tạo được file HTML đầu tiên
+- Hiểu HTML là gì và không phải là gì
+- Hiểu vai trò của HTML trong một website
+- Biết cấu trúc chuẩn của một file HTML
+- Tạo được file HTML đầu tiên chạy đúng trên trình duyệt
 
-## Nội dung chính
-- HTML là ngôn ngữ đánh dấu
-- Vai trò của HTML, CSS, JavaScript
-- Cấu trúc cơ bản:
-  - \`<!DOCTYPE html>\`
-  - \`<html>\`
-  - \`<head>\`
-  - \`<body>\`
+## Cách học buổi này
+Bạn sẽ **copy từng prompt bên dưới vào AI** theo đúng thứ tự.
+Không học lướt. Học xong mỗi prompt phải tự gõ lại code.
 
-## Ví dụ
-\`\`\`html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Trang đầu tiên</title>
-  </head>
-  <body>
-    <h1>Xin chào HTML</h1>
-  </body>
-</html>
+## Prompt 1 - Nhờ AI dạy lý thuyết từ gốc
+\`\`\`
+Bạn hãy đóng vai một mentor Front-end cực giỏi, chuyên dạy người mới học HTML từ con số 0.
+
+Nhiệm vụ của bạn là dạy tôi bài đầu tiên về HTML theo phong cách:
+- dễ hiểu nhưng không hời hợt
+- giải thích từ bản chất
+- ví dụ ngắn, rõ, thực tế
+- luôn nói vì sao phải học phần này
+- không dùng thuật ngữ khó nếu chưa giải thích
+
+Chủ đề hôm nay: HTML là gì và cấu trúc chuẩn của file HTML đầu tiên.
+
+Tôi muốn bạn dạy theo format sau:
+1. HTML là gì?
+2. HTML dùng để làm gì trong website?
+3. Phân biệt HTML, CSS, JavaScript thật rõ cho người mới
+4. Trình duyệt đọc file HTML như thế nào?
+5. Giải thích từng phần trong cấu trúc chuẩn:
+   - <!DOCTYPE html>
+   - <html>
+   - <head>
+   - <body>
+   - <title>
+   - meta charset
+   - meta viewport
+6. Cho tôi 1 ví dụ file HTML hoàn chỉnh, rất cơ bản nhưng đúng chuẩn
+7. Chỉ ra 7 lỗi sai phổ biến của người mới
+8. Đặt cho tôi 5 câu hỏi kiểm tra hiểu bài, tăng dần độ khó
+9. Sau khi tôi trả lời, bạn phải chấm và sửa thật kỹ
+
+Lưu ý:
+- Dùng tiếng Việt
+- Không trả lời quá ngắn
+- Luôn giải thích “tại sao”
+- Đừng chỉ đưa định nghĩa, hãy giúp tôi hiểu bản chất
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo file \`index.html\`
-2. Thêm tiêu đề tab trình duyệt
-3. Hiển thị một dòng chữ chào mừng trong \`body\`
+## Prompt 2 - Nhờ AI hướng dẫn thực hành
+\`\`\`
+Tôi đang học HTML buổi 1. Hãy đóng vai mentor thực hành và hướng dẫn tôi tạo file index.html đầu tiên.
 
-## Bài tập nâng cao
-- Viết lại cấu trúc HTML hoàn chỉnh mà không nhìn mẫu
+Tôi muốn bạn hướng dẫn theo cách sau:
+1. Nói rõ tôi cần tạo file gì
+2. Viết cho tôi khung HTML hoàn chỉnh
+3. Giải thích từng dòng code trong khung đó
+4. Giao cho tôi 1 nhiệm vụ nhỏ:
+   - tạo 1 tiêu đề chính
+   - tạo 1 đoạn văn giới thiệu
+   - đổi title của tab trình duyệt
+5. Sau đó yêu cầu tôi tự gõ lại code bằng tay
+6. Tiếp theo, bạn yêu cầu tôi gửi code lên để bạn review
+7. Khi review, bạn phải chỉ ra:
+   - lỗi cú pháp
+   - lỗi cấu trúc
+   - phần nào đúng
+   - phần nào có thể viết sạch hơn
+
+Hãy bắt đầu như một mentor đang ngồi cạnh tôi.
+\`\`\`
+
+## Prompt 3 - Nhờ AI kiểm tra hiểu bài
+\`\`\`
+Hãy kiểm tra xem tôi đã thật sự hiểu buổi 1 HTML chưa.
+
+Đừng hỏi kiểu lý thuyết quá dễ. Hãy tạo:
+- 3 câu hỏi trắc nghiệm có giải thích đáp án
+- 3 câu hỏi tự luận ngắn
+- 2 bài tập code nhỏ
+- 1 câu hỏi tư duy: vì sao nội dung hiển thị phải nằm trong body chứ không phải head?
+
+Sau khi tôi trả lời, bạn hãy:
+- chấm điểm từng câu
+- giải thích chỗ sai
+- cho tôi biết tôi đang ở mức nào: chưa hiểu / hiểu cơ bản / hiểu chắc
+\`\`\`
+
+## Bài tập buổi này
+1. Tạo file \`index.html\`
+2. Viết cấu trúc HTML hoàn chỉnh
+3. Thêm:
+   - 1 tiêu đề chính
+   - 2 đoạn văn
+   - title phù hợp
+4. Tự gõ lại toàn bộ khung HTML từ trí nhớ
+
+## Tiêu chuẩn hoàn thành
+- Không thiếu \`<!DOCTYPE html>\`
+- Có \`head\` và \`body\`
+- Nội dung hiển thị nằm đúng trong \`body\`
+- Code dễ đọc, thụt dòng rõ
       `
     },
     {
       id: 'html-02',
-      title: 'Buổi 2: Thẻ, phần tử và thuộc tính',
+      title: 'Buổi 2: Thẻ, phần tử, thuộc tính và cách đọc code HTML',
       level: 'beginner',
       content: `
-# Buổi 2: Thẻ, phần tử và thuộc tính
+# Buổi 2: Thẻ, phần tử, thuộc tính và cách đọc code HTML
 
 ## Mục tiêu
-- Hiểu thẻ mở, thẻ đóng
-- Biết phần tử HTML là gì
-- Hiểu thuộc tính dùng để làm gì
+- Hiểu thẻ mở, thẻ đóng, phần tử HTML
+- Hiểu thuộc tính và giá trị thuộc tính
+- Biết cách “đọc” một dòng HTML thay vì chỉ chép lại
+- Bắt đầu có tư duy phân tích cú pháp
 
-## Nội dung chính
-- Thẻ mở / thẻ đóng
-- Nội dung bên trong phần tử
-- Thuộc tính như:
-  - \`href\`
-  - \`src\`
-  - \`alt\`
-  - \`title\`
-  - \`id\`
-  - \`class\`
+## Prompt 1 - Nhờ AI dạy thật sâu về cú pháp HTML
+\`\`\`
+Bạn hãy đóng vai mentor Front-end dạy tôi HTML buổi 2.
 
-## Ví dụ
-\`\`\`html
-<a href="https://example.com" title="Đi tới trang web">Truy cập</a>
+Chủ đề hôm nay là:
+- thẻ HTML
+- phần tử HTML
+- thuộc tính HTML
+- cách đọc một dòng code HTML đúng bản chất
+
+Tôi muốn bạn dạy cực rõ theo format sau:
+1. Thẻ là gì?
+2. Phần tử là gì?
+3. Thuộc tính là gì?
+4. Giá trị thuộc tính là gì?
+5. Phân biệt rõ cho người mới giữa:
+   - tag
+   - element
+   - attribute
+   - content
+6. Cho tôi nhiều ví dụ từ rất đơn giản đến hơi phức tạp
+7. Bóc tách từng ví dụ theo kiểu:
+   - đây là thẻ gì
+   - đây là thuộc tính gì
+   - đây là nội dung gì
+   - dòng code này có nhiệm vụ gì
+8. Giải thích các thuộc tính phổ biến:
+   - href
+   - src
+   - alt
+   - id
+   - class
+   - title
+   - name
+   - placeholder
+9. Chỉ ra lỗi sai người mới thường gặp khi viết thuộc tính
+10. Cuối cùng cho tôi 5 bài tập phân tích code HTML
+
+Yêu cầu rất quan trọng:
+- Dùng tiếng Việt
+- Giải thích sâu nhưng không lan man
+- Tôi là người mới nên mọi thuật ngữ khó đều phải được giải thích
 \`\`\`
 
-## Bài tập luyện tập
-1. Tạo 3 phần tử HTML khác nhau
-2. Gắn thuộc tính cho thẻ \`a\`, \`img\`, \`input\`
-3. Phân biệt đâu là thẻ, đâu là thuộc tính
+## Prompt 2 - Nhờ AI huấn luyện kỹ năng đọc code
+\`\`\`
+Tôi muốn luyện kỹ năng đọc code HTML như người có tư duy, không phải nhìn thấy đâu chép đó.
 
-## Bài tập nâng cao
-- Tự giải thích cấu tạo của một phần tử HTML hoàn chỉnh
+Hãy cho tôi 10 dòng HTML từ dễ đến vừa.
+Với mỗi dòng:
+- yêu cầu tôi tự phân tích trước
+- hỏi tôi:
+  - tên thẻ là gì
+  - phần nội dung là gì
+  - thuộc tính nào đang được dùng
+  - mục đích của dòng code là gì
+- chờ tôi trả lời
+- sau đó bạn mới chữa
+
+Hãy đóng vai mentor nghiêm khắc nhưng dễ hiểu.
+Nếu tôi trả lời mơ hồ, bạn bắt tôi nói rõ hơn.
+\`\`\`
+
+## Prompt 3 - Nhờ AI ra bài tập thực hành
+\`\`\`
+Hãy giao cho tôi bài tập HTML buổi 2 theo kiểu thực hành.
+
+Yêu cầu:
+1. Tạo 1 thẻ a có href và title
+2. Tạo 1 thẻ img có src và alt
+3. Tạo 1 input có type, name, placeholder
+4. Tạo 1 đoạn văn có title
+5. Sau khi tôi làm xong, bạn review từng dòng cực chi tiết:
+   - dòng nào đúng
+   - dòng nào sai
+   - sai vì sao
+   - sửa thế nào
+   - có cách viết nào tốt hơn không
+
+Hãy review như mentor code thật sự, đừng chỉ nói “đúng rồi” hoặc “ổn”.
+\`\`\`
+
+## Bài tập buổi này
+- Tự viết 5 phần tử HTML có thuộc tính
+- Tự giải thích bằng lời từng dòng
+- Gửi lên AI để được bắt lỗi
+
+## Tiêu chuẩn hoàn thành
+- Hiểu rõ cấu tạo một phần tử HTML
+- Không còn nhầm thẻ với thuộc tính
+- Đọc được HTML cơ bản của người khác
       `
     },
     {
       id: 'html-03',
-      title: 'Buổi 3: Tiêu đề, đoạn văn, xuống dòng, định dạng văn bản',
+      title: 'Buổi 3: Văn bản, tiêu đề, đoạn văn và phân cấp nội dung',
       level: 'beginner',
       content: `
-# Buổi 3: Tiêu đề, đoạn văn, xuống dòng, định dạng văn bản
+# Buổi 3: Văn bản, tiêu đề, đoạn văn và phân cấp nội dung
 
 ## Mục tiêu
-- Biết dùng \`h1\` đến \`h6\`
-- Biết dùng \`p\`, \`br\`, \`hr\`
-- Biết định dạng chữ cơ bản
+- Dùng đúng \`h1\` đến \`h6\`
+- Dùng đúng \`p\`, \`br\`, \`hr\`
+- Biết nhấn mạnh nội dung bằng thẻ đúng nghĩa
+- Hiểu rằng HTML không chỉ là “hiển thị chữ”, mà là tổ chức thông tin
 
-## Nội dung chính
-- Thẻ tiêu đề
-- Thẻ đoạn văn
-- Xuống dòng và kẻ ngang
-- In đậm, nhấn mạnh:
-  - \`strong\`
-  - \`em\`
-  - \`mark\`
-  - \`small\`
+## Prompt 1 - Nhờ AI dạy cách viết nội dung HTML đúng tư duy
+\`\`\`
+Bạn là mentor Front-end. Hôm nay hãy dạy tôi HTML buổi 3 về:
+- heading
+- paragraph
+- line break
+- horizontal rule
+- strong
+- em
+- mark
+- small
 
-## Bài tập luyện tập
-1. Tạo một bài giới thiệu bản thân có:
-   - 1 tiêu đề chính
-   - 2 tiêu đề phụ
-   - 3 đoạn văn
-2. Dùng \`strong\` và \`em\` để nhấn mạnh từ khóa
+Nhưng tôi không muốn học kiểu liệt kê thẻ.
+Tôi muốn bạn dạy theo tư duy tổ chức nội dung.
 
-## Bài tập nâng cao
-- Viết một bài giới thiệu ngắn giống bài blog nhỏ bằng các thẻ đã học
+Hãy dạy theo cấu trúc này:
+1. Vì sao một trang web cần có phân cấp nội dung?
+2. Heading dùng để làm gì? Tại sao không phải cứ chữ to là heading?
+3. Phân biệt vai trò của:
+   - h1 đến h6
+   - p
+   - br
+   - hr
+4. Giải thích khi nào dùng:
+   - strong
+   - em
+   - mark
+   - small
+5. Cho tôi 1 ví dụ bài viết ngắn có cấu trúc đẹp
+6. Cho tôi 1 ví dụ bài viết sai cấu trúc và phân tích vì sao sai
+7. Chỉ ra các lỗi phổ biến:
+   - dùng nhiều h1
+   - dùng br thay cho p
+   - dùng heading chỉ để trang trí
+8. Cuối cùng, cho tôi 1 checklist để tự kiểm tra một bài HTML có cấu trúc tốt hay không
+
+Dạy thật kỹ như đang đào tạo một junior thật sự.
+\`\`\`
+
+## Prompt 2 - Nhờ AI biến tôi thành người viết HTML có cấu trúc
+\`\`\`
+Hãy giao cho tôi một bài tập viết nội dung HTML.
+
+Bối cảnh:
+Tôi cần tạo 1 bài giới thiệu bản thân dạng blog ngắn.
+
+Yêu cầu bài làm:
+- 1 h1
+- ít nhất 2 h2
+- mỗi phần có đoạn văn riêng
+- dùng strong và em hợp lý
+- có 1 hr để tách phần
+- không dùng thẻ một cách máy móc
+
+Tôi muốn bạn:
+1. đưa đề bài
+2. không cho lời giải ngay
+3. bắt tôi tự làm
+4. sau khi tôi gửi code, bạn review như mentor:
+   - cấu trúc nội dung đã ổn chưa
+   - heading có logic chưa
+   - dùng strong/em có đúng nghĩa chưa
+   - có gì đang viết theo kiểu “cho có” không
+5. sau đó bắt tôi sửa lại bản 2
+\`\`\`
+
+## Prompt 3 - Nhờ AI phản biện bài làm của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn một đoạn HTML có các heading và paragraph.
+Bạn hãy đóng vai reviewer khó tính và phản biện thật kỹ.
+
+Khi review, bắt buộc phải đánh giá theo 4 tiêu chí:
+1. Cấu trúc nội dung
+2. Phân cấp heading
+3. Tính dễ đọc
+4. Tính đúng nghĩa của các thẻ nhấn mạnh
+
+Không được review chung chung.
+Phải chỉ ra cụ thể:
+- dòng nào ổn
+- dòng nào chưa ổn
+- vì sao
+- sửa như thế nào
+- cách viết nào gọn và tốt hơn
+\`\`\`
+
+## Bài tập buổi này
+- Viết 1 bài giới thiệu bản thân dạng blog
+- Có cấu trúc rõ
+- Có heading logic
+- Có nhấn mạnh từ khóa đúng cách
+
+## Tiêu chuẩn hoàn thành
+- Chỉ có 1 \`h1\`
+- Heading không nhảy loạn
+- Không lạm dụng \`br\`
+- Nội dung đọc mạch lạc
       `
     },
     {
       id: 'html-04',
-      title: 'Buổi 4: Liên kết và điều hướng',
+      title: 'Buổi 4: Link, ảnh, đường dẫn và điều hướng cơ bản',
       level: 'beginner',
       content: `
-# Buổi 4: Liên kết và điều hướng
+# Buổi 4: Link, ảnh, đường dẫn và điều hướng cơ bản
 
 ## Mục tiêu
-- Biết tạo liên kết
-- Biết mở tab mới
-- Biết liên kết đến phần tử trong cùng trang
+- Tạo được liên kết trong trang và ra ngoài
+- Biết dùng ảnh đúng cách
+- Hiểu relative path và absolute path
+- Dựng được menu điều hướng đơn giản
 
-## Nội dung chính
-- Thẻ \`a\`
-- Thuộc tính \`href\`
-- \`target="_blank"\`
-- Link tuyệt đối và link tương đối
-- Anchor link với \`id\`
+## Prompt 1 - Nhờ AI giải thích thật rõ về link và ảnh
+\`\`\`
+Hãy đóng vai mentor Front-end dạy tôi buổi 4 HTML về:
+- thẻ a
+- href
+- target
+- liên kết tuyệt đối và tương đối
+- anchor link bằng id
+- thẻ img
+- src, alt, width, height
+- cấu trúc thư mục cơ bản của project
 
-## Bài tập luyện tập
-1. Tạo menu có 3 liên kết
-2. Tạo liên kết tới Google
-3. Tạo nút "Lên đầu trang"
+Tôi muốn được học theo kiểu:
+1. giải thích bản chất từng khái niệm
+2. cho ví dụ thực tế
+3. giải thích tại sao người mới hay nhầm đường dẫn
+4. chỉ rõ khi nào dùng:
+   - link ngoài
+   - link nội bộ
+   - link tới section trong cùng trang
+5. giải thích alt thật kỹ:
+   - alt để làm gì
+   - vì sao alt quan trọng
+   - alt nào là tốt, alt nào là vô nghĩa
+6. cho tôi 8 lỗi sai phổ biến của người mới khi làm link và ảnh
+7. cuối cùng, cho tôi 1 sơ đồ tư duy ngắn để nhớ toàn bộ buổi học
 
-## Bài tập nâng cao
-- Tạo một trang có menu điều hướng đến các phần: Giới thiệu, Kỹ năng, Liên hệ
+Hãy dạy như mentor thật sự, không tóm tắt sơ sài.
+\`\`\`
+
+## Prompt 2 - Nhờ AI ra bài tập dựng menu và trang profile mini
+\`\`\`
+Hãy giao cho tôi một bài tập thực hành HTML buổi 4.
+
+Yêu cầu:
+- tạo 1 menu điều hướng có 3 liên kết
+- tạo 1 liên kết ra website bên ngoài
+- tạo 1 nút đi tới phần liên hệ trong cùng trang
+- chèn 2 ảnh có alt rõ ràng
+- tạo cấu trúc thư mục đơn giản với thư mục images
+
+Tôi muốn bạn:
+1. mô tả đề bài thật rõ
+2. chia bài tập thành từng bước nhỏ
+3. bắt tôi tự làm từng bước
+4. sau mỗi bước, yêu cầu tôi gửi code
+5. review thật kỹ từng lỗi về:
+   - href
+   - đường dẫn ảnh
+   - alt
+   - target
+   - id dùng cho anchor link
+\`\`\`
+
+## Prompt 3 - Nhờ AI tạo bài kiểm tra tình huống
+\`\`\`
+Hãy tạo cho tôi một bài kiểm tra tình huống về link và ảnh trong HTML.
+
+Tôi muốn có:
+- 5 câu hỏi tình huống thực tế
+- ví dụ: khi nào dùng target="_blank", khi nào không nên dùng
+- ví dụ: alt như thế nào là tốt
+- ví dụ: vì sao ảnh không hiện
+- ví dụ: khi nào dùng relative path
+
+Sau khi tôi trả lời, hãy:
+- chấm từng câu
+- giải thích sâu chỗ sai
+- nói rõ tôi thiếu tư duy ở đâu
+\`\`\`
+
+## Bài tập buổi này
+- Dựng 1 trang profile mini có:
+  - ảnh đại diện
+  - menu điều hướng
+  - liên kết mạng xã hội
+  - nút tới phần liên hệ
+
+## Tiêu chuẩn hoàn thành
+- Link hoạt động đúng
+- Ảnh hiển thị đúng
+- Alt có ý nghĩa
+- Điều hướng trong trang không lỗi
       `
     },
     {
       id: 'html-05',
-      title: 'Buổi 5: Hình ảnh, đường dẫn và thư mục',
+      title: 'Buổi 5: Danh sách, div, span, block/inline và dựng hồ sơ cá nhân',
       level: 'beginner',
       content: `
-# Buổi 5: Hình ảnh, đường dẫn và thư mục
+# Buổi 5: Danh sách, div, span, block/inline và dựng hồ sơ cá nhân
 
 ## Mục tiêu
-- Hiểu cách chèn ảnh
-- Biết dùng đường dẫn tương đối và tuyệt đối
-- Hiểu ý nghĩa của \`alt\`
+- Biết tạo danh sách có cấu trúc
+- Hiểu block và inline
+- Dùng \`div\` và \`span\` có chủ đích
+- Dựng được trang hồ sơ cá nhân phiên bản 1
 
-## Nội dung chính
-- Thẻ \`img\`
-- \`src\`, \`alt\`, \`width\`, \`height\`
-- Cấu trúc thư mục dự án
-- Ảnh trong cùng thư mục và thư mục con
+## Prompt 1 - Nhờ AI dạy tư duy nhóm nội dung
+\`\`\`
+Bạn hãy dạy tôi HTML buổi 5 với vai trò mentor.
 
-## Bài tập luyện tập
-1. Chèn 2 ảnh vào trang
-2. Viết mô tả \`alt\` rõ ràng cho từng ảnh
-3. Tạo thư mục \`images\` và gọi ảnh từ đó
+Chủ đề:
+- ul, ol, li
+- danh sách lồng nhau
+- block và inline
+- div và span
+- cách nhóm nội dung hợp lý trong một trang web
 
-## Bài tập nâng cao
-- Tạo một trang “Bộ sưu tập ảnh” gồm 4 ảnh và tiêu đề mô tả
+Nhưng tôi không muốn học theo kiểu “đây là thẻ này, đây là thẻ kia”.
+Tôi muốn học theo tư duy xây một trang.
+
+Hãy dạy theo trình tự:
+1. Vì sao phải chia nội dung thành nhóm?
+2. Khi nào nên dùng danh sách?
+3. Khi nào không nên dùng danh sách?
+4. Block và inline khác nhau ở bản chất gì?
+5. div để làm gì?
+6. span để làm gì?
+7. Người mới hay lạm dụng div như thế nào?
+8. Cho tôi 3 ví dụ:
+   - 1 ví dụ dùng list đúng
+   - 1 ví dụ dùng list sai
+   - 1 ví dụ dùng div/span sai và cách sửa
+9. Cuối cùng tóm tắt thành checklist quyết định nhanh:
+   - nội dung này nên dùng p, list, div hay span?
+
+Dạy cực kỳ thực chiến.
+\`\`\`
+
+## Prompt 2 - Nhờ AI hướng dẫn dựng trang hồ sơ cá nhân
+\`\`\`
+Tôi muốn bạn đóng vai mentor và dẫn tôi dựng một trang hồ sơ cá nhân bằng HTML.
+
+Trang cần có:
+- tiêu đề chính
+- ảnh đại diện
+- phần giới thiệu
+- danh sách kỹ năng
+- danh sách mục tiêu học tập
+- một vài từ được nhấn mạnh trong câu bằng span hoặc strong nếu hợp lý
+
+Hãy hướng dẫn tôi theo kiểu:
+1. phân tích yêu cầu
+2. chia cấu trúc trang thành các khối
+3. nói rõ khối nào dùng div, khối nào dùng list
+4. yêu cầu tôi tự code từng phần
+5. mỗi phần tôi gửi lên thì bạn review
+6. nếu tôi dùng thẻ không hợp lý, bạn phải phản biện ngay
+
+Tôi muốn được học như một junior đang được mentor kèm trực tiếp.
+\`\`\`
+
+## Prompt 3 - Nhờ AI review cấu trúc trang
+\`\`\`
+Tôi sẽ gửi cho bạn code HTML của trang hồ sơ cá nhân.
+Bạn hãy review theo tiêu chí:
+1. Nhóm nội dung đã logic chưa?
+2. Danh sách dùng có đúng chỗ không?
+3. Có chỗ nào đang lạm dụng div không?
+4. Có chỗ nào nên dùng span hoặc strong khác đi không?
+5. Bố cục HTML đã dễ đọc chưa?
+
+Hãy review cụ thể theo từng vùng, không nói chung chung.
+Sau đó yêu cầu tôi viết lại phiên bản tốt hơn.
+\`\`\`
+
+## Bài tập buổi này
+- Hoàn thành trang hồ sơ cá nhân phiên bản 1
+
+## Tiêu chuẩn hoàn thành
+- Có các khối nội dung rõ ràng
+- Danh sách dùng đúng chỗ
+- Không lạm dụng div
+- Code đọc dễ hiểu
       `
     },
     {
       id: 'html-06',
-      title: 'Buổi 6: Danh sách và cấu trúc nội dung',
-      level: 'beginner',
+      title: 'Buổi 6: Bảng và cách biểu diễn dữ liệu đúng mục đích',
+      level: 'intermediate',
       content: `
-# Buổi 6: Danh sách và cấu trúc nội dung
+# Buổi 6: Bảng và cách biểu diễn dữ liệu đúng mục đích
 
 ## Mục tiêu
-- Biết tạo danh sách có thứ tự và không thứ tự
-- Biết khi nào dùng từng loại danh sách
+- Tạo được bảng dữ liệu đúng chuẩn
+- Biết khi nào nên dùng bảng
+- Không dùng bảng để chia layout
+- Thêm bảng hợp lý vào project cá nhân
 
-## Nội dung chính
-- \`ul\`, \`ol\`, \`li\`
-- Danh sách lồng nhau
-- Ứng dụng trong menu, checklist, quy trình
+## Prompt 1 - Nhờ AI dạy bảng theo tư duy dữ liệu
+\`\`\`
+Hãy dạy tôi HTML buổi 6 về bảng, nhưng phải dạy theo tư duy biểu diễn dữ liệu, không chỉ dạy cú pháp.
 
-## Bài tập luyện tập
-1. Tạo danh sách kỹ năng của bạn
-2. Tạo danh sách 5 bước học HTML
-3. Tạo danh sách lồng nhau cho chủ đề học web
+Chủ đề cần dạy:
+- table
+- tr
+- th
+- td
+- thead
+- tbody
+- tfoot
+- colspan
+- rowspan
 
-## Bài tập nâng cao
-- Tạo menu món ăn hoặc kế hoạch học tập bằng danh sách lồng nhau
+Yêu cầu cách dạy:
+1. Giải thích bảng trong HTML dùng để làm gì
+2. Phân biệt bảng dữ liệu và layout thật rõ
+3. Từng thẻ có vai trò gì
+4. Dùng ví dụ thực tế:
+   - thời khóa biểu
+   - bảng giá
+   - bảng kỹ năng
+5. Chỉ ra các sai lầm phổ biến:
+   - dùng bảng để chia bố cục
+   - không có th
+   - dữ liệu lộn xộn
+6. Cho tôi 5 câu hỏi để tự quyết định khi nào nên dùng bảng, khi nào không
+
+Dạy kỹ như đang sửa tư duy cho người mới.
+\`\`\`
+
+## Prompt 2 - Nhờ AI giao bài tập bảng thực tế
+\`\`\`
+Hãy giao cho tôi 3 bài tập thực hành về bảng HTML:
+1. bảng thời khóa biểu
+2. bảng kỹ năng cá nhân
+3. bảng thông tin khóa học
+
+Mỗi bài tập cần:
+- mô tả yêu cầu rõ
+- các cột/hàng gợi ý
+- mức độ tăng dần
+- không cho đáp án ngay
+
+Sau đó khi tôi gửi code, hãy review cực kỹ:
+- dữ liệu có logic không
+- có dùng th đúng chưa
+- nên thêm thead/tbody không
+- bảng có đang bị lạm dụng không
+- code có sạch không
+\`\`\`
+
+## Prompt 3 - Nhờ AI bắt lỗi tư duy
+\`\`\`
+Tôi muốn bạn đóng vai reviewer khó tính.
+
+Tôi sẽ gửi cho bạn một đoạn HTML có bảng.
+Bạn phải đánh giá:
+- bảng này có thực sự cần là bảng không?
+- nếu không cần, nên đổi sang cấu trúc nào?
+- nếu cần, cấu trúc bảng này đã hợp lý chưa?
+- có thiếu th, thead, tbody hay không?
+- dữ liệu có dễ đọc không?
+
+Mục tiêu là giúp tôi không học bảng một cách máy móc.
+\`\`\`
+
+## Bài tập buổi này
+- Thêm 1 bảng hợp lý vào project cá nhân:
+  - bảng kỹ năng
+  - hoặc bảng lộ trình học
+
+## Tiêu chuẩn hoàn thành
+- Bảng có ý nghĩa dữ liệu rõ ràng
+- Không dùng bảng để dựng layout
+- Có hàng tiêu đề hợp lý
       `
     },
     {
       id: 'html-07',
-      title: 'Buổi 7: Block và inline, thẻ bao nội dung',
-      level: 'beginner',
+      title: 'Buổi 7: Form cơ bản và tư duy tạo trải nghiệm nhập liệu',
+      level: 'intermediate',
       content: `
-# Buổi 7: Block và inline, thẻ bao nội dung
+# Buổi 7: Form cơ bản và tư duy tạo trải nghiệm nhập liệu
 
 ## Mục tiêu
-- Hiểu block và inline
-- Biết dùng \`div\` và \`span\`
-- Biết nhóm nội dung hợp lý
+- Hiểu form dùng để làm gì
+- Dùng được các input phổ biến
+- Tạo được form liên hệ hoặc đăng ký cơ bản
+- Bắt đầu nghĩ về trải nghiệm người dùng, không chỉ là “đủ trường”
 
-## Nội dung chính
-- Phần tử block
-- Phần tử inline
-- \`div\` để chia khối
-- \`span\` để bọc chữ nhỏ trong dòng
+## Prompt 1 - Nhờ AI dạy form như một mentor UX cơ bản
+\`\`\`
+Hãy dạy tôi HTML buổi 7 về form, nhưng theo hướng thực chiến.
 
-## Bài tập luyện tập
-1. Tạo 3 khối nội dung bằng \`div\`
-2. Dùng \`span\` để đánh dấu 1 từ quan trọng trong câu
-3. Quan sát sự khác nhau giữa block và inline
+Chủ đề:
+- form
+- input text
+- email
+- password
+- number
+- button submit
+- name
+- placeholder
 
-## Bài tập nâng cao
-- Chia bố cục hồ sơ cá nhân thành từng vùng bằng \`div\`
+Tôi muốn bạn dạy theo cấu trúc:
+1. Form trong HTML dùng để làm gì?
+2. Vì sao form là nơi người dùng “tương tác” chứ không chỉ nhập dữ liệu?
+3. Giải thích từng loại input cơ bản và khi nào nên dùng
+4. Vai trò của:
+   - name
+   - placeholder
+   - value
+   - button submit
+5. Cho tôi 3 ví dụ form thực tế:
+   - đăng nhập
+   - đăng ký
+   - liên hệ
+6. Phân tích form nào tốt, form nào dở
+7. Chỉ ra 10 lỗi người mới hay mắc khi tạo form
+8. Cuối cùng, cho tôi checklist để tự đánh giá một form cơ bản
+
+Hãy dạy kỹ, có ví dụ, có phản biện, không dạy qua loa.
+\`\`\`
+
+## Prompt 2 - Nhờ AI dẫn tôi tạo form thật
+\`\`\`
+Hãy đóng vai mentor và dẫn tôi tạo một form liên hệ cho trang hồ sơ cá nhân.
+
+Yêu cầu form:
+- họ tên
+- email
+- chủ đề
+- nội dung liên hệ
+- nút gửi
+
+Cách hướng dẫn tôi muốn:
+1. phân tích mục tiêu form
+2. xác định từng trường cần thiết
+3. nói rõ tại sao có trường này, tại sao không cần thêm trường kia
+4. yêu cầu tôi tự code
+5. review thật kỹ khi tôi gửi code:
+   - dùng input type đã đúng chưa
+   - tên field đã rõ chưa
+   - cấu trúc form đã ổn chưa
+   - có field nào thừa không
+
+Đừng chỉ viết hộ. Hãy buộc tôi tư duy.
+\`\`\`
+
+## Prompt 3 - Nhờ AI đóng vai người dùng khó tính
+\`\`\`
+Hãy đóng vai một người dùng khó tính đang phải điền form của tôi.
+
+Tôi sẽ gửi code form HTML.
+Bạn hãy phản biện theo góc nhìn người dùng:
+- trường nào gây khó hiểu?
+- placeholder nào vô nghĩa?
+- thứ tự field có hợp lý không?
+- nút submit có rõ ràng không?
+- form có đang dài dòng không?
+
+Sau đó chuyển vai thành mentor kỹ thuật và nói tôi cần sửa gì trong HTML.
+\`\`\`
+
+## Bài tập buổi này
+- Tạo form liên hệ hoặc form đăng ký cơ bản cho project cá nhân
+
+## Tiêu chuẩn hoàn thành
+- Form có mục tiêu rõ
+- Trường nhập liệu hợp lý
+- Không có field thừa
+- HTML đủ sạch để nâng cấp sau
       `
     },
     {
       id: 'html-08',
-      title: 'Buổi 8: Bảng trong HTML',
+      title: 'Buổi 8: Form nâng cao, label, validation và form dễ dùng',
       level: 'intermediate',
       content: `
-# Buổi 8: Bảng trong HTML
+# Buổi 8: Form nâng cao, label, validation và form dễ dùng
 
 ## Mục tiêu
-- Biết tạo bảng
-- Hiểu hàng, cột, ô tiêu đề
-- Biết khi nào nên dùng bảng
+- Dùng được checkbox, radio, select, textarea
+- Viết form có label đúng chuẩn
+- Thêm validation cơ bản hợp lý
+- Hiểu form thân thiện với người dùng là gì
 
-## Nội dung chính
-- \`table\`, \`tr\`, \`th\`, \`td\`
-- \`thead\`, \`tbody\`, \`tfoot\`
-- \`colspan\`, \`rowspan\` cơ bản
+## Prompt 1 - Nhờ AI dạy form chuẩn hơn
+\`\`\`
+Hãy dạy tôi HTML buổi 8 về form nâng cao theo góc nhìn mentor kỹ tính.
 
-## Bài tập luyện tập
-1. Tạo bảng thời khóa biểu
-2. Tạo bảng thông tin sản phẩm
-3. Thêm hàng tiêu đề cho bảng
+Chủ đề bắt buộc:
+- label
+- for
+- checkbox
+- radio
+- select
+- option
+- textarea
+- required
+- minlength
+- maxlength
+- checked
+- selected
+- disabled
+- readonly
 
-## Bài tập nâng cao
-- Tạo bảng điểm học sinh có cột tổng kết
+Tôi muốn bạn dạy theo logic:
+1. Vì sao label cực kỳ quan trọng?
+2. Vì sao placeholder không thay thế được label?
+3. Khi nào dùng checkbox, khi nào dùng radio?
+4. Khi nào dùng select, khi nào không nên dùng?
+5. Validation cơ bản nên dùng như thế nào để vừa đủ?
+6. Cho ví dụ form tốt và form tệ
+7. Chỉ ra lỗi sai phổ biến của người mới
+8. Tạo cho tôi checklist “form dễ dùng”
+
+Yêu cầu:
+- phải có ví dụ HTML
+- phải có giải thích “vì sao”
+- phải phản biện tư duy sai của người mới
+\`\`\`
+
+## Prompt 2 - Nhờ AI giao bài thực chiến
+\`\`\`
+Hãy giao cho tôi một bài tập thực chiến:
+Tạo form đăng ký tư vấn hoặc form khảo sát sở thích.
+
+Form cần có:
+- họ tên
+- email
+- thành phố (select)
+- mục tiêu học tập (radio hoặc checkbox nếu hợp lý)
+- mô tả ngắn (textarea)
+- các field bắt buộc được đánh dấu hợp lý
+
+Tôi muốn bạn:
+1. đưa đề bài rõ ràng
+2. không cho đáp án ngay
+3. đợi tôi làm
+4. sau đó review như mentor:
+   - label đã đúng chưa
+   - checkbox/radio đã hợp lý chưa
+   - validation đã quá tay hay chưa đủ
+   - form có dễ hiểu không
+   - field nào đang thừa
+5. yêu cầu tôi sửa lại bản 2
+\`\`\`
+
+## Prompt 3 - Nhờ AI audit form của tôi
+\`\`\`
+Tôi sẽ gửi code HTML của form.
+Bạn hãy audit theo 5 tiêu chí:
+1. Đúng kỹ thuật
+2. Dễ hiểu với người dùng
+3. Dễ dùng
+4. Có tính accessibility cơ bản
+5. Cấu trúc HTML có sạch không
+
+Mỗi tiêu chí phải có nhận xét cụ thể.
+Cuối cùng, chấm điểm form của tôi trên thang 10 và nói tôi cần sửa gì để lên level tốt hơn.
+\`\`\`
+
+## Bài tập buổi này
+- Hoàn thiện form final cho project cá nhân
+
+## Tiêu chuẩn hoàn thành
+- Mọi input quan trọng đều có label
+- Validation vừa đủ
+- Cấu trúc field hợp lý
+- Form dễ hiểu và dễ điền
       `
     },
     {
       id: 'html-09',
-      title: 'Buổi 9: Form cơ bản',
+      title: 'Buổi 9: Semantic HTML và cách viết HTML có nghĩa',
       level: 'intermediate',
       content: `
-# Buổi 9: Form cơ bản
+# Buổi 9: Semantic HTML và cách viết HTML có nghĩa
 
 ## Mục tiêu
-- Hiểu form dùng để làm gì
-- Biết tạo input cơ bản
-- Biết nút submit hoạt động thế nào
+- Hiểu semantic HTML là gì
+- Không dùng div cho mọi thứ
+- Biết dùng header, nav, main, section, article, aside, footer
+- Refactor project cá nhân sang HTML rõ nghĩa hơn
 
-## Nội dung chính
-- \`form\`
-- \`input type="text"\`
-- \`password\`
-- \`email\`
-- \`submit\`
-- \`placeholder\`
-- \`name\`
+## Prompt 1 - Nhờ AI dạy semantic như người làm nghề
+\`\`\`
+Hãy dạy tôi HTML buổi 9 về semantic HTML thật sâu.
 
-## Bài tập luyện tập
-1. Tạo form đăng nhập
-2. Tạo form đăng ký có tên, email, mật khẩu
-3. Thêm nút gửi form
+Tôi không muốn học kiểu nhớ tên thẻ.
+Tôi muốn hiểu bản chất của semantic HTML.
 
-## Bài tập nâng cao
-- Tạo form đăng ký tài khoản đầy đủ hơn với 5 trường
+Hãy dạy theo cấu trúc:
+1. Semantic HTML là gì?
+2. Vì sao semantic HTML quan trọng với:
+   - con người đọc code
+   - cấu trúc nội dung
+   - accessibility
+   - SEO cơ bản
+3. Giải thích thật rõ các thẻ:
+   - header
+   - nav
+   - main
+   - section
+   - article
+   - aside
+   - footer
+4. Phân biệt:
+   - section và article
+   - div và section
+   - nav và khối link thông thường
+5. Cho 1 ví dụ trang viết rất tệ toàn div
+6. Refactor nó thành semantic HTML và giải thích từng quyết định
+7. Liệt kê 10 lỗi semantic người mới hay mắc
+8. Cho tôi 1 checklist tự hỏi trước khi chọn thẻ semantic
+
+Dạy như mentor chuyên review code của junior.
+\`\`\`
+
+## Prompt 2 - Nhờ AI dẫn tôi refactor project
+\`\`\`
+Tôi đã có một trang HTML cá nhân.
+Hãy giúp tôi refactor trang đó sang semantic HTML.
+
+Cách làm tôi muốn:
+1. Tôi gửi code cũ
+2. Bạn phân tích cấu trúc nội dung của trang
+3. Bạn nói khối nào nên là header, nav, main, section, footer...
+4. Bạn không làm thay ngay, mà hướng dẫn tôi sửa từng phần
+5. Sau mỗi lần tôi sửa, bạn review tiếp
+6. Nếu tôi chọn semantic sai, bạn phải giải thích vì sao sai
+
+Mục tiêu là để tôi thực sự hiểu cách chọn thẻ, không phải chỉ copy đáp án.
+\`\`\`
+
+## Prompt 3 - Nhờ AI phản biện semantic của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn HTML của tôi.
+Bạn hãy chỉ tập trung review semantic HTML.
+
+Yêu cầu review:
+- chỗ nào nên giữ
+- chỗ nào semantic chưa đúng
+- chỗ nào đang dùng section vô tội vạ
+- chỗ nào đáng ra vẫn nên là div
+- chỗ nào thiếu main/nav/header/footer
+
+Cuối cùng, hãy tạo cho tôi một phiên bản checklist cá nhân để tôi tự audit sau này.
+\`\`\`
+
+## Bài tập buổi này
+- Refactor toàn bộ project cá nhân sang semantic HTML
+
+## Tiêu chuẩn hoàn thành
+- Có cấu trúc semantic rõ
+- Mỗi vùng nội dung có vai trò hợp lý
+- Không lạm dụng section
+- HTML dễ đọc hơn bản cũ
       `
     },
     {
       id: 'html-10',
-      title: 'Buổi 10: Form nâng cao',
-      level: 'intermediate',
-      content: `
-# Buổi 10: Form nâng cao
-
-## Mục tiêu
-- Biết dùng nhiều loại input hơn
-- Hiểu checkbox, radio, select, textarea
-- Tạo form thực tế hơn
-
-## Nội dung chính
-- \`checkbox\`
-- \`radio\`
-- \`textarea\`
-- \`select\`, \`option\`
-- \`date\`, \`number\`, \`file\`
-
-## Bài tập luyện tập
-1. Tạo form khảo sát sở thích
-2. Tạo form ứng tuyển cơ bản
-3. Tạo dropdown chọn thành phố
-
-## Bài tập nâng cao
-- Tạo form “Liên hệ với chúng tôi” hoàn chỉnh
-      `
-    },
-    {
-      id: 'html-11',
-      title: 'Buổi 11: Label, validation và trải nghiệm người dùng trong form',
-      level: 'intermediate',
-      content: `
-# Buổi 11: Label, validation và trải nghiệm người dùng trong form
-
-## Mục tiêu
-- Biết gắn \`label\` đúng cách
-- Biết dùng các thuộc tính kiểm tra dữ liệu
-- Hiểu form thân thiện với người dùng là gì
-
-## Nội dung chính
-- \`label\` + \`for\`
-- \`required\`
-- \`minlength\`, \`maxlength\`
-- \`min\`, \`max\`
-- \`checked\`, \`selected\`
-- \`disabled\`, \`readonly\`
-
-## Bài tập luyện tập
-1. Sửa một form để có \`label\` đầy đủ
-2. Thêm \`required\` cho các trường bắt buộc
-3. Giới hạn độ dài mật khẩu
-
-## Bài tập nâng cao
-- Tạo form đăng ký chuẩn hơn, dễ dùng hơn, có kiểm tra dữ liệu cơ bản
-      `
-    },
-    {
-      id: 'html-12',
-      title: 'Buổi 12: Semantic HTML cơ bản',
-      level: 'intermediate',
-      content: `
-# Buổi 12: Semantic HTML cơ bản
-
-## Mục tiêu
-- Hiểu semantic HTML là gì
-- Biết tại sao không nên dùng \`div\` cho mọi thứ
-- Biết các thẻ semantic phổ biến
-
-## Nội dung chính
-- \`header\`
-- \`nav\`
-- \`main\`
-- \`section\`
-- \`article\`
-- \`aside\`
-- \`footer\`
-
-## Bài tập luyện tập
-1. Chuyển một bố cục đang dùng \`div\` sang semantic HTML
-2. Tạo bố cục blog đơn giản với:
-   - header
-   - nav
-   - main
-   - article
-   - footer
-
-## Bài tập nâng cao
-- Tạo trang tin tức nhỏ bằng semantic HTML
-      `
-    },
-    {
-      id: 'html-13',
-      title: 'Buổi 13: Semantic HTML nâng cao và bố cục trang',
-      level: 'intermediate',
-      content: `
-# Buổi 13: Semantic HTML nâng cao và bố cục trang
-
-## Mục tiêu
-- Phân biệt \`section\`, \`article\`, \`aside\`
-- Biết chia bố cục trang logic
-- Viết HTML rõ nghĩa hơn
-
-## Nội dung chính
-- Khi nào dùng \`section\`
-- Khi nào dùng \`article\`
-- Nội dung phụ với \`aside\`
-- Bố cục landing page, blog, trang tin
-
-## Bài tập luyện tập
-1. Tạo bố cục trang bài viết hoàn chỉnh
-2. Thêm sidebar bằng \`aside\`
-3. Chia nội dung thành nhiều section hợp lý
-
-## Bài tập nâng cao
-- Tạo trang blog có bài viết chính và khung bài viết liên quan
-      `
-    },
-    {
-      id: 'html-14',
-      title: 'Buổi 14: Thẻ media và nội dung nhúng',
-      level: 'intermediate',
-      content: `
-# Buổi 14: Thẻ media và nội dung nhúng
-
-## Mục tiêu
-- Biết chèn audio, video
-- Biết nhúng nội dung bên ngoài
-- Hiểu các trường hợp dùng iframe
-
-## Nội dung chính
-- \`audio\`
-- \`video\`
-- \`source\`
-- \`iframe\`
-
-## Bài tập luyện tập
-1. Chèn một video vào trang
-2. Thêm audio có nút điều khiển
-3. Nhúng Google Map hoặc video YouTube
-
-## Bài tập nâng cao
-- Tạo một trang giới thiệu khóa học có video và bản đồ
-      `
-    },
-    {
-      id: 'html-15',
-      title: 'Buổi 15: Head, meta và SEO cơ bản',
+      title: 'Buổi 10: SEO cơ bản, accessibility cơ bản và cách tự audit HTML',
       level: 'advanced',
       content: `
-# Buổi 15: Head, meta và SEO cơ bản
+# Buổi 10: SEO cơ bản, accessibility cơ bản và cách tự audit HTML
 
 ## Mục tiêu
-- Hiểu vai trò của \`head\`
-- Biết dùng \`meta\` cơ bản
-- Hiểu nền tảng SEO trong HTML
+- Hiểu HTML ảnh hưởng SEO ra sao
+- Hiểu HTML ảnh hưởng accessibility ra sao
+- Biết các tiêu chuẩn căn bản để tự rà soát bài làm
+- Hoàn thiện project cá nhân ở mức sạch và có tư duy nghề
 
-## Nội dung chính
-- \`title\`
-- \`meta charset\`
-- \`meta name="viewport"\`
-- \`meta description\`
-- Cấu trúc heading hợp lý
-- \`alt\` cho ảnh
+## Prompt 1 - Nhờ AI dạy SEO và accessibility ở mức người mới cần biết
+\`\`\`
+Hãy dạy tôi buổi 10 về SEO cơ bản và accessibility cơ bản trong HTML.
 
-## Bài tập luyện tập
-1. Viết phần \`head\` chuẩn cho một trang web
-2. Thêm mô tả cho trang
-3. Kiểm tra lại tiêu đề trang và các heading
+Tôi là người học HTML, chưa cần kiến thức quá sâu như chuyên gia SEO hay a11y.
+Tôi cần hiểu đủ để viết HTML có chất lượng.
 
-## Bài tập nâng cao
-- Tối ưu một trang HTML đơn giản để thân thiện hơn với SEO
-      `
-    },
-    {
-      id: 'html-16',
-      title: 'Buổi 16: Accessibility (trợ năng) trong HTML',
-      level: 'advanced',
-      content: `
-# Buổi 16: Accessibility trong HTML
+Hãy dạy theo cấu trúc:
+1. HTML liên quan gì đến SEO?
+2. HTML liên quan gì đến accessibility?
+3. Giải thích vai trò của:
+   - title
+   - meta description
+   - heading hierarchy
+   - alt
+   - label
+   - button và a
+   - semantic HTML
+4. Cho ví dụ tốt và xấu
+5. Chỉ ra 12 lỗi phổ biến mà junior hay mắc
+6. Cho tôi 1 checklist audit HTML trước khi nộp bài
+7. Cho tôi 5 tình huống thực tế để tôi tự quyết định đúng/sai
 
-## Mục tiêu
-- Hiểu trợ năng là gì
-- Biết viết HTML dễ dùng cho nhiều đối tượng
-- Biết các lỗi phổ biến ảnh hưởng đến accessibility
+Yêu cầu:
+- giải thích dễ hiểu
+- có ví dụ HTML
+- có phản biện tư duy sai
+\`\`\`
 
-## Nội dung chính
-- Dùng semantic HTML đúng cách
-- \`label\` cho form
-- \`alt\` cho ảnh
-- Thứ tự heading hợp lý
-- Nút phải là \`button\`, link phải là \`a\`
+## Prompt 2 - Nhờ AI audit project final của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn project HTML của tôi.
+Bạn hãy audit như một mentor kỹ tính theo đúng 5 nhóm tiêu chí sau:
 
-## Bài tập luyện tập
-1. Sửa một form để thân thiện hơn với accessibility
-2. Kiểm tra lại ảnh và heading trong một trang HTML
-3. Thay thẻ chưa phù hợp bằng thẻ đúng nghĩa
+1. Cấu trúc nội dung
+2. Semantic HTML
+3. Form usability
+4. SEO cơ bản
+5. Accessibility cơ bản
 
-## Bài tập nâng cao
-- Rà soát một trang HTML và ghi ra 10 lỗi accessibility thường gặp
-      `
-    },
-    {
-      id: 'html-17',
-      title: 'Buổi 17: Các thẻ HTML hiện đại và ít được biết đến',
-      level: 'advanced',
-      content: `
-# Buổi 17: Các thẻ HTML hiện đại và ít được biết đến
+Với mỗi nhóm tiêu chí, bạn phải:
+- nêu điểm tốt
+- nêu lỗi cụ thể
+- giải thích vì sao là lỗi
+- cho hướng sửa cụ thể
+- ưu tiên lỗi nghiêm trọng trước
 
-## Mục tiêu
-- Mở rộng kiến thức ngoài các thẻ cơ bản
-- Biết thêm các thẻ hữu ích trong dự án thực tế
+Cuối cùng:
+- chấm điểm tổng trên thang 100
+- xếp loại: yếu / ổn / tốt / rất tốt
+- cho tôi danh sách 5 việc cần sửa ngay
+\`\`\`
 
-## Nội dung chính
-- \`details\`, \`summary\`
-- \`figure\`, \`figcaption\`
-- \`progress\`
-- \`meter\`
-- \`abbr\`
-- \`code\`
-- \`pre\`
+## Prompt 3 - Nhờ AI đóng vai reviewer cuối khóa
+\`\`\`
+Hãy đóng vai reviewer cuối khóa HTML.
 
-## Bài tập luyện tập
-1. Tạo mục FAQ bằng \`details\` và \`summary\`
-2. Tạo hình ảnh có chú thích bằng \`figure\`
-3. Thêm thanh tiến trình học tập
+Tôi sẽ gửi code project của tôi.
+Bạn phải review như thật, không nể nang.
 
-## Bài tập nâng cao
-- Tạo trang giới thiệu khóa học có FAQ, thanh tiến độ, ảnh minh họa có chú thích
-      `
-    },
-    {
-      id: 'html-18',
-      title: 'Buổi 18: Cấu trúc một trang web hoàn chỉnh bằng HTML',
-      level: 'advanced',
-      content: `
-# Buổi 18: Cấu trúc một trang web hoàn chỉnh bằng HTML
+Cách review mong muốn:
+- chia theo từng phần của project
+- đánh giá cấu trúc
+- đánh giá semantic
+- đánh giá độ sạch của HTML
+- đánh giá tính dễ dùng của form
+- đánh giá SEO và accessibility cơ bản
+- chỉ rõ điểm nào chứng tỏ tôi đã hiểu bài
+- chỉ rõ điểm nào cho thấy tôi vẫn đang code theo kiểu chắp vá
 
-## Mục tiêu
-- Kết hợp các kiến thức đã học
-- Biết cách tổ chức nội dung một trang web hoàn chỉnh
+Cuối cùng, hãy nói thật:
+- tôi đã sẵn sàng học CSS chưa?
+- nếu chưa, tôi cần luyện thêm phần nào?
+\`\`\`
 
-## Nội dung chính
-- Header
-- Navigation
-- Hero section
-- Main content
-- Form liên hệ
-- Footer
+## Bài tập buổi này
+- Audit toàn bộ project cá nhân
+- Sửa lại theo góp ý
+- Tạo phiên bản final sạch nhất có thể
 
-## Bài tập luyện tập
-1. Phác thảo bố cục một landing page chỉ bằng HTML
-2. Tạo trang giới thiệu cá nhân hoàn chỉnh
-
-## Bài tập nâng cao
-- Tạo một landing page sản phẩm chỉ dùng HTML, bố cục logic và semantic
-      `
-    },
-    {
-      id: 'html-19',
-      title: 'Buổi 19: Mini Project HTML',
-      level: 'advanced',
-      content: `
-# Buổi 19: Mini Project HTML
-
-## Mục tiêu
-- Ứng dụng HTML vào sản phẩm nhỏ
-- Rèn tư duy xây cấu trúc trang
-
-## Gợi ý project
-Chọn 1 trong 3 project:
-1. Trang hồ sơ cá nhân
-2. Trang blog cá nhân
-3. Trang giới thiệu khóa học
-
-## Yêu cầu bắt buộc
-- Có \`head\` đầy đủ
-- Có semantic HTML
-- Có ảnh
-- Có liên kết
-- Có danh sách
-- Có form liên hệ hoặc form đăng ký
-
-## Bài tập luyện tập
-- Hoàn thành mini project theo yêu cầu
-
-## Bài tập nâng cao
-- Tự thêm bảng, FAQ hoặc media vào project
-      `
-    },
-    {
-      id: 'html-20',
-      title: 'Buổi 20: Tổng ôn và Dự án cuối khóa',
-      level: 'advanced',
-      content: `
-# Buổi 20: Tổng ôn và Dự án cuối khóa
-
-## Mục tiêu
-- Hệ thống lại toàn bộ HTML
-- Hoàn thiện một dự án hoàn chỉnh
-- Tự đánh giá mức độ làm chủ HTML
-
-## Nội dung ôn tập
-- Cấu trúc trang HTML
-- Text, link, ảnh, danh sách
-- Bảng
-- Form
-- Semantic HTML
-- SEO cơ bản
-- Accessibility
-
-## Dự án cuối khóa
-Tạo một website nhiều phần bằng HTML gồm:
-- Header
-- Menu điều hướng
-- Khu vực giới thiệu
-- Khu vực nội dung chính
-- Bảng hoặc danh sách
-- Form liên hệ
-- Footer
-
-## Checklist tự đánh giá
-- Có dùng semantic HTML không?
-- Có \`label\` cho form không?
-- Có \`alt\` cho ảnh không?
-- Có heading rõ ràng không?
-- Cấu trúc có dễ đọc không?
-
-## Bài tập cuối khóa
-- Hoàn thiện dự án
-- Tự rà soát và cải thiện toàn bộ HTML
+## Tiêu chuẩn hoàn thành
+- Có title và meta description hợp lý
+- Heading có logic
+- Alt và label ổn
+- Semantic tốt
+- Code đủ sạch để bước sang CSS
       `
     }
   ]

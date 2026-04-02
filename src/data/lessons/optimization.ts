@@ -5,665 +5,908 @@ export const optimizationLesson: Lesson = {
   icon: 'gauge',
   title: 'Tối ưu Hiệu suất',
   description:
-    'Lộ trình 20 buổi học tối ưu hiệu suất web từ cơ bản đến chuyên sâu, chia nhỏ dễ học, có bài tập thực hành và mini project để giúp người học xây dựng website nhanh hơn, mượt hơn và thân thiện hơn với người dùng.',
+    'Lộ trình Tối ưu Hiệu suất theo phong cách tự học cùng AI mentor. Mỗi buổi học đi kèm prompt cực chi tiết để học viên chỉ cần copy vào AI là có thể học từ bản chất, biết đo hiệu suất, audit vấn đề, tối ưu tài nguyên, tối ưu render và được review như học cùng mentor performance 1-1.',
   points: [
-    'Hiểu hiệu suất web là gì và vì sao tốc độ rất quan trọng',
-    'Nắm chắc ảnh, font, CSS, JavaScript, network và caching',
-    'Biết đo hiệu suất bằng DevTools, Lighthouse và Core Web Vitals',
-    'Biết tối ưu React, lazy loading, code splitting và render',
-    'Có bài tập và project để luyện audit và cải thiện tốc độ thực tế'
+    'Mỗi buổi có prompt cực chi tiết để copy vào AI và học ngay',
+    'AI đóng vai mentor performance, dạy từ bản chất chứ không chỉ liệt kê mẹo tối ưu',
+    'Có prompt học lý thuyết, prompt audit, prompt tối ưu và prompt phản biện',
+    'Tập trung vào năng lực thật: đo đúng, tìm đúng bottleneck, tối ưu đúng ưu tiên',
+    'Có bài tập theo kiểu audit dự án thật thay vì học mẹo rời rạc',
+    'Học xong có thể tự đánh giá và cải thiện tốc độ cho một website hoặc app thực tế'
   ],
   chapters: [
     {
       id: 'perf-01',
-      title: 'Buổi 1: Hiệu suất web là gì? Vì sao tốc độ quan trọng?',
+      title: 'Buổi 1: Hiệu suất web là gì và vì sao tối ưu hiệu suất quan trọng?',
       level: 'beginner',
       content: `
-# Buổi 1: Hiệu suất web là gì? Vì sao tốc độ quan trọng?
+# Buổi 1: Hiệu suất web là gì và vì sao tối ưu hiệu suất quan trọng?
 
 ## Mục tiêu
 - Hiểu hiệu suất web là gì
-- Biết vì sao website chậm làm giảm trải nghiệm người dùng
-- Có tư duy tối ưu từ sớm thay vì sửa muộn
+- Hiểu vì sao website chậm làm người dùng rời đi
+- Bắt đầu có tư duy performance từ sớm
+- Không còn nghĩ performance chỉ là “điểm Lighthouse”
 
-## Nội dung chính
-- Hiệu suất web là tốc độ tải, tốc độ phản hồi và độ mượt của giao diện
-- Website chậm ảnh hưởng tới:
-  - trải nghiệm người dùng
-  - tỉ lệ rời trang
-  - tỉ lệ chuyển đổi
-  - SEO
-- Hiệu suất không chỉ là điểm số, mà là cảm giác dùng thật
+## Cách học buổi này
+Bạn sẽ copy từng prompt bên dưới vào AI theo đúng thứ tự.
+Không học lướt. Sau mỗi prompt phải tự giải thích lại bằng lời của bạn.
 
-## Ví dụ
-\`\`\`text
-Một trang tải chậm không chỉ làm người dùng khó chịu,
-mà còn khiến họ bỏ đi trước khi xem nội dung chính.
+## Prompt 1 - Nhờ AI dạy lý thuyết từ gốc
+\`\`\`
+Bạn hãy đóng vai một mentor Front-end/Performance cực giỏi, chuyên dạy tối ưu hiệu suất web cho người mới.
+
+Hôm nay hãy dạy tôi buổi đầu tiên về hiệu suất web theo phong cách:
+- cực dễ hiểu nhưng không hời hợt
+- giải thích từ bản chất
+- luôn nói vì sao kiến thức này quan trọng
+- gắn với trải nghiệm thật của người dùng
+- không dùng thuật ngữ khó nếu chưa giải thích
+
+Chủ đề hôm nay:
+- Hiệu suất web là gì?
+- Vì sao tốc độ quan trọng?
+- Website chậm ảnh hưởng gì đến người dùng, chuyển đổi và SEO?
+- Performance không chỉ là điểm số, mà là cảm giác dùng thật
+
+Tôi muốn bạn dạy theo format:
+1. Hiệu suất web là gì?
+2. Một website “nhanh” nghĩa là gì dưới góc nhìn người dùng?
+3. Một website “chậm” gây ra những vấn đề gì?
+4. Phân tích các tác động:
+   - trải nghiệm người dùng
+   - tỉ lệ rời trang
+   - chuyển đổi
+   - SEO
+5. Cho 5 ví dụ website chậm và hậu quả thực tế
+6. Chỉ ra 8 hiểu lầm phổ biến của người mới về performance
+7. Đặt cho tôi 5 câu hỏi kiểm tra hiểu bài
+8. Sau khi tôi trả lời, bạn phải chấm và sửa thật kỹ
+
+Dùng tiếng Việt và dạy như mentor thật sự.
 \`\`\`
 
-## Bài tập luyện tập
-1. Nêu 3 lý do vì sao website nhanh quan trọng
-2. Nêu 3 hậu quả khi website chậm
-3. Kể tên 5 thành phần có thể làm trang tải chậm
+## Prompt 2 - Nhờ AI luyện tư duy nhìn vấn đề hiệu suất
+\`\`\`
+Tôi muốn luyện tư duy nhìn một website dưới góc nhìn hiệu suất.
 
-## Bài tập thử thách
-- Phân tích một website bạn từng thấy chậm và đoán nguyên nhân chính
+Hãy cho tôi 6 tình huống thực tế, ví dụ:
+- landing page nhiều ảnh
+- dashboard nhiều dữ liệu
+- blog chèn nhiều font và iframe
+- app React có danh sách dài
+- trang e-commerce có ảnh sản phẩm lớn
+- trang mobile bị lag khi cuộn
+
+Với mỗi tình huống:
+1. hỏi tôi người dùng sẽ khó chịu ở điểm nào
+2. hỏi tôi thành phần nào có thể gây chậm
+3. hỏi tôi nên đo hay kiểm tra gì trước
+4. sau đó bạn mới chữa
+5. nếu tôi trả lời mơ hồ, hãy bắt tôi nói cụ thể hơn
+
+Mục tiêu là để tôi thấy performance là vấn đề sản phẩm, không chỉ là kỹ thuật.
+\`\`\`
+
+## Prompt 3 - Nhờ AI kiểm tra hiểu bài
+\`\`\`
+Hãy kiểm tra xem tôi đã thật sự hiểu performance web buổi 1 chưa.
+
+Tôi muốn có:
+- 3 câu hỏi trắc nghiệm có giải thích đáp án
+- 3 câu hỏi tự luận ngắn
+- 2 tình huống thực tế
+- 1 câu hỏi tư duy: vì sao cùng một website nhưng “nhanh trên máy dev” chưa chắc nhanh với người dùng thật?
+
+Sau khi tôi trả lời, bạn hãy:
+- chấm điểm từng câu
+- giải thích chỗ sai
+- nói tôi đang ở mức nào: chưa hiểu / hiểu cơ bản / hiểu chắc
+\`\`\`
+
+## Bài tập buổi này
+1. Nêu 5 lý do performance quan trọng
+2. Kể 3 hậu quả khi website chậm
+3. Chọn 1 website bạn từng thấy chậm và phân tích nguyên nhân có thể có
+
+## Tiêu chuẩn hoàn thành
+- Hiểu performance là trải nghiệm thật
+- Biết vì sao tốc độ quan trọng
+- Có động lực học tối ưu từ sớm
       `
     },
     {
       id: 'perf-02',
-      title: 'Buổi 2: Trình duyệt tải một trang web như thế nào?',
+      title: 'Buổi 2: Trình duyệt tải trang như thế nào và bottleneck thường nằm ở đâu?',
       level: 'beginner',
       content: `
-# Buổi 2: Trình duyệt tải một trang web như thế nào?
+# Buổi 2: Trình duyệt tải trang như thế nào và bottleneck thường nằm ở đâu?
 
 ## Mục tiêu
 - Hiểu luồng tải trang cơ bản
-- Biết HTML, CSS, JS, ảnh và font ảnh hưởng ra sao
-- Có nền tảng để hiểu vì sao trang bị chậm
+- Biết HTML, CSS, JS, ảnh, font ảnh hưởng thế nào
+- Hiểu render-blocking là gì ở mức dễ hiểu
+- Bắt đầu xác định chỗ nào dễ gây chậm
 
-## Nội dung chính
-- Trình duyệt tải HTML trước
-- Sau đó tải CSS, JavaScript, ảnh, font
-- CSS có thể chặn việc hiển thị
-- JavaScript có thể chặn việc tương tác
-- Quá nhiều tài nguyên sẽ làm chậm trang
+## Prompt 1 - Nhờ AI dạy browser loading từ bản chất
+\`\`\`
+Hãy dạy tôi performance web buổi 2 như một mentor Front-end.
 
-## Ví dụ
-\`\`\`text
-HTML là khung đầu tiên,
-CSS làm đẹp,
-JavaScript thêm tương tác,
-nhưng nếu mỗi thứ đều quá nặng thì trang sẽ chậm.
+Chủ đề:
+- trình duyệt tải HTML như thế nào
+- tải CSS, JS, ảnh, font ra sao
+- render-blocking
+- parse
+- execute
+- hiển thị nội dung
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Điều gì xảy ra khi người dùng mở một URL?
+2. Trình duyệt lấy HTML trước hay CSS/JS trước?
+3. Vai trò của HTML, CSS, JavaScript, ảnh, font trong quá trình tải
+4. Vì sao CSS có thể chặn hiển thị?
+5. Vì sao JavaScript có thể chặn tương tác?
+6. Ảnh và font ảnh hưởng gì tới tốc độ và trải nghiệm?
+7. Cho ví dụ một trang tải chậm và phân tích nguyên nhân theo từng lớp tài nguyên
+8. Chỉ ra lỗi phổ biến người mới hay nghĩ sai về tốc độ tải
+9. Tạo checklist để đọc một trang theo góc nhìn “tài nguyên nào đang chặn người dùng”
+
+Dạy như mentor đang xây nền browser performance cho junior.
 \`\`\`
 
-## Bài tập luyện tập
-1. Mô tả các bước cơ bản khi trình duyệt tải trang
-2. Nêu vai trò của HTML, CSS, JS trong hiệu suất
-3. Giải thích vì sao ảnh lớn làm trang chậm
+## Prompt 2 - Nhờ AI luyện tư duy bottleneck
+\`\`\`
+Tôi muốn luyện tư duy xác định bottleneck hiệu suất.
 
-## Bài tập thử thách
-- Vẽ lại sơ đồ đơn giản quá trình tải một trang web
+Hãy cho tôi 8 tình huống, ví dụ:
+- HTML nhẹ nhưng JS rất nặng
+- ảnh hero quá lớn
+- font tải chậm
+- CSS bundle quá to
+- quá nhiều request nhỏ
+- iframe YouTube ở đầu trang
+- banner đầu trang tải chậm
+- app có nhiều thư viện nặng
+
+Với mỗi tình huống:
+1. hỏi tôi bottleneck chính có thể là gì
+2. hỏi tôi người dùng sẽ cảm thấy chậm ở đâu
+3. hỏi tôi nên đo bằng công cụ nào trước
+4. sau đó bạn mới chữa
+\`\`\`
+
+## Prompt 3 - Nhờ AI kiểm tra hiểu luồng tải trang
+\`\`\`
+Hãy kiểm tra xem tôi đã hiểu quá trình tải trang chưa.
+
+Tôi muốn có:
+- 5 câu hỏi nhận diện bottleneck
+- 3 câu hỏi tự luận ngắn
+- 1 bài tập yêu cầu tôi giải thích luồng tải trang của một landing page điển hình
+
+Sau khi tôi trả lời, hãy chấm và chỉ ra chỗ tôi đang hiểu mơ hồ.
+\`\`\`
+
+## Bài tập buổi này
+- Tự mô tả các bước trình duyệt tải một trang
+- Liệt kê 5 loại tài nguyên có thể làm chậm trang
+- Giải thích tài nguyên nào dễ làm chậm nội dung đầu trang nhất
+
+## Tiêu chuẩn hoàn thành
+- Hiểu browser loading flow cơ bản
+- Bắt đầu nhìn thấy bottleneck thay vì đoán mù
       `
     },
     {
       id: 'perf-03',
-      title: 'Buổi 3: Đo hiệu suất bằng DevTools và Lighthouse',
+      title: 'Buổi 3: Đo hiệu suất bằng DevTools, Lighthouse và đọc kết quả đúng cách',
       level: 'beginner',
       content: `
-# Buổi 3: Đo hiệu suất bằng DevTools và Lighthouse
+# Buổi 3: Đo hiệu suất bằng DevTools, Lighthouse và đọc kết quả đúng cách
 
 ## Mục tiêu
 - Biết cách đo hiệu suất thay vì đoán
 - Làm quen với Chrome DevTools
-- Biết đọc báo cáo Lighthouse cơ bản
+- Biết tab Network, Performance, Lighthouse
+- Biết đọc kết quả theo tư duy ưu tiên vấn đề
 
-## Nội dung chính
-- Tab Network
-- Tab Performance
+## Prompt 1 - Nhờ AI dạy đo hiệu suất như một người làm nghề
+\`\`\`
+Hãy dạy tôi performance web buổi 3 như mentor thực chiến.
+
+Chủ đề:
+- DevTools
+- tab Network
+- tab Performance
 - Lighthouse
-- Waterfall request
-- Kích thước tài nguyên
-- Thời gian tải và chặn
+- waterfall
+- request size
+- blocking time
+- audit
 
-## Ví dụ
-\`\`\`text
-Tối ưu hiệu suất không nên bắt đầu bằng cảm giác,
-mà nên bắt đầu bằng việc đo.
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao performance phải đo chứ không đoán?
+2. Tab Network giúp tôi thấy điều gì?
+3. Tab Performance giúp tôi thấy điều gì?
+4. Lighthouse đo và báo cáo điều gì?
+5. Waterfall request là gì?
+6. Làm sao đọc một báo cáo để tìm vấn đề ưu tiên?
+7. Cho ví dụ các kiểu vấn đề:
+   - ảnh nặng
+   - JS nặng
+   - request quá nhiều
+   - CLS
+8. Chỉ ra lỗi phổ biến:
+   - nhìn điểm số mà không hiểu nguyên nhân
+   - tối ưu linh tinh không theo dữ liệu
+   - fix vấn đề nhỏ trước vấn đề lớn
+9. Tạo checklist audit hiệu suất cơ bản
+
+Dạy như mentor performance đang review một dự án thật.
 \`\`\`
 
-## Bài tập luyện tập
-1. Mở DevTools và xem tab Network
-2. Chạy một báo cáo Lighthouse
-3. Ghi lại 3 vấn đề chậm lớn nhất của một trang mẫu
+## Prompt 2 - Nhờ AI dẫn tôi audit một trang web
+\`\`\`
+Hãy đóng vai mentor và dẫn tôi audit hiệu suất của một trang web bằng DevTools và Lighthouse.
 
-## Bài tập thử thách
-- Chụp lại kết quả audit một trang web bạn làm và viết nhận xét ngắn
+Tôi muốn quy trình:
+1. mở DevTools
+2. vào tab Network và xem request
+3. xác định request nào nặng hoặc chậm
+4. chạy Lighthouse
+5. ghi lại 3 vấn đề lớn nhất
+6. phân loại vấn đề theo:
+   - ảnh
+   - CSS
+   - JavaScript
+   - network
+   - layout shift
+7. sau đó bạn giúp tôi sắp xếp thứ tự ưu tiên fix
+
+Đừng chỉ nói “chạy Lighthouse”. Hãy hướng dẫn như mentor thật.
+\`\`\`
+
+## Prompt 3 - Nhờ AI review kết quả đo của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn:
+- ảnh chụp hoặc mô tả tab Network
+- kết quả Lighthouse
+- danh sách vấn đề tôi thấy
+
+Bạn hãy review:
+1. Tôi đọc kết quả đúng chưa?
+2. Tôi có đang ưu tiên đúng vấn đề lớn nhất không?
+3. Có chỗ nào tôi đang hiểu sai ý nghĩa của chỉ số không?
+4. Việc nào nên fix trước?
+5. Việc nào chưa cần động vào ngay?
+\`\`\`
+
+## Bài tập buổi này
+- Audit ít nhất 1 website bằng DevTools + Lighthouse
+- Ghi lại 5 vấn đề phát hiện được
+- Sắp xếp theo mức ưu tiên
+
+## Tiêu chuẩn hoàn thành
+- Biết dùng công cụ đo
+- Không còn đoán mò
+- Biết nhìn dữ liệu và chọn việc cần làm trước
       `
     },
     {
       id: 'perf-04',
-      title: 'Buổi 4: Core Web Vitals cơ bản',
+      title: 'Buổi 4: Core Web Vitals, LCP, INP, CLS và cách hiểu trải nghiệm thật',
       level: 'beginner',
       content: `
-# Buổi 4: Core Web Vitals cơ bản
+# Buổi 4: Core Web Vitals, LCP, INP, CLS và cách hiểu trải nghiệm thật
 
 ## Mục tiêu
-- Hiểu các chỉ số trải nghiệm quan trọng
-- Biết LCP, INP và CLS phản ánh điều gì
-- Biết dùng chúng để đọc tình trạng website
+- Hiểu LCP, INP, CLS là gì
+- Biết chúng phản ánh trải nghiệm nào của người dùng
+- Biết liên hệ chỉ số với hành vi thực tế trên giao diện
+- Không học Core Web Vitals như công thức khô khan
 
-## Nội dung chính
-- LCP: phần nội dung lớn chính hiện ra nhanh hay chậm
-- INP: tương tác có phản hồi mượt hay không
-- CLS: bố cục có bị nhảy lung tung không
-- Core Web Vitals phản ánh trải nghiệm thật của người dùng
+## Prompt 1 - Nhờ AI dạy Core Web Vitals bằng tình huống người dùng
+\`\`\`
+Hãy dạy tôi performance web buổi 4 như một mentor sản phẩm + kỹ thuật.
 
-## Ví dụ
-\`\`\`text
-Nếu ảnh banner xuất hiện quá chậm -> LCP xấu
-Nếu bấm nút mà phản hồi trễ -> INP xấu
-Nếu trang đang đọc mà layout nhảy -> CLS xấu
+Chủ đề:
+- Core Web Vitals
+- LCP
+- INP
+- CLS
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Core Web Vitals là gì?
+2. Vì sao những chỉ số này quan trọng hơn nhiều chỉ số kỹ thuật khác với người dùng?
+3. LCP phản ánh điều gì?
+4. INP phản ánh điều gì?
+5. CLS phản ánh điều gì?
+6. Cho ví dụ thực tế:
+   - hero banner xuất hiện chậm
+   - bấm nút mà phản hồi trễ
+   - layout nhảy làm bấm nhầm
+7. Chỉ ra nguyên nhân phổ biến làm từng chỉ số xấu
+8. Tạo checklist đọc Core Web Vitals theo góc nhìn người dùng thật
+9. Sau đó hỏi lại tôi để kiểm tra hiểu bài
+
+Dạy như mentor đang biến số liệu thành trải nghiệm thật.
 \`\`\`
 
-## Bài tập luyện tập
-1. Giải thích LCP bằng lời của bạn
-2. Giải thích INP bằng ví dụ thực tế
-3. Giải thích CLS bằng tình huống người dùng bấm nhầm
+## Prompt 2 - Nhờ AI luyện tư duy ánh xạ chỉ số -> vấn đề
+\`\`\`
+Tôi muốn luyện cách nhìn một vấn đề giao diện và đoán chỉ số nào sẽ xấu.
 
-## Bài tập thử thách
-- Chọn một trang web và đoán chỉ số nào dễ bị xấu nhất
+Hãy cho tôi 8 tình huống, ví dụ:
+- ảnh đầu trang quá nặng
+- button click rất chậm
+- font tải xong làm bố cục lệch
+- banner quảng cáo chèn muộn
+- JS parse lâu
+- form bấm submit nhưng phản hồi trễ
+- ảnh không có width/height
+- trang mobile lag khi cuộn
+
+Với mỗi tình huống:
+1. hỏi tôi chỉ số nào dễ bị ảnh hưởng nhất
+2. hỏi tôi vì sao
+3. sau đó bạn mới chữa
+
+Mục tiêu là để tôi liên hệ được metric với trải nghiệm.
+\`\`\`
+
+## Prompt 3 - Nhờ AI phản biện cách hiểu metrics của tôi
+\`\`\`
+Tôi sẽ giải thích LCP, INP, CLS theo lời của tôi.
+Bạn hãy review:
+1. Tôi hiểu bản chất chưa?
+2. Tôi có đang chỉ học thuộc định nghĩa không?
+3. Tôi có biết liên hệ với giao diện thật không?
+4. Cách hiểu nào cần sửa lại để dễ nhớ hơn?
+\`\`\`
+
+## Bài tập buổi này
+- Giải thích LCP, INP, CLS bằng ví dụ thực tế
+- Chọn 1 trang web và đoán chỉ số nào dễ xấu nhất, vì sao
+
+## Tiêu chuẩn hoàn thành
+- Không chỉ nhớ tên chỉ số
+- Biết gắn chỉ số với trải nghiệm người dùng thật
       `
     },
     {
       id: 'perf-05',
-      title: 'Buổi 5: Tối ưu hình ảnh - kẻ thù số 1 của tốc độ',
+      title: 'Buổi 5: Tối ưu ảnh, font, icon và tài nguyên giao diện',
       level: 'beginner',
       content: `
-# Buổi 5: Tối ưu hình ảnh - kẻ thù số 1 của tốc độ
+# Buổi 5: Tối ưu ảnh, font, icon và tài nguyên giao diện
 
 ## Mục tiêu
-- Biết vì sao ảnh thường là phần nặng nhất của trang
-- Biết resize, nén và chọn định dạng phù hợp
-- Giảm dung lượng ảnh mà vẫn giữ chất lượng đủ tốt
+- Hiểu vì sao ảnh và font thường là “kẻ phá tốc độ”
+- Biết resize, nén, chọn định dạng ảnh hợp lý
+- Biết giảm số lượng font và weight không cần thiết
+- Tạo giao diện đẹp mà vẫn nhẹ
 
-## Nội dung chính
-- Resize ảnh đúng kích thước hiển thị
-- Nén ảnh trước khi đưa lên web
-- Dùng định dạng hiện đại khi phù hợp
-- Không tải ảnh khổng lồ cho khung nhỏ
-- Dùng nhiều kích thước ảnh theo màn hình
+## Prompt 1 - Nhờ AI dạy tối ưu tài nguyên giao diện từ bản chất
+\`\`\`
+Hãy dạy tôi performance web buổi 5 như mentor Front-end thực chiến.
 
-## Ví dụ
-\`\`\`text
-Không nên dùng ảnh 4000px chỉ để hiển thị trong một ô 400px.
+Chủ đề:
+- tối ưu ảnh
+- resize ảnh
+- nén ảnh
+- định dạng ảnh
+- responsive image ở mức tư duy
+- font web
+- font weight
+- icon
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao ảnh thường là tài nguyên nặng nhất?
+2. Vì sao không nên dùng ảnh 4000px cho khung 400px?
+3. Nén ảnh là gì? Resize ảnh là gì? Khác nhau ra sao?
+4. Khi nào nên dùng định dạng hiện đại?
+5. Font web ảnh hưởng hiệu suất thế nào?
+6. Vì sao chỉ nên tải số weight cần thiết?
+7. Icon cũng có thể gây nặng ra sao?
+8. Cho ví dụ trang dùng quá nhiều ảnh/font và hậu quả
+9. Chỉ ra lỗi phổ biến của người mới
+10. Tạo checklist audit tài nguyên giao diện
+
+Dạy như mentor đang đi dọn landing page nặng cho team.
 \`\`\`
 
-## Bài tập luyện tập
-1. So sánh dung lượng 2 ảnh trước và sau khi nén
-2. Resize một ảnh lớn xuống đúng kích thước cần dùng
-3. Tạo bộ 3 ảnh cho mobile, tablet, desktop
+## Prompt 2 - Nhờ AI giao bài thực hành tối ưu tài nguyên
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 5:
+1. chọn một ảnh lớn và giảm về đúng kích thước cần hiển thị
+2. nén ảnh trước/sau và so sánh dung lượng
+3. tạo bộ ảnh phù hợp cho mobile và desktop
+4. liệt kê các font và weight đang dùng trong một trang
+5. đề xuất cắt bớt những font/weight không cần thiết
 
-## Bài tập thử thách
-- Tối ưu một thư mục ảnh cho landing page và ghi lại dung lượng giảm được
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi kết quả, review:
+  - ảnh đã tối ưu đúng chưa
+  - còn dư kích thước không
+  - font có đang bị dùng quá tay không
+  - icon có thể thay bằng giải pháp nhẹ hơn không
+\`\`\`
+
+## Prompt 3 - Nhờ AI audit tài nguyên của dự án tôi
+\`\`\`
+Tôi sẽ gửi cho bạn danh sách ảnh/font/icon hoặc mô tả trang của tôi.
+Bạn hãy review:
+1. Tài nguyên nào đang nặng nhất?
+2. Tài nguyên nào đáng tối ưu trước?
+3. Có ảnh nào đang overkill không?
+4. Có font nào đang tải quá nhiều weight không?
+5. Nếu chỉ được tối ưu 3 việc đầu tiên, tôi nên làm gì?
+\`\`\`
+
+## Bài tập buổi này
+- Tối ưu ít nhất 3 ảnh
+- Giảm số font hoặc weight trong 1 trang
+- Viết lại danh sách tài nguyên cần tối ưu theo ưu tiên
+
+## Tiêu chuẩn hoàn thành
+- Biết tối ưu ảnh đúng cách
+- Biết font cũng ảnh hưởng hiệu suất
+- Có tư duy ưu tiên tài nguyên quan trọng
       `
     },
     {
       id: 'perf-06',
-      title: 'Buổi 6: Font, icon và tài nguyên giao diện',
-      level: 'beginner',
+      title: 'Buổi 6: CSS, JavaScript, lazy loading và code splitting',
+      level: 'intermediate',
       content: `
-# Buổi 6: Font, icon và tài nguyên giao diện
+# Buổi 6: CSS, JavaScript, lazy loading và code splitting
 
 ## Mục tiêu
-- Hiểu font và icon cũng ảnh hưởng mạnh tới tốc độ
-- Biết giảm số lượng font và weight không cần thiết
-- Tạo giao diện đẹp mà không quá nặng
+- Hiểu CSS và JS có thể làm chậm tải trang thế nào
+- Biết lazy loading cho ảnh/iframe/nội dung phụ
+- Hiểu code splitting ở mức thực chiến
+- Biết giảm tải ban đầu của app
 
-## Nội dung chính
-- Font web có thể làm chậm hiển thị
-- Chỉ dùng số weight cần thiết
-- Ưu tiên icon gọn nhẹ
-- Giảm tài nguyên không cần thiết trên trang đầu
+## Prompt 1 - Nhờ AI dạy tối ưu tài nguyên chặn render
+\`\`\`
+Hãy dạy tôi performance web buổi 6 như mentor Front-end thực chiến.
 
-## Ví dụ
-\`\`\`text
-Một trang dùng 4 bộ font, mỗi bộ nhiều weight,
-thường nặng hơn rất nhiều so với chỉ dùng 1 bộ font hợp lý.
+Chủ đề:
+- CSS render-blocking
+- CSS thừa
+- JavaScript bundle lớn
+- parse/execute JavaScript
+- lazy loading
+- code splitting
+- lazy import
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. CSS có thể làm chậm hiển thị như thế nào?
+2. JavaScript nặng ảnh hưởng tải trang và tương tác ra sao?
+3. Lazy loading là gì? Khi nào nên dùng?
+4. Vì sao không nên lazy load mọi thứ?
+5. Code splitting là gì?
+6. Khi nào nên tách code theo route hoặc theo component?
+7. Cho ví dụ thực tế:
+   - landing page nhiều ảnh
+   - app React nhiều route
+   - iframe YouTube ở cuối trang
+8. Chỉ ra lỗi phổ biến:
+   - lazy load sai chỗ
+   - tải toàn bộ app ngay từ đầu
+   - CSS rất lớn nhưng không biết cắt
+9. Tạo checklist tối ưu CSS/JS cơ bản
+
+Dạy như mentor đang sửa tải ban đầu của app cho junior.
 \`\`\`
 
-## Bài tập luyện tập
-1. Liệt kê các font đang dùng trong một dự án
-2. Giảm số weight không cần thiết
-3. Thay icon quá nặng bằng cách nhẹ hơn
+## Prompt 2 - Nhờ AI giao bài thực hành
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 6:
+1. tìm một file CSS đang dư hoặc lặp
+2. tìm file JS/bundle nặng nhất
+3. thêm lazy loading cho ảnh ngoài màn hình
+4. thêm lazy loading cho iframe
+5. nếu là app React/SPA, mô tả chỗ nên code split
 
-## Bài tập thử thách
-- Tối ưu toàn bộ typography của một trang mà vẫn giữ giao diện đẹp
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự audit
+- sau khi tôi gửi kết quả, review:
+  - tôi đã tìm đúng chỗ nặng chưa
+  - lazy loading có đúng chỗ chưa
+  - có gì đang tối ưu sai thứ tự không
+  - code splitting nên áp vào phần nào trước
+\`\`\`
+
+## Prompt 3 - Nhờ AI phản biện chiến lược tải ban đầu của tôi
+\`\`\`
+Tôi sẽ mô tả cách trang/app của tôi đang tải CSS, JS, ảnh, iframe.
+Bạn hãy review:
+1. Cái gì đang chặn hiển thị đầu trang?
+2. Cái gì đang làm bundle nặng?
+3. Cái gì nên lazy load?
+4. Cái gì không nên lazy load?
+5. Nếu chỉ được làm 3 việc đầu tiên, nên tối ưu gì?
+\`\`\`
+
+## Bài tập buổi này
+- Audit CSS và JS của một trang/app
+- Thêm lazy loading đúng chỗ
+- Đề xuất ít nhất 3 điểm code splitting hoặc deferred loading
+
+## Tiêu chuẩn hoàn thành
+- Biết CSS/JS nặng ảnh hưởng thế nào
+- Biết lazy loading đúng chỗ
+- Bắt đầu có tư duy giảm tải ban đầu
       `
     },
     {
       id: 'perf-07',
-      title: 'Buổi 7: CSS nhẹ hơn, tải nhanh hơn',
+      title: 'Buổi 7: Caching, CDN, nén tài nguyên và chiến lược phân phối nội dung',
       level: 'intermediate',
       content: `
-# Buổi 7: CSS nhẹ hơn, tải nhanh hơn
+# Buổi 7: Caching, CDN, nén tài nguyên và chiến lược phân phối nội dung
 
 ## Mục tiêu
-- Hiểu CSS cũng có thể làm chậm trang
-- Biết giảm CSS thừa
-- Biết CSS ảnh hưởng tới hiển thị ban đầu
+- Hiểu cache giúp gì
+- Hiểu CDN giúp gì
+- Hiểu nén tài nguyên là gì
+- Có tư duy phân phối tài nguyên thông minh thay vì tải lại mọi thứ
 
-## Nội dung chính
-- CSS chặn render
-- CSS thừa làm bundle nặng hơn
-- Tách CSS theo phạm vi cần dùng
-- Tránh style trùng lặp và không dùng nữa
+## Prompt 1 - Nhờ AI dạy từ góc nhìn network
+\`\`\`
+Hãy dạy tôi performance web buổi 7 như mentor full-stack/performance.
 
-## Ví dụ
-\`\`\`text
-Một file CSS rất lớn có thể làm trình duyệt phải chờ lâu hơn trước khi hiển thị trang.
+Chủ đề:
+- browser cache
+- cache header ở mức khái niệm
+- CDN
+- gzip
+- brotli
+- static assets
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Cache là gì?
+2. Vì sao cache giúp website nhanh hơn ở lần truy cập sau?
+3. CDN là gì?
+4. Vì sao CDN giúp tài nguyên đến gần người dùng hơn?
+5. Nén tài nguyên là gì?
+6. gzip và brotli khác gì ở mức dễ hiểu?
+7. Cho ví dụ thực tế:
+   - logo
+   - font
+   - JS bundle
+   - CSS bundle
+8. Chỉ ra lỗi phổ biến:
+   - tài nguyên tĩnh mà không cache hợp lý
+   - không hiểu vì sao cache cũ gây lỗi
+   - không để ý nén tài nguyên
+9. Tạo checklist tối ưu network cơ bản
+
+Dạy như mentor đang tối ưu hạ tầng phân phối nội dung cho app.
 \`\`\`
 
-## Bài tập luyện tập
-1. Tìm CSS không còn được dùng trong một trang mẫu
-2. Gộp các style lặp lại
-3. Giảm số class hoặc style trùng ý nghĩa
+## Prompt 2 - Nhờ AI luyện tư duy network/perf
+\`\`\`
+Tôi muốn luyện tư duy khi nào cache và CDN sẽ giúp nhiều nhất.
 
-## Bài tập thử thách
-- Rà soát một project cũ và viết danh sách chỗ có thể giảm CSS thừa
+Hãy cho tôi 8 tình huống, ví dụ:
+- landing page nhiều ảnh tĩnh
+- dashboard dữ liệu thay đổi liên tục
+- font tải từ nhiều nguồn
+- bundle JS lớn
+- logo và icon dùng trên mọi trang
+- blog có bài viết ít thay đổi
+- app nội bộ ít người dùng
+- website global nhiều quốc gia
+
+Với mỗi tình huống:
+1. hỏi tôi có nên cache không
+2. hỏi tôi CDN có ích nhiều không
+3. hỏi tài nguyên nào nên ưu tiên tối ưu network trước
+4. sau đó bạn mới chữa
+\`\`\`
+
+## Prompt 3 - Nhờ AI review chiến lược phân phối tài nguyên của tôi
+\`\`\`
+Tôi sẽ mô tả website/app của tôi và cách đang phục vụ ảnh, font, CSS, JS.
+Bạn hãy review:
+1. Tài nguyên nào nên cache mạnh?
+2. Tài nguyên nào cần thận trọng vì dễ stale?
+3. CDN có đáng dùng không?
+4. Nén tài nguyên có đang thiếu không?
+5. Nếu chỉ được tối ưu 3 điểm network, tôi nên làm gì trước?
+\`\`\`
+
+## Bài tập buổi này
+- Chọn một website/app và đề xuất chiến lược cache + CDN + compression
+- Giải thích bằng lời tài nguyên nào nên được cache dài hơn
+
+## Tiêu chuẩn hoàn thành
+- Hiểu cache/CDN/compression ở mức nền tảng
+- Có tư duy network optimization cơ bản
       `
     },
     {
       id: 'perf-08',
-      title: 'Buổi 8: JavaScript nặng ảnh hưởng tới tốc độ thế nào?',
-      level: 'intermediate',
+      title: 'Buổi 8: React performance - re-render, memoization và danh sách lớn',
+      level: 'advanced',
       content: `
-# Buổi 8: JavaScript nặng ảnh hưởng tới tốc độ thế nào?
+# Buổi 8: React performance - re-render, memoization và danh sách lớn
 
 ## Mục tiêu
-- Hiểu JavaScript không chỉ ảnh hưởng kích thước tải mà còn ảnh hưởng khả năng tương tác
-- Biết bundle JS lớn gây chậm ra sao
-- Có tư duy giảm JavaScript không cần thiết
+- Hiểu re-render trong React
+- Phân biệt re-render bình thường và re-render thừa
+- Biết \`React.memo\`, \`useMemo\`, \`useCallback\`
+- Hiểu virtualization cho danh sách lớn
 
-## Nội dung chính
-- Bundle JS lớn làm tải chậm
-- Parse và execute JavaScript cũng tốn thời gian
-- JavaScript có thể làm trang chậm phản hồi
-- Không phải chỗ nào cũng cần JS nặng
+## Prompt 1 - Nhờ AI dạy React performance từ bản chất
+\`\`\`
+Hãy dạy tôi performance web buổi 8 như mentor React performance.
 
-## Ví dụ
-\`\`\`text
-Một trang có thể tải HTML nhanh,
-nhưng vẫn bấm rất chậm nếu JavaScript quá nặng.
+Chủ đề:
+- re-render
+- parent render / child render
+- React.memo
+- useMemo
+- useCallback
+- danh sách lớn
+- virtualization
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Re-render là gì?
+2. Khi nào re-render là bình thường?
+3. Khi nào re-render trở thành vấn đề?
+4. React.memo giúp gì?
+5. useMemo giúp gì?
+6. useCallback giúp gì?
+7. Vì sao danh sách dài dễ lag?
+8. Virtualization là gì?
+9. Cho ví dụ thực tế:
+   - list sản phẩm
+   - filter/search
+   - component con nhận callback
+10. Chỉ ra lỗi phổ biến:
+   - tối ưu quá sớm
+   - dùng memoization sai chỗ
+   - render hàng nghìn item cùng lúc
+11. Tạo checklist React performance cơ bản
+
+Dạy như mentor đang sửa app React chậm cho junior.
 \`\`\`
 
-## Bài tập luyện tập
-1. Kiểm tra file JS lớn nhất trong dự án
-2. Liệt kê 3 thư viện có thể đang quá nặng
-3. Nêu 3 chỗ có thể giảm JS mà không ảnh hưởng tính năng chính
+## Prompt 2 - Nhờ AI giao bài thực hành React performance
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 8:
+1. tạo danh sách lớn giả lập
+2. quan sát cảm giác lag khi filter hoặc render
+3. áp dụng React.memo cho component con
+4. áp dụng useMemo cho danh sách lọc
+5. áp dụng useCallback cho callback truyền xuống con
+6. mô tả nơi nào nên nghĩ tới virtualization
 
-## Bài tập thử thách
-- Phân tích một trang React và chỉ ra nơi đang tải quá nhiều JavaScript
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự làm
+- sau khi tôi gửi code, review:
+  - tối ưu đã đúng chỗ chưa
+  - memoization có đang thừa không
+  - list có đang là bottleneck thật không
+  - có cách nào đơn giản hơn không
+\`\`\`
+
+## Prompt 3 - Nhờ AI review React performance của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn code React của tôi.
+Bạn hãy review:
+1. Component nào đang re-render thừa?
+2. Re-render đó có đáng lo hay không?
+3. Có chỗ nào nên dùng React.memo/useMemo/useCallback không?
+4. Có chỗ nào tôi đang tối ưu quá sớm không?
+5. Nếu có danh sách lớn, virtualization có cần không?
+
+Hãy review như mentor React performance khó tính.
+\`\`\`
+
+## Bài tập buổi này
+- Audit một phần UI React
+- Tối ưu ít nhất 2 vấn đề re-render hoặc danh sách
+- Viết lại bằng lời vì sao tối ưu đó có giá trị
+
+## Tiêu chuẩn hoàn thành
+- Hiểu re-render
+- Biết khi nào tối ưu React là cần thiết
+- Không còn dùng memoization theo kiểu mê tín
       `
     },
     {
       id: 'perf-09',
-      title: 'Buổi 9: Lazy Loading cho ảnh, iframe và nội dung ngoài màn hình',
-      level: 'intermediate',
+      title: 'Buổi 9: Tối ưu request, API, dữ liệu và chiến lược ưu tiên',
+      level: 'advanced',
       content: `
-# Buổi 9: Lazy Loading cho ảnh, iframe và nội dung ngoài màn hình
+# Buổi 9: Tối ưu request, API, dữ liệu và chiến lược ưu tiên
 
 ## Mục tiêu
-- Biết tải muộn những gì chưa cần hiển thị
-- Biết dùng lazy loading cho ảnh và nội dung phụ
-- Giảm tải ban đầu của trang
+- Hiểu request quá nhiều cũng làm app chậm
+- Biết tối ưu dữ liệu trả về từ API
+- Biết debounce, pagination, tránh gọi API dư
+- Biết chọn việc tối ưu theo ưu tiên cao nhất
 
-## Nội dung chính
-- Lazy loading cho ảnh
-- Lazy loading cho iframe
-- Chỉ tải khi gần xuất hiện trên màn hình
-- Không lazy load các phần tử rất quan trọng ở đầu trang
+## Prompt 1 - Nhờ AI dạy tối ưu data flow
+\`\`\`
+Hãy dạy tôi performance web buổi 9 như mentor full-stack/performance.
 
-## Ví dụ
-\`\`\`html
-<img src="anh.jpg" alt="Ảnh" loading="lazy" width="800" height="600" />
+Chủ đề:
+- request quá nhiều
+- payload quá lớn
+- chỉ lấy dữ liệu cần dùng
+- pagination
+- debounce
+- tránh gọi API lặp
+- cache dữ liệu phía client khi phù hợp
+
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao request quá nhiều làm app chậm?
+2. Vì sao payload lớn cũng là vấn đề?
+3. Pagination giúp gì?
+4. Debounce dùng trong tình huống nào?
+5. Vì sao search box không nên gọi API mỗi ký tự ngay lập tức?
+6. Khi nào nên cache dữ liệu phía client?
+7. Cho ví dụ thực tế:
+   - search sản phẩm
+   - dashboard filter
+   - list bài viết
+   - autocomplete
+8. Chỉ ra lỗi phổ biến:
+   - gọi API lặp vô ích
+   - trả về quá nhiều field không dùng
+   - không phân trang
+9. Tạo checklist tối ưu data/request
+
+Dạy như mentor đang sửa app gọi API lãng phí.
 \`\`\`
 
-## Bài tập luyện tập
-1. Thêm lazy loading cho ảnh ở cuối trang
-2. Thêm width và height để tránh layout shift
-3. Kiểm tra lại tab Network trước và sau khi áp dụng
+## Prompt 2 - Nhờ AI giao bài audit request
+\`\`\`
+Hãy giao cho tôi bài thực hành buổi 9:
+1. audit một flow tìm kiếm hoặc danh sách
+2. xác định request nào thừa
+3. xác định payload nào đang quá lớn
+4. đề xuất pagination hoặc debounce
+5. đề xuất cache phù hợp nếu cần
 
-## Bài tập thử thách
-- Tối ưu một trang dài nhiều ảnh bằng lazy loading hợp lý
+Tôi muốn bạn:
+- không cho đáp án ngay
+- để tôi tự phân tích
+- sau khi tôi gửi kết quả, review:
+  - tôi đã nhìn đúng bottleneck chưa
+  - đề xuất tối ưu có hợp lý không
+  - có gì đang tối ưu quá tay hoặc sai chỗ không
+\`\`\`
+
+## Prompt 3 - Nhờ AI phản biện thứ tự ưu tiên tối ưu của tôi
+\`\`\`
+Tôi sẽ gửi danh sách các vấn đề performance tôi tìm thấy trong app.
+Bạn hãy review:
+1. Tôi có đang ưu tiên đúng việc quan trọng nhất không?
+2. Có vấn đề nào impact nhỏ nhưng tôi đang chú ý quá nhiều không?
+3. Có vấn đề nào impact lớn nhưng tôi đang bỏ qua không?
+4. Nếu chỉ được làm 3 việc tuần này, nên làm gì?
+5. Vì sao?
+
+Hãy phản biện như mentor performance thực chiến.
+\`\`\`
+
+## Bài tập buổi này
+- Audit một flow request/API
+- Viết ra 5 vấn đề + thứ tự ưu tiên tối ưu
+- Giải thích lý do ưu tiên
+
+## Tiêu chuẩn hoàn thành
+- Hiểu performance không chỉ là tài nguyên tĩnh
+- Biết nhìn request/data flow như một nguồn chậm lớn
+- Bắt đầu tối ưu theo ưu tiên thay vì theo hứng
       `
     },
     {
       id: 'perf-10',
-      title: 'Buổi 10: Code Splitting và tải JavaScript theo nhu cầu',
-      level: 'intermediate',
-      content: `
-# Buổi 10: Code Splitting và tải JavaScript theo nhu cầu
-
-## Mục tiêu
-- Hiểu vì sao không nên tải toàn bộ app ngay từ đầu
-- Biết chia code theo trang hoặc theo khu vực
-- Giảm tải ban đầu cho ứng dụng
-
-## Nội dung chính
-- Code splitting
-- Chia bundle theo route
-- Tải component nặng khi cần
-- Tư duy chỉ tải cái người dùng sắp dùng
-
-## Ví dụ
-\`\`\`tsx
-const AboutPage = lazy(() => import('./AboutPage'));
-\`\`\`
-
-## Bài tập luyện tập
-1. Tách một trang phụ bằng lazy import
-2. Thêm giao diện fallback khi đang tải
-3. So sánh bundle trước và sau khi tách code
-
-## Bài tập thử thách
-- Tạo chiến lược chia code cho app có nhiều trang và nhiều khu vực admin
-      `
-    },
-    {
-      id: 'perf-11',
-      title: 'Buổi 11: Caching, CDN và nén tài nguyên',
-      level: 'intermediate',
-      content: `
-# Buổi 11: Caching, CDN và nén tài nguyên
-
-## Mục tiêu
-- Hiểu cache giúp tải lại nhanh hơn
-- Biết CDN hỗ trợ phân phối tài nguyên ra sao
-- Biết nén tài nguyên giúp giảm dung lượng tải
-
-## Nội dung chính
-- Browser cache
-- Cache header ở mức khái quát
-- CDN
-- Gzip và Brotli
-- Tài nguyên tĩnh nên được phục vụ hiệu quả hơn
-
-## Ví dụ
-\`\`\`text
-Một file logo, font hay script tĩnh
-không nên bị tải lại toàn bộ mỗi lần người dùng mở trang.
-\`\`\`
-
-## Bài tập luyện tập
-1. Giải thích cache bằng lời của bạn
-2. Nêu vai trò của CDN
-3. So sánh tài nguyên có nén và không nén
-
-## Bài tập thử thách
-- Thiết kế sơ đồ tối ưu phân phối tài nguyên cho một website landing page
-      `
-    },
-    {
-      id: 'perf-12',
-      title: 'Buổi 12: Critical Rendering Path và nội dung quan trọng đầu trang',
-      level: 'intermediate',
-      content: `
-# Buổi 12: Critical Rendering Path và nội dung quan trọng đầu trang
-
-## Mục tiêu
-- Hiểu phần nào của trang cần xuất hiện sớm nhất
-- Biết ưu tiên nội dung quan trọng đầu màn hình
-- Hạn chế tải chậm phần hero hoặc tiêu đề chính
-
-## Nội dung chính
-- Above-the-fold content
-- Nội dung chính cần hiển thị sớm
-- Tránh chặn phần hero bằng tài nguyên nặng
-- Tư duy ưu tiên trải nghiệm mở trang đầu tiên
-
-## Ví dụ
-\`\`\`text
-Người dùng vào trang chủ,
-điều quan trọng nhất là tiêu đề, mô tả chính và nút hành động phải hiện sớm.
-\`\`\`
-
-## Bài tập luyện tập
-1. Xác định nội dung above-the-fold của một landing page
-2. Liệt kê các tài nguyên đang làm chậm phần đầu trang
-3. Viết lại thứ tự ưu tiên tải cho một trang web mẫu
-
-## Bài tập thử thách
-- Tối ưu phần hero section của một trang giới thiệu sản phẩm
-      `
-    },
-    {
-      id: 'perf-13',
-      title: 'Buổi 13: Giảm CLS - chống giật layout',
+      title: 'Buổi 10: Project cuối khóa - audit và tối ưu một website/app thực tế',
       level: 'advanced',
       content: `
-# Buổi 13: Giảm CLS - chống giật layout
+# Buổi 10: Project cuối khóa - audit và tối ưu một website/app thực tế
 
 ## Mục tiêu
-- Hiểu vì sao layout bị nhảy gây khó chịu
-- Biết cách giữ bố cục ổn định
-- Tránh lỗi bấm nhầm do giao diện bị dịch chuyển
+- Tổng hợp toàn bộ kiến thức tối ưu hiệu suất đã học
+- Audit một website/app thật
+- Lập kế hoạch tối ưu theo ưu tiên
+- Đo trước/sau và tự đánh giá hiệu quả thật
 
-## Nội dung chính
-- Đặt kích thước rõ cho ảnh, video, iframe
-- Chừa chỗ cho nội dung sắp tải
-- Tránh chèn banner, quảng cáo, popup làm đẩy layout bất ngờ
-- Font cũng có thể gây đổi layout
+## Prompt 1 - Nhờ AI dẫn tôi làm project từ đầu
+\`\`\`
+Hãy đóng vai mentor performance và dẫn tôi làm project cuối khóa.
 
-## Ví dụ
-\`\`\`text
-Nếu ảnh chưa có kích thước trước,
-khi ảnh tải xong nó có thể đẩy toàn bộ nội dung bên dưới xuống.
+Cho tôi chọn 1 trong các loại project:
+1. Landing page nhiều ảnh
+2. Blog mini
+3. Dashboard dữ liệu
+4. App React có danh sách lớn
+5. Website học online có nhiều ảnh, font và nhiều route
+
+Sau khi tôi chọn, hãy dẫn tôi theo lộ trình:
+1. xác định mục tiêu audit
+2. đo hiệu suất ban đầu
+3. liệt kê các vấn đề chính
+4. phân loại vấn đề theo:
+   - ảnh/font
+   - CSS/JS
+   - render
+   - request/API
+   - layout shift
+5. sắp xếp thứ tự ưu tiên
+6. đề xuất cách tối ưu cho từng nhóm
+7. để tôi tự làm từng bước
+8. sau mỗi bước, review rất kỹ như mentor
+9. cuối cùng, giúp tôi so sánh trước/sau
+
+Mục tiêu là để tôi thật sự biết làm performance audit thực tế.
 \`\`\`
 
-## Bài tập luyện tập
-1. Thêm width và height cho ảnh trong một trang mẫu
-2. Tạo placeholder cho một khối nội dung tải chậm
-3. Tìm 3 vị trí có nguy cơ gây CLS trong một giao diện
+## Prompt 2 - Nhờ AI audit project cuối khóa
+\`\`\`
+Tôi sẽ gửi cho bạn kết quả audit hiệu suất của tôi:
+- số liệu trước tối ưu
+- các vấn đề tôi tìm thấy
+- các thay đổi tôi đã làm
+- số liệu sau tối ưu
 
-## Bài tập thử thách
-- Rà soát một landing page và giảm các điểm gây layout shift
-      `
-    },
-    {
-      id: 'perf-14',
-      title: 'Buổi 14: Tối ưu render - SSR, CSR, SSG và chọn cách phù hợp',
-      level: 'advanced',
-      content: `
-# Buổi 14: Tối ưu render - SSR, CSR, SSG và chọn cách phù hợp
+Bạn hãy audit như mentor performance kỹ tính.
 
-## Mục tiêu
-- Hiểu các chiến lược render phổ biến
-- Biết mỗi chiến lược ảnh hưởng tới tốc độ và SEO ra sao
-- Biết chọn cách render phù hợp với từng trang
+Đánh giá theo 8 nhóm tiêu chí:
+1. Cách đo ban đầu
+2. Khả năng đọc dữ liệu
+3. Xác định bottleneck
+4. Thứ tự ưu tiên
+5. Chất lượng tối ưu tài nguyên
+6. Chất lượng tối ưu render/request
+7. Cải thiện trải nghiệm thực tế
+8. Mức độ trưởng thành trong tư duy performance
 
-## Nội dung chính
-- CSR
-- SSR
-- SSG
-- Trang nội dung tĩnh
-- Trang dashboard động
-- Trang marketing cần SEO
+Với mỗi nhóm:
+- nêu điểm tốt
+- nêu lỗi cụ thể
+- giải thích vì sao là lỗi
+- cho hướng sửa cụ thể
+- ưu tiên lỗi nghiêm trọng trước
 
-## Ví dụ
-\`\`\`text
-Trang blog công khai thường phù hợp với render sẵn,
-trong khi dashboard cá nhân có thể thiên về dữ liệu động hơn.
+Cuối cùng:
+- chấm điểm tổng trên thang 100
+- xếp loại: yếu / ổn / tốt / rất tốt
+- cho tôi 5 thói quen performance cần giữ lâu dài
 \`\`\`
 
-## Bài tập luyện tập
-1. Chọn chiến lược render cho blog
-2. Chọn chiến lược render cho dashboard admin
-3. Chọn chiến lược render cho landing page sản phẩm
-
-## Bài tập thử thách
-- Thiết kế chiến lược render cho một website học online có cả phần công khai và phần người dùng đăng nhập
-      `
-    },
-    {
-      id: 'perf-15',
-      title: 'Buổi 15: Re-render trong React - hiểu đúng trước khi tối ưu',
-      level: 'advanced',
-      content: `
-# Buổi 15: Re-render trong React - hiểu đúng trước khi tối ưu
-
-## Mục tiêu
-- Hiểu re-render là gì
-- Biết khi nào React render lại là bình thường
-- Tránh tối ưu quá sớm và sai chỗ
-
-## Nội dung chính
-- State đổi thì component render lại
-- Component cha render có thể kéo theo component con
-- Re-render không luôn là xấu
-- Chỉ tối ưu khi có dấu hiệu thật sự chậm
-
-## Ví dụ
-\`\`\`text
-Một component nhỏ render lại 1 chút không đáng lo,
-nhưng một danh sách lớn render lại liên tục thì cần xem xét.
+## Prompt 3 - Nhờ AI đóng vai reviewer cuối khóa
 \`\`\`
+Hãy đóng vai reviewer cuối khóa về web performance.
 
-## Bài tập luyện tập
-1. Nêu 3 nguyên nhân gây re-render
-2. Phân biệt re-render bình thường và re-render thừa
-3. Chọn một component trong app và đoán lúc nào nó render lại
+Tôi sẽ gửi báo cáo và thay đổi tối ưu của tôi.
+Bạn phải review như thật, không nể nang.
 
-## Bài tập thử thách
-- Phân tích một cây component React và chỉ ra nơi dễ render thừa
-      `
-    },
-    {
-      id: 'perf-16',
-      title: 'Buổi 16: React.memo, useMemo và useCallback',
-      level: 'advanced',
-      content: `
-# Buổi 16: React.memo, useMemo và useCallback
+Cách review mong muốn:
+- đánh giá cách tôi đo
+- đánh giá cách tôi suy luận từ dữ liệu
+- đánh giá cách tôi chọn việc cần tối ưu
+- đánh giá chất lượng các tối ưu đã làm
+- đánh giá impact thật lên trải nghiệm người dùng
+- chỉ rõ điểm nào chứng tỏ tôi đã hiểu performance
+- chỉ rõ điểm nào cho thấy tôi vẫn đang tối ưu kiểu mẹo vặt, không có hệ thống
 
-## Mục tiêu
-- Biết các công cụ memoization trong React
-- Biết khi nào nên dùng từng công cụ
-- Giảm render thừa và tính toán thừa
-
-## Nội dung chính
-- React.memo
-- useMemo
-- useCallback
-- Ghi nhớ component
-- Ghi nhớ kết quả tính toán
-- Ghi nhớ hàm truyền xuống component con
-
-## Ví dụ
-\`\`\`tsx
-const ProductCard = memo(function ProductCard({ title }: { title: string }) {
-  return <div>{title}</div>;
-});
+Cuối cùng, hãy nói thật:
+- tôi đã đủ nền tảng để audit performance cho dự án thật chưa?
+- nếu chưa, tôi cần luyện thêm phần nào?
 \`\`\`
-
-## Bài tập luyện tập
-1. Bọc một component con bằng React.memo
-2. Dùng useMemo cho danh sách lọc
-3. Dùng useCallback cho hàm click truyền xuống con
-
-## Bài tập thử thách
-- Tối ưu một danh sách sản phẩm có tìm kiếm và nhiều item
-      `
-    },
-    {
-      id: 'perf-17',
-      title: 'Buổi 17: Danh sách lớn, virtualization và tối ưu tương tác',
-      level: 'advanced',
-      content: `
-# Buổi 17: Danh sách lớn, virtualization và tối ưu tương tác
-
-## Mục tiêu
-- Hiểu vì sao danh sách dài dễ gây lag
-- Biết chỉ render phần đang nhìn thấy
-- Tăng độ mượt cho giao diện dữ liệu lớn
-
-## Nội dung chính
-- Danh sách hàng trăm hoặc hàng nghìn item
-- Virtualization
-- Tìm kiếm và lọc danh sách lớn
-- Tối ưu thao tác cuộn và cập nhật giao diện
-
-## Ví dụ
-\`\`\`text
-Không nên render 5000 item một lúc nếu người dùng chỉ nhìn thấy 20 item trên màn hình.
-\`\`\`
-
-## Bài tập luyện tập
-1. Tạo danh sách lớn giả lập
-2. Đo cảm giác cuộn trước và sau khi tối ưu
-3. Phân tích nơi nào bị chậm khi lọc danh sách
-
-## Bài tập thử thách
-- Thiết kế giải pháp hiển thị danh sách khóa học rất dài theo cách mượt hơn
-      `
-    },
-    {
-      id: 'perf-18',
-      title: 'Buổi 18: Tối ưu dữ liệu, request và API',
-      level: 'advanced',
-      content: `
-# Buổi 18: Tối ưu dữ liệu, request và API
-
-## Mục tiêu
-- Biết request quá nhiều cũng làm app chậm
-- Biết giảm dữ liệu trả về từ API
-- Biết tránh tải dư thừa
-
-## Nội dung chính
-- Chỉ lấy dữ liệu cần dùng
-- Pagination
-- Debounce tìm kiếm
-- Tránh gọi API lặp
-- Cache dữ liệu phía client khi phù hợp
-
-## Ví dụ
-\`\`\`text
-Một ô tìm kiếm không nên gọi API mỗi ký tự nếu chưa có debounce.
-\`\`\`
-
-## Bài tập luyện tập
-1. Thiết kế API chỉ trả trường cần thiết
-2. Áp dụng debounce cho ô tìm kiếm
-3. So sánh tải toàn bộ danh sách và tải theo trang
-
-## Bài tập thử thách
-- Tối ưu luồng tìm kiếm sản phẩm có gợi ý theo thời gian thực
-      `
-    },
-    {
-      id: 'perf-19',
-      title: 'Buổi 19: Hiệu suất trong thực tế - budget, theo dõi và tối ưu liên tục',
-      level: 'advanced',
-      content: `
-# Buổi 19: Hiệu suất trong thực tế - budget, theo dõi và tối ưu liên tục
-
-## Mục tiêu
-- Hiểu tối ưu hiệu suất là công việc liên tục
-- Biết đặt performance budget cơ bản
-- Biết theo dõi sau khi deploy
-
-## Nội dung chính
-- Performance budget
-- Giới hạn kích thước ảnh, JS, CSS
-- Theo dõi sau khi release
-- Không tối ưu một lần rồi quên
-- So sánh trước và sau khi thay đổi
-
-## Ví dụ
-\`\`\`text
-Một team tốt không chỉ sửa khi trang chậm rõ rệt,
-mà còn đặt giới hạn để không chậm dần theo thời gian.
-\`\`\`
-
-## Bài tập luyện tập
-1. Đặt budget cơ bản cho app của bạn
-2. Ghi 3 chỉ số muốn theo dõi định kỳ
-3. Tạo checklist ngắn trước khi release
-
-## Bài tập thử thách
-- Viết kế hoạch theo dõi hiệu suất hàng tuần cho một dự án nhỏ
-      `
-    },
-    {
-      id: 'perf-20',
-      title: 'Buổi 20: Mini Project và dự án cuối khóa Tối ưu Hiệu suất',
-      level: 'advanced',
-      content: `
-# Buổi 20: Mini Project và dự án cuối khóa Tối ưu Hiệu suất
-
-## Mục tiêu
-- Kết hợp toàn bộ kiến thức tối ưu hiệu suất đã học
-- Audit một ứng dụng thật hoặc app demo
-- Tự đánh giá mức độ làm chủ performance
 
 ## Gợi ý project
 Chọn 1 trong các project:
@@ -675,25 +918,27 @@ Chọn 1 trong các project:
 
 ## Yêu cầu bắt buộc
 - Có đo hiệu suất ban đầu
-- Có liệt kê các vấn đề chính
-- Có tối ưu ảnh hoặc font
-- Có tối ưu JS hoặc code splitting
-- Có ít nhất một cải thiện rõ ở trải nghiệm tải hoặc tương tác
+- Có liệt kê vấn đề chính
+- Có sắp xếp ưu tiên
+- Có thực hiện ít nhất 5 cải tiến
 - Có đo lại sau khi tối ưu
+- Có giải thích vì sao các cải tiến đó quan trọng
 
 ## Checklist tự đánh giá
-- Bạn đã đo trước khi tối ưu chưa?
-- Ảnh và font đã được tối ưu chưa?
-- Có tải tài nguyên không cần thiết quá sớm không?
-- React có render thừa ở đâu không?
-- Tốc độ sau tối ưu có cải thiện thực sự không?
+- Tôi đã đo trước khi tối ưu chưa?
+- Tôi có đang fix vấn đề lớn nhất trước không?
+- Ảnh, font, CSS, JS đã được xem xét chưa?
+- Render/request/data flow đã được xem xét chưa?
+- Sau tối ưu, trải nghiệm người dùng có thật sự khá hơn không?
+- Tôi có thể giải thích vì sao từng thay đổi lại có giá trị không?
 
 ## Bài tập cuối khóa
 - Chọn một dự án thật hoặc demo
 - Audit hiệu suất
 - Viết danh sách tối ưu theo mức ưu tiên
 - Thực hiện ít nhất 5 cải tiến
-- So sánh trước và sau bằng kết quả đo
+- So sánh trước và sau
+- Tự audit bằng AI theo các prompt trên
       `
     }
   ]

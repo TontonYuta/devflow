@@ -5,783 +5,921 @@ export const aiLesson: Lesson = {
   icon: 'cpu',
   title: 'Tư duy sử dụng AI',
   description:
-    'Lộ trình 20 buổi học cách làm việc cùng AI trong lập trình, từ đặt câu hỏi đúng, debug hiệu quả, refactor code, viết test đến xây dựng quy trình học và làm việc thực tế với AI như một Pair Programmer.',
+    'Lộ trình Tư duy sử dụng AI theo phong cách tự học cùng AI mentor. Mỗi buổi học đi kèm prompt cực chi tiết để học viên chỉ cần copy vào AI là có thể học cách đặt câu hỏi đúng, debug tốt hơn, refactor thông minh hơn, kiểm chứng đầu ra và xây workflow làm việc với AI như một pair programmer thực thụ.',
   points: [
-    'Hiểu AI là công cụ hỗ trợ, không phải thay thế tư duy lập trình',
-    'Biết viết prompt rõ ràng, có ngữ cảnh và mục tiêu cụ thể',
-    'Biết dùng AI để debug, refactor, giải thích code và học nhanh hơn',
-    'Biết kiểm chứng đầu ra của AI để tránh lệ thuộc hoặc dùng sai',
-    'Có bài tập và tình huống thực tế để luyện làm việc với AI mỗi ngày'
+    'Mỗi buổi có prompt cực chi tiết để copy vào AI và học ngay',
+    'AI đóng vai mentor làm việc cùng lập trình viên, không chỉ là công cụ trả lời nhanh',
+    'Có prompt học lý thuyết, prompt debug, prompt review, prompt phản biện và prompt tự đánh giá',
+    'Tập trung vào năng lực thật: hỏi đúng, đưa đúng ngữ cảnh, kiểm chứng đầu ra, dùng AI để tăng tốc mà không lệ thuộc',
+    'Có bài tập theo kiểu workflow thực tế thay vì chỉ học mẹo prompt rời rạc',
+    'Học xong có thể tự xây một quy trình dùng AI hiệu quả trong học tập, code, debug, review và viết tài liệu'
   ],
   chapters: [
     {
       id: 'ai-01',
-      title: 'Buổi 1: AI trong lập trình là gì? Dùng AI đúng vai trò',
+      title: 'Buổi 1: AI trong lập trình là gì và vì sao phải dùng AI đúng vai trò?',
       level: 'beginner',
       content: `
-# Buổi 1: AI trong lập trình là gì? Dùng AI đúng vai trò
+# Buổi 1: AI trong lập trình là gì và vì sao phải dùng AI đúng vai trò?
 
 ## Mục tiêu
 - Hiểu AI hỗ trợ lập trình theo cách nào
-- Biết AI nên được xem là trợ lý, không phải "cây đũa thần"
-- Có tư duy dùng AI để tăng tốc nhưng vẫn giữ quyền kiểm soát
+- Hiểu AI là trợ lý tăng tốc, không phải người thay thế tư duy
+- Bắt đầu có tư duy dùng AI để học nhanh hơn nhưng vẫn giữ quyền kiểm soát
 
-## Nội dung chính
-- AI có thể hỗ trợ:
-  - giải thích khái niệm
-  - sinh code mẫu
-  - debug
-  - refactor
-  - viết test
-  - gợi ý kiến trúc
-- AI không hiểu dự án của bạn tốt bằng chính bạn nếu thiếu ngữ cảnh
-- AI có thể đúng nhanh, sai cũng nhanh
+## Cách học buổi này
+Bạn sẽ copy từng prompt bên dưới vào AI theo đúng thứ tự.
+Không học lướt. Sau mỗi prompt phải tự viết lại suy nghĩ của bạn bằng lời của bạn.
 
-## Ví dụ
-\`\`\`text
-Dùng AI đúng:
-"Hãy giải thích đoạn code này và chỉ ra 2 lỗi có thể có"
+## Prompt 1 - Nhờ AI dạy lý thuyết từ gốc
+\`\`\`
+Bạn hãy đóng vai một mentor chuyên hướng dẫn lập trình viên làm việc cùng AI một cách hiệu quả.
 
-Dùng AI sai:
-"Làm hết dự án này cho tôi"
+Hôm nay hãy dạy tôi buổi đầu tiên về tư duy sử dụng AI trong lập trình theo phong cách:
+- cực dễ hiểu nhưng không hời hợt
+- giải thích từ bản chất
+- luôn nói vì sao kiến thức này quan trọng
+- gắn với tình huống thực tế khi học code và làm dự án
+- không dùng thuật ngữ khó nếu chưa giải thích
+
+Chủ đề hôm nay:
+- AI trong lập trình là gì?
+- AI có thể hỗ trợ những việc gì?
+- AI không nên được dùng như thế nào?
+- Vì sao AI là trợ lý, không phải “cây đũa thần”?
+
+Tôi muốn bạn dạy theo format:
+1. AI đang hỗ trợ lập trình viên ở những nhóm việc nào?
+2. Những việc nào AI làm tốt?
+3. Những việc nào AI có thể hỗ trợ nhưng không nên giao hoàn toàn?
+4. Những việc nào người học/lập trình viên vẫn phải tự chịu trách nhiệm?
+5. Cho 6 ví dụ thực tế:
+   - học khái niệm mới
+   - giải thích code
+   - debug
+   - refactor
+   - viết test
+   - review code
+6. Vì sao AI có thể đúng nhanh nhưng sai cũng nhanh?
+7. Chỉ ra 8 hiểu lầm phổ biến của người mới khi dùng AI để học lập trình
+8. Đặt cho tôi 5 câu hỏi kiểm tra hiểu bài
+9. Sau khi tôi trả lời, bạn phải chấm và sửa thật kỹ
+
+Dùng tiếng Việt và dạy như mentor thật sự.
 \`\`\`
 
-## Bài tập luyện tập
-1. Liệt kê 5 việc AI có thể hỗ trợ trong lập trình
-2. Liệt kê 3 việc không nên giao hoàn toàn cho AI
-3. Giải thích vì sao AI là trợ lý chứ không phải người thay thế tư duy
+## Prompt 2 - Nhờ AI luyện tư duy “việc nào nên giao cho AI”
+\`\`\`
+Tôi muốn luyện tư duy phân biệt việc nào nên nhờ AI, việc nào không nên giao hoàn toàn cho AI.
 
-## Bài tập thử thách
-- Viết một đoạn ngắn mô tả cách bạn muốn dùng AI trong quá trình học code
+Hãy cho tôi 10 tình huống thực tế, ví dụ:
+- học một khái niệm mới
+- sửa bug production
+- chọn kiến trúc cho dự án thật
+- viết test cho một hàm
+- refactor một component
+- sinh README
+- xử lý phân quyền bảo mật
+- thiết kế database
+- code một feature nhỏ
+- review code pull request
+
+Với mỗi tình huống:
+1. hỏi tôi AI nên đóng vai trò gì
+2. hỏi tôi phần nào tôi vẫn phải tự chịu trách nhiệm
+3. hỏi tôi rủi ro nếu tin AI mù quáng là gì
+4. sau đó bạn mới chữa
+5. nếu tôi trả lời hời hợt, hãy bắt tôi nói cụ thể hơn
+
+Mục tiêu là để tôi dùng AI đúng vai trò ngay từ đầu.
+\`\`\`
+
+## Prompt 3 - Nhờ AI kiểm tra hiểu bài
+\`\`\`
+Hãy kiểm tra xem tôi đã thật sự hiểu buổi 1 Tư duy sử dụng AI chưa.
+
+Tôi muốn có:
+- 3 câu hỏi trắc nghiệm có giải thích đáp án
+- 3 câu hỏi tự luận ngắn
+- 2 tình huống thực tế
+- 1 câu hỏi tư duy: vì sao “AI viết được code” không đồng nghĩa “AI chịu trách nhiệm thay bạn”?
+
+Sau khi tôi trả lời, bạn hãy:
+- chấm điểm từng câu
+- giải thích chỗ sai
+- nói tôi đang ở mức nào: chưa hiểu / hiểu cơ bản / hiểu chắc
+\`\`\`
+
+## Bài tập buổi này
+1. Liệt kê 5 việc AI hỗ trợ tốt trong lập trình
+2. Liệt kê 3 việc không nên giao hoàn toàn cho AI
+3. Viết một đoạn ngắn mô tả cách bạn muốn dùng AI trong quá trình học code
+
+## Tiêu chuẩn hoàn thành
+- Hiểu AI là trợ lý
+- Không còn nhìn AI như máy làm bài hộ
+- Bắt đầu có tư duy dùng AI có trách nhiệm
       `
     },
     {
       id: 'ai-02',
-      title: 'Buổi 2: Tư duy hỏi đúng - đầu vào quyết định đầu ra',
+      title: 'Buổi 2: Hỏi đúng để AI trả lời tốt - ngữ cảnh, mục tiêu và đầu vào rõ ràng',
       level: 'beginner',
       content: `
-# Buổi 2: Tư duy hỏi đúng - đầu vào quyết định đầu ra
+# Buổi 2: Hỏi đúng để AI trả lời tốt - ngữ cảnh, mục tiêu và đầu vào rõ ràng
 
 ## Mục tiêu
-- Hiểu vì sao câu hỏi mơ hồ thường cho câu trả lời mơ hồ
-- Biết cách mô tả vấn đề rõ ràng hơn
-- Nâng chất lượng prompt ngay từ đầu
+- Hiểu vì sao đầu vào quyết định đầu ra
+- Biết biến câu hỏi mơ hồ thành câu hỏi rõ
+- Biết thêm stack, mục tiêu, log, code, ràng buộc vào prompt
 
-## Nội dung chính
-- Câu hỏi tốt cần rõ:
-  - bạn đang làm gì
-  - đang dùng công nghệ gì
-  - vấn đề cụ thể là gì
-  - bạn muốn kết quả ra sao
-- Nói càng rõ, AI càng dễ giúp đúng
+## Prompt 1 - Nhờ AI dạy tư duy đặt câu hỏi đúng
+\`\`\`
+Hãy dạy tôi buổi 2 về cách đặt câu hỏi hiệu quả cho AI trong lập trình.
 
-## Ví dụ
-\`\`\`text
-Tệ:
-"Sửa lỗi này"
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao prompt mơ hồ thường cho câu trả lời mơ hồ?
+2. Một prompt tốt trong lập trình thường cần những phần nào?
+3. Vai trò của:
+   - stack công nghệ
+   - mục tiêu
+   - code liên quan
+   - log lỗi
+   - bước tái hiện
+   - ràng buộc
+4. So sánh 5 cặp prompt:
+   - prompt kém
+   - prompt tốt hơn
+5. Chỉ ra lỗi phổ biến:
+   - hỏi quá ngắn
+   - không đưa code
+   - không nói mục tiêu
+   - gửi lỗi nhưng không nói cách tái hiện
+6. Tạo cho tôi một checklist viết prompt tốt cho lập trình viên
 
-Tốt:
-"Tôi đang dùng React + TypeScript. Khi click nút submit thì state không cập nhật.
-Đây là code và log lỗi. Hãy tìm nguyên nhân và đề xuất cách sửa."
+Dạy như mentor đang sửa cách hỏi của junior để AI trả lời hữu ích hơn.
 \`\`\`
 
-## Bài tập luyện tập
-1. Viết lại 3 câu hỏi mơ hồ thành rõ hơn
-2. Thêm công nghệ và mục tiêu vào một prompt ngắn
-3. So sánh prompt tốt và prompt kém
+## Prompt 2 - Nhờ AI luyện sửa prompt yếu thành prompt mạnh
+\`\`\`
+Tôi muốn luyện kỹ năng biến prompt yếu thành prompt mạnh.
 
-## Bài tập thử thách
-- Viết một prompt nhờ AI giải thích sự khác nhau giữa React state và props cho người mới
+Hãy cho tôi 10 prompt rất dở trong ngữ cảnh lập trình, ví dụ:
+- sửa lỗi này
+- code này sai ở đâu
+- giải thích React
+- tối ưu code này
+- viết test cho tôi
+- app tôi bị chậm
+- API không chạy
+- form bị lỗi
+- giúp tôi làm auth
+- giúp tôi refactor
+
+Với mỗi prompt:
+1. yêu cầu tôi viết lại cho rõ hơn
+2. bắt tôi thêm:
+   - stack
+   - ngữ cảnh
+   - mục tiêu
+   - dữ liệu/log/code nếu cần
+3. sau đó bạn mới chữa
+4. giải thích vì sao bản sửa tốt hơn
+
+Mục tiêu là để tôi có phản xạ hỏi đúng ngay từ đầu.
+\`\`\`
+
+## Prompt 3 - Nhờ AI review prompt của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn 3 prompt tôi tự viết để hỏi AI về code.
+Bạn hãy review:
+1. Prompt đã đủ ngữ cảnh chưa?
+2. Đã nói rõ mục tiêu chưa?
+3. Có thiếu dữ liệu đầu vào quan trọng không?
+4. Chỗ nào còn mơ hồ?
+5. Hãy viết lại prompt đó theo phiên bản mạnh hơn nhưng vẫn ngắn gọn
+
+Hãy review như mentor tối ưu cách giao tiếp với AI.
+\`\`\`
+
+## Bài tập buổi này
+- Viết lại 10 prompt mơ hồ thành prompt rõ ràng hơn
+- Tạo 1 template hỏi lỗi code
+- Tạo 1 template hỏi giải thích khái niệm
+
+## Tiêu chuẩn hoàn thành
+- Biết prompt tốt cần gì
+- Không còn hỏi AI kiểu quá mơ hồ
+- Bắt đầu có template prompt riêng
       `
     },
     {
       id: 'ai-03',
-      title: 'Buổi 3: Công thức prompt hiệu quả cho lập trình',
+      title: 'Buổi 3: Công thức prompt mạnh cho lập trình - vai trò, ngữ cảnh, dữ liệu, mục tiêu, định dạng đầu ra',
       level: 'beginner',
       content: `
-# Buổi 3: Công thức prompt hiệu quả cho lập trình
+# Buổi 3: Công thức prompt mạnh cho lập trình - vai trò, ngữ cảnh, dữ liệu, mục tiêu, định dạng đầu ra
 
 ## Mục tiêu
-- Có khung hỏi chuẩn để dùng lặp lại
-- Biết cách đưa vai trò, ngữ cảnh, vấn đề, code và mục tiêu
-- Biết biến prompt ngắn thành prompt mạnh hơn
+- Có công thức prompt rõ ràng để tái sử dụng
+- Biết thêm role, output format, level explanation
+- Biết làm prompt mạnh hơn mà không cần quá dài dòng
 
-## Nội dung chính
-- Công thức gợi ý:
-  1. Vai trò
-  2. Ngữ cảnh
-  3. Vấn đề
-  4. Mã nguồn hoặc dữ liệu
-  5. Mục tiêu mong muốn
-- Có thể thêm:
-  - ràng buộc
-  - định dạng đầu ra
-  - mức giải thích
+## Prompt 1 - Nhờ AI dạy prompt framework
+\`\`\`
+Hãy dạy tôi buổi 3 về công thức viết prompt mạnh cho lập trình viên.
 
-## Ví dụ
-\`\`\`text
-Đóng vai một senior frontend developer.
-Tôi đang dùng Next.js và Tailwind.
-Tôi có lỗi layout bị nhảy khi ảnh tải xong.
-Đây là component của tôi: [code].
-Hãy chỉ ra nguyên nhân, cách sửa và giải thích đơn giản.
+Tôi muốn bạn dạy theo cấu trúc:
+1. Một prompt mạnh thường có những khối nào?
+2. Vai trò (role) giúp gì?
+3. Ngữ cảnh giúp gì?
+4. Dữ liệu/code/log giúp gì?
+5. Mục tiêu mong muốn cần rõ ra sao?
+6. Ràng buộc và định dạng đầu ra giúp gì?
+7. Cho tôi một framework ngắn gọn có thể tái sử dụng mỗi ngày
+8. Cho 5 ví dụ ứng dụng framework đó vào:
+   - học khái niệm
+   - debug
+   - refactor
+   - review code
+   - viết test
+9. Chỉ ra lỗi phổ biến khi thêm quá nhiều chi tiết nhưng vẫn không rõ mục tiêu
+10. Tạo cho tôi 3 template prompt thực dụng nhất
+
+Dạy như mentor đang giúp tôi xây “khung prompt cá nhân”.
 \`\`\`
 
-## Bài tập luyện tập
-1. Viết prompt theo đúng 5 phần
-2. Thử thêm yêu cầu "giải thích đơn giản cho người mới"
-3. Thử thêm yêu cầu "trả lời theo từng bước"
+## Prompt 2 - Nhờ AI luyện dùng framework vào nhiều tình huống
+\`\`\`
+Tôi muốn luyện dùng một framework prompt chung cho nhiều tình huống.
 
-## Bài tập thử thách
-- Tạo một template prompt chung bạn có thể tái sử dụng mỗi khi hỏi lỗi code
+Hãy cho tôi 8 bài toán lập trình khác nhau.
+Với mỗi bài toán:
+1. yêu cầu tôi viết prompt theo cấu trúc:
+   - role
+   - context
+   - problem
+   - code/log/data
+   - desired output
+2. sau đó bạn mới chữa
+3. chỉ ra phần nào còn thiếu
+4. tối ưu lại thành phiên bản mạnh hơn nhưng không quá dài
+
+Mục tiêu là để tôi dùng prompt có hệ thống, không hỏi theo cảm hứng.
+\`\`\`
+
+## Prompt 3 - Nhờ AI phản biện template prompt của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn một template prompt chung mà tôi muốn dùng hằng ngày.
+Bạn hãy review:
+1. Template này có đủ linh hoạt không?
+2. Phần nào đang thừa?
+3. Phần nào còn thiếu?
+4. Nếu dùng cho debug / học khái niệm / review code thì nên biến thể ra sao?
+5. Hãy giúp tôi rút gọn thành bản thực dụng hơn
+\`\`\`
+
+## Bài tập buổi này
+- Tạo 3 template prompt riêng cho:
+  - học khái niệm
+  - debug
+  - review code
+- Thử áp dụng mỗi template vào một ví dụ thật
+
+## Tiêu chuẩn hoàn thành
+- Có framework prompt riêng
+- Biết tái sử dụng thay vì viết prompt từ đầu mỗi lần
+- Biết yêu cầu đầu ra rõ ràng hơn
       `
     },
     {
       id: 'ai-04',
-      title: 'Buổi 4: Hỏi AI để học khái niệm mới nhanh hơn',
+      title: 'Buổi 4: Dùng AI để học nhanh hơn - giải thích khái niệm, giải thích code, so sánh khái niệm',
       level: 'beginner',
       content: `
-# Buổi 4: Hỏi AI để học khái niệm mới nhanh hơn
+# Buổi 4: Dùng AI để học nhanh hơn - giải thích khái niệm, giải thích code, so sánh khái niệm
 
 ## Mục tiêu
-- Biết dùng AI như gia sư giải thích kiến thức
-- Biết yêu cầu ví dụ dễ hiểu
-- Biết học từ dễ đến khó
+- Biết dùng AI như gia sư kỹ thuật
+- Biết yêu cầu giải thích theo trình độ
+- Biết học theo vòng: hiểu → ví dụ → tự làm → hỏi lại
 
-## Nội dung chính
-- Hỏi AI giải thích:
-  - định nghĩa
-  - ví dụ thực tế
-  - ví dụ code
-  - so sánh 2 khái niệm
-- Yêu cầu AI giải thích như cho người mới
-- Học theo vòng:
-  - hiểu khái niệm
-  - xem ví dụ
-  - tự làm lại
+## Prompt 1 - Nhờ AI dạy cách học khái niệm hiệu quả với AI
+\`\`\`
+Hãy dạy tôi buổi 4 về cách dùng AI để học khái niệm lập trình nhanh và sâu hơn.
 
-## Ví dụ
-\`\`\`text
-Hãy giải thích Promise như cho học sinh mới học JavaScript,
-kèm 2 ví dụ đời thường và 1 ví dụ code.
+Tôi muốn bạn dạy theo cấu trúc:
+1. AI có thể đóng vai gia sư như thế nào?
+2. Khi học khái niệm mới, nên hỏi AI theo các tầng nào?
+   - định nghĩa
+   - ví dụ đời thường
+   - ví dụ code
+   - so sánh với khái niệm gần giống
+   - bài tập nhỏ
+3. Vì sao nên yêu cầu AI giải thích “như cho người mới” hoặc “theo từng bước”?
+4. Làm sao dùng AI để giải thích code có sẵn mà không rơi vào copy-paste?
+5. Cho 5 ví dụ prompt học khái niệm:
+   - Promise
+   - useEffect
+   - REST API
+   - closure
+   - JWT
+6. Chỉ ra lỗi phổ biến:
+   - học lướt
+   - chỉ xin định nghĩa
+   - không yêu cầu ví dụ
+   - không tự diễn đạt lại
+7. Tạo checklist học khái niệm cùng AI
+
+Dạy như mentor đang giúp tôi học nhanh hơn nhưng không nông hơn.
 \`\`\`
 
-## Bài tập luyện tập
-1. Chọn một khái niệm khó và viết prompt nhờ AI giải thích
-2. Yêu cầu AI so sánh 2 khái niệm bạn hay nhầm
-3. Yêu cầu AI cho 3 ví dụ từ cơ bản đến nâng cao
+## Prompt 2 - Nhờ AI luyện vòng học 4 bước
+\`\`\`
+Tôi muốn luyện một quy trình học khái niệm mới cùng AI.
 
-## Bài tập thử thách
-- Tạo một prompt nhờ AI dạy lại cho bạn khái niệm useEffect bằng ngôn ngữ đời thường
+Hãy chọn 5 khái niệm lập trình từ dễ đến vừa.
+Với mỗi khái niệm:
+1. yêu cầu tôi viết prompt xin định nghĩa và ví dụ
+2. yêu cầu tôi viết prompt xin so sánh với khái niệm gần giống
+3. yêu cầu tôi viết prompt xin bài tập nhỏ
+4. yêu cầu tôi tự diễn đạt lại bằng lời của mình
+5. sau đó bạn mới chữa
+
+Mục tiêu là để tôi hình thành workflow học cùng AI chứ không chỉ hỏi một lần rồi thôi.
+\`\`\`
+
+## Prompt 3 - Nhờ AI review cách tôi học với AI
+\`\`\`
+Tôi sẽ gửi cho bạn 3 prompt tôi dùng để học một khái niệm mới và phần tôi tự tóm tắt lại.
+Bạn hãy review:
+1. Prompt của tôi đã đủ tốt chưa?
+2. Tôi có đang học theo vòng đủ sâu không?
+3. Phần tóm tắt lại của tôi có cho thấy tôi hiểu thật không?
+4. Tôi nên hỏi thêm gì để hiểu chắc hơn?
+5. Hãy đề xuất phiên bản quy trình học tốt hơn cho tôi
+\`\`\`
+
+## Bài tập buổi này
+- Chọn 3 khái niệm mới và học cùng AI theo quy trình 4 bước
+- Viết lại phần bạn hiểu bằng lời của bạn
+- Tạo 1 template “học khái niệm mới cùng AI”
+
+## Tiêu chuẩn hoàn thành
+- Biết dùng AI để học chứ không chỉ xin đáp án
+- Biết yêu cầu ví dụ, so sánh và bài tập
+- Bắt đầu có workflow tự học hiệu quả hơn
       `
     },
     {
       id: 'ai-05',
-      title: 'Buổi 5: Dùng AI để giải thích code có sẵn',
-      level: 'beginner',
+      title: 'Buổi 5: Debugging cùng AI - đưa log lỗi, bước tái hiện và phân tích nguyên nhân gốc rễ',
+      level: 'intermediate',
       content: `
-# Buổi 5: Dùng AI để giải thích code có sẵn
+# Buổi 5: Debugging cùng AI - đưa log lỗi, bước tái hiện và phân tích nguyên nhân gốc rễ
 
 ## Mục tiêu
-- Biết nhờ AI giải thích từng phần của code
-- Học cách đọc code thay vì chỉ copy
-- Biết hỏi lại khi một dòng code còn khó hiểu
+- Biết dùng AI để debug hiệu quả hơn
+- Biết gửi log lỗi, code liên quan và bước tái hiện đúng cách
+- Biết yêu cầu AI tìm root cause thay vì chỉ vá lỗi
 
-## Nội dung chính
-- Yêu cầu AI:
-  - giải thích từng dòng
-  - giải thích luồng chạy
-  - chỉ ra input/output
-  - giải thích đoạn nào quan trọng nhất
-- Hỏi theo cấp độ:
-  - tổng quan
-  - chi tiết
-  - từng dòng
+## Prompt 1 - Nhờ AI dạy quy trình debug cùng AI
+\`\`\`
+Hãy dạy tôi buổi 5 về cách debug cùng AI như một lập trình viên có phương pháp.
 
-## Ví dụ
-\`\`\`text
-Hãy giải thích đoạn code này theo 3 phần:
-1. Mục đích chính
-2. Cách nó hoạt động
-3. Những dòng quan trọng nhất
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao debug với AI thất bại nếu cung cấp dữ liệu quá ít?
+2. Một prompt debug tốt cần có những phần nào?
+3. Vai trò của:
+   - log lỗi đầy đủ
+   - đoạn code liên quan
+   - bước tái hiện
+   - điều tôi mong muốn xảy ra
+4. Vì sao phải yêu cầu AI phân tích nguyên nhân gốc rễ?
+5. Khi nào nên xin 2 cách sửa và so sánh ưu/nhược điểm?
+6. Cho 5 ví dụ prompt debug tốt cho:
+   - React
+   - Node.js
+   - CSS layout
+   - fetch/API
+   - TypeScript error
+7. Chỉ ra lỗi phổ biến:
+   - chỉ gửi ảnh 1 dòng đỏ
+   - không nói stack
+   - không nói hành vi mong muốn
+   - chỉ xin fix nhanh
+8. Tạo checklist debug cùng AI hiệu quả
+
+Dạy như mentor đang giúp tôi biến AI thành trợ lý debug thật sự.
 \`\`\`
 
-## Bài tập luyện tập
-1. Chọn một hàm JavaScript và nhờ AI giải thích
-2. Hỏi AI giải thích từng dòng của một component React
-3. Hỏi AI đoạn nào dễ gây lỗi nhất trong code
+## Prompt 2 - Nhờ AI luyện viết prompt debug tốt
+\`\`\`
+Tôi muốn luyện viết prompt debug.
 
-## Bài tập thử thách
-- Đưa một đoạn code dài và yêu cầu AI tóm tắt logic chỉ trong 5 ý chính
+Hãy cho tôi 8 lỗi giả định trong lập trình, ví dụ:
+- state không cập nhật
+- form submit reload trang
+- API 401
+- layout bị nhảy
+- useEffect chạy lặp
+- TypeScript báo kiểu sai
+- backend crash do undefined
+- query không trả dữ liệu
+
+Với mỗi lỗi:
+1. yêu cầu tôi viết prompt debug hoàn chỉnh
+2. bắt tôi thêm stack, log, code, bước tái hiện, expected behavior
+3. sau đó bạn mới chữa
+4. chỉ ra phần nào của prompt còn yếu
+\`\`\`
+
+## Prompt 3 - Nhờ AI review khả năng debug cùng AI của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn một prompt debug tôi viết kèm log lỗi và code.
+Bạn hãy review:
+1. Prompt đã đủ dữ liệu chưa?
+2. AI có khả năng trả lời đúng cao không?
+3. Tôi có đang bỏ sót bước tái hiện hoặc expected behavior không?
+4. Tôi có đang hỏi fix quá nhanh mà chưa hỏi root cause không?
+5. Hãy viết lại prompt đó thành bản mạnh hơn
+\`\`\`
+
+## Bài tập buổi này
+- Viết 5 prompt debug hoàn chỉnh
+- Tạo 1 template debug dùng hằng ngày
+- Tự phân biệt symptom và root cause trong ít nhất 3 lỗi
+
+## Tiêu chuẩn hoàn thành
+- Biết debug cùng AI có phương pháp
+- Không còn gửi lỗi quá thiếu dữ kiện
+- Biết hỏi nguyên nhân gốc rễ
       `
     },
     {
       id: 'ai-06',
-      title: 'Buổi 6: Debugging cùng AI - cung cấp log lỗi đúng cách',
+      title: 'Buổi 6: Refactor, review code, viết test và tối ưu với AI mà không lệ thuộc',
       level: 'intermediate',
       content: `
-# Buổi 6: Debugging cùng AI - cung cấp log lỗi đúng cách
+# Buổi 6: Refactor, review code, viết test và tối ưu với AI mà không lệ thuộc
 
 ## Mục tiêu
-- Biết dùng AI để sửa lỗi hiệu quả hơn
-- Biết gửi đúng log lỗi và đoạn code liên quan
-- Biết tránh hỏi lỗi theo kiểu quá chung chung
+- Biết dùng AI để refactor code đã chạy được
+- Biết nhờ AI review readability, performance, security, testability
+- Biết nhờ AI viết test và edge cases
+- Không dùng AI theo kiểu copy-paste vô thức
 
-## Nội dung chính
-- Khi gặp lỗi cần gửi:
-  - log lỗi đầy đủ
-  - đoạn code liên quan
-  - bước để tái hiện lỗi
-  - điều bạn mong muốn xảy ra
-- Không chỉ chụp một dòng đỏ ngắn rồi hỏi
+## Prompt 1 - Nhờ AI dạy cách hợp tác với AI sau khi code xong
+\`\`\`
+Hãy dạy tôi buổi 6 về cách dùng AI sau khi đã có code: refactor, review, test và tối ưu.
 
-## Ví dụ
-\`\`\`text
-Tôi chạy app React và gặp lỗi này: [log].
-Lỗi xảy ra khi tôi bấm nút đăng nhập.
-Đây là component LoginForm và hook useAuth của tôi: [code].
-Nguyên nhân gốc rễ là gì?
+Tôi muốn bạn dạy theo cấu trúc:
+1. Khi code đã chạy được, AI có thể hỗ trợ những việc gì tiếp theo?
+2. Khi nào nên nhờ AI refactor?
+3. Khi nào nên nhờ AI review code?
+4. Khi nào nên nhờ AI nghĩ edge cases và viết test?
+5. Khi nào nên nhờ AI phân tích hiệu suất?
+6. Cho 5 ví dụ prompt thực tế:
+   - refactor cho dễ đọc hơn
+   - review theo 4 tiêu chí
+   - viết unit test
+   - tìm edge cases
+   - phân tích re-render hoặc code thừa
+7. Chỉ ra lỗi phổ biến:
+   - refactor xong không kiểm tra hành vi
+   - tin review của AI mù quáng
+   - dùng test AI viết mà không hiểu
+   - tối ưu quá sớm
+8. Tạo checklist dùng AI sau khi code xong
+
+Dạy như mentor đang giúp tôi dùng AI như reviewer sơ bộ có giá trị.
 \`\`\`
 
-## Bài tập luyện tập
-1. Viết một prompt debug hoàn chỉnh cho lỗi React
-2. Viết một prompt debug hoàn chỉnh cho lỗi Node.js
-3. Thêm bước tái hiện lỗi vào prompt
+## Prompt 2 - Nhờ AI luyện viết prompt review/refactor/test
+\`\`\`
+Tôi muốn luyện viết prompt cho 4 nhóm việc:
+- refactor
+- review
+- test
+- tối ưu hiệu suất
 
-## Bài tập thử thách
-- Tạo một mẫu prompt debug bạn có thể dán log + code vào và dùng ngay
+Hãy cho tôi 8 tình huống code khác nhau.
+Với mỗi tình huống:
+1. yêu cầu tôi chọn đang cần refactor, review, test hay tối ưu
+2. yêu cầu tôi viết prompt phù hợp
+3. yêu cầu tôi nói rõ mục tiêu và ràng buộc
+4. sau đó bạn mới chữa
+5. chỉ ra prompt của tôi đang thiếu điều gì
+\`\`\`
+
+## Prompt 3 - Nhờ AI review cách tôi cộng tác với AI trên code có sẵn
+\`\`\`
+Tôi sẽ gửi cho bạn một đoạn code và 3 prompt tôi định dùng để:
+- review
+- refactor
+- viết test
+
+Bạn hãy review:
+1. Prompt nào đang tốt?
+2. Prompt nào còn mơ hồ?
+3. Tôi có đang giao quá nhiều quyền quyết định cho AI không?
+4. Chỗ nào tôi nên tự suy nghĩ trước rồi mới hỏi AI?
+5. Hãy tối ưu lại bộ prompt này cho tôi
+\`\`\`
+
+## Bài tập buổi này
+- Tạo 4 template prompt cho:
+  - refactor
+  - review code
+  - viết test
+  - tối ưu hiệu suất
+- Áp dụng mỗi template vào 1 đoạn code thật
+
+## Tiêu chuẩn hoàn thành
+- Biết AI hỗ trợ tốt sau khi code xong
+- Biết review/refactor/test/tối ưu cùng AI
+- Không lệ thuộc vào code AI đề xuất
       `
     },
     {
       id: 'ai-07',
-      title: 'Buổi 7: Yêu cầu AI phân tích nguyên nhân gốc rễ thay vì chỉ sửa nhanh',
-      level: 'intermediate',
+      title: 'Buổi 7: Kiểm chứng đầu ra của AI - phát hiện hallucination, giả định sai và code không đáng tin',
+      level: 'advanced',
       content: `
-# Buổi 7: Yêu cầu AI phân tích nguyên nhân gốc rễ thay vì chỉ sửa nhanh
+# Buổi 7: Kiểm chứng đầu ra của AI - phát hiện hallucination, giả định sai và code không đáng tin
 
 ## Mục tiêu
-- Biết học từ lỗi thay vì chỉ vá lỗi
-- Biết yêu cầu AI phân tích sâu hơn
-- Hiểu sự khác nhau giữa triệu chứng và nguyên nhân
+- Hiểu AI có thể sai, bịa hoặc đoán
+- Biết kiểm chứng câu trả lời thay vì tin mù quáng
+- Biết yêu cầu AI nêu giả định và giới hạn
+- Hình thành checklist đọc lại code AI trước khi dùng
 
-## Nội dung chính
-- Hỏi AI:
-  - lỗi này xảy ra vì sao
-  - dòng nào là nguyên nhân chính
-  - đây là lỗi logic hay lỗi cú pháp
-  - lỗi này thường gặp trong trường hợp nào
-- Xin 2 cách sửa và so sánh
+## Prompt 1 - Nhờ AI dạy verification mindset
+\`\`\`
+Hãy dạy tôi buổi 7 về cách kiểm chứng đầu ra của AI trong lập trình.
 
-## Ví dụ
-\`\`\`text
-Hãy giải thích nguyên nhân gốc rễ của lỗi này.
-Sau đó đưa ra 2 cách sửa khác nhau cùng ưu và nhược điểm.
+Tôi muốn bạn dạy theo cấu trúc:
+1. Hallucination là gì trong ngữ cảnh AI hỗ trợ lập trình?
+2. Vì sao AI dễ đoán khi thiếu ngữ cảnh?
+3. Những dấu hiệu nào cho thấy câu trả lời AI có thể không đáng tin?
+4. Những gì tôi cần kiểm tra trước khi dùng code AI:
+   - API/thư viện có tồn tại không
+   - logic có khớp yêu cầu không
+   - code có chạy không
+   - có vấn đề bảo mật không
+   - có bug edge case rõ ràng không
+5. Khi nào nên đối chiếu docs chính thức?
+6. Cho 5 ví dụ tình huống AI trả lời “nghe hợp lý nhưng sai”
+7. Chỉ ra lỗi phổ biến:
+   - paste code vào dự án mà không đọc
+   - tin thư viện/API không kiểm tra
+   - không hỏi giả định
+8. Tạo checklist kiểm chứng đầu ra AI
+
+Dạy như mentor đang giúp tôi không bị AI “dắt đi sai”.
 \`\`\`
 
-## Bài tập luyện tập
-1. Viết prompt yêu cầu AI tìm root cause
-2. Yêu cầu AI phân biệt symptom và root cause
-3. Yêu cầu AI nêu 2 cách sửa cho cùng một lỗi
+## Prompt 2 - Nhờ AI luyện kiểm chứng câu trả lời
+\`\`\`
+Tôi muốn luyện kỹ năng kiểm chứng đầu ra AI.
 
-## Bài tập thử thách
-- Chọn một lỗi bạn từng gặp và viết prompt để AI giải thích sâu hơn thay vì chỉ sửa
+Hãy cho tôi 8 câu trả lời giả định của AI trong lập trình.
+Một số câu nên đúng, một số câu nên có lỗi tinh vi.
+
+Với mỗi câu:
+1. yêu cầu tôi chỉ ra chỗ nào cần nghi ngờ
+2. yêu cầu tôi nói cách kiểm chứng
+3. hỏi tôi nên hỏi lại AI như thế nào để ép nó tự rà lỗi
+4. sau đó bạn mới chữa
+
+Mục tiêu là để tôi có thói quen phản biện đầu ra thay vì chỉ nhận.
+\`\`\`
+
+## Prompt 3 - Nhờ AI review checklist kiểm chứng của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn checklist tôi dùng trước khi paste code từ AI vào dự án.
+Bạn hãy review:
+1. Checklist có đủ thực dụng không?
+2. Có bước nào quan trọng còn thiếu không?
+3. Bước nào đang thừa hoặc quá lý thuyết?
+4. Nếu tôi chỉ có 30 giây để kiểm tra, nên giữ 5 bước nào là bắt buộc?
+5. Hãy tối ưu checklist đó cho tôi
+\`\`\`
+
+## Bài tập buổi này
+- Tạo checklist “đọc lại code AI trước khi dùng”
+- Tạo prompt yêu cầu AI nêu giả định và giới hạn
+- Chọn 3 câu trả lời AI và tự kiểm chứng lại
+
+## Tiêu chuẩn hoàn thành
+- Không còn tin đầu ra AI một cách mù quáng
+- Biết cách phản biện và kiểm chứng
+- Có checklist kiểm tra trước khi dùng code
       `
     },
     {
       id: 'ai-08',
-      title: 'Buổi 8: Hỏi AI để refactor code dễ đọc hơn',
-      level: 'intermediate',
+      title: 'Buổi 8: Bảo mật, quyền riêng tư và dữ liệu nào không nên đưa cho AI',
+      level: 'advanced',
       content: `
-# Buổi 8: Hỏi AI để refactor code dễ đọc hơn
+# Buổi 8: Bảo mật, quyền riêng tư và dữ liệu nào không nên đưa cho AI
 
 ## Mục tiêu
-- Biết nhờ AI cải thiện code đã chạy được
-- Biết tách logic, đổi tên biến, giảm lặp
-- Học cách đọc code sạch hơn
+- Hiểu không phải dữ liệu nào cũng nên gửi cho AI
+- Biết tránh lộ token, API key, dữ liệu khách hàng, bí mật dự án
+- Biết cách ẩn hoặc thay thế dữ liệu nhạy cảm trước khi hỏi
 
-## Nội dung chính
-- Nhờ AI:
-  - đổi tên biến rõ nghĩa hơn
-  - tách hàm
-  - giảm lặp code
-  - chia component
-  - làm code dễ đọc hơn
-- Luôn yêu cầu AI giải thích thay đổi
+## Prompt 1 - Nhờ AI dạy safe usage mindset
+\`\`\`
+Hãy dạy tôi buổi 8 về bảo mật và quyền riêng tư khi làm việc với AI trong lập trình.
 
-## Ví dụ
-\`\`\`text
-Hãy refactor đoạn code này để dễ đọc hơn,
-nhưng không làm thay đổi hành vi.
-Sau đó giải thích các thay đổi chính.
+Tôi muốn bạn dạy theo cấu trúc:
+1. Vì sao dùng AI cũng có rủi ro về bảo mật và riêng tư?
+2. Những loại dữ liệu nào tuyệt đối không nên paste nguyên văn cho AI?
+3. Vì sao token, API key, .env, dữ liệu khách hàng, thông tin nội bộ là rất nhạy cảm?
+4. Nên thay thế hoặc ẩn dữ liệu nhạy cảm như thế nào?
+5. Cho 6 ví dụ:
+   - file .env
+   - log có JWT
+   - API response có email thật
+   - config nội bộ
+   - dữ liệu billing
+   - thông tin user thật
+6. Chỉ ra lỗi phổ biến:
+   - paste nguyên file .env
+   - paste token thật để debug
+   - gửi dữ liệu người dùng thật mà không ẩn
+7. Tạo checklist an toàn trước khi gửi code/log cho AI
+
+Dạy như mentor đang bảo vệ tôi khỏi những lỗi bất cẩn rất nguy hiểm.
 \`\`\`
 
-## Bài tập luyện tập
-1. Đưa một hàm dài cho AI refactor
-2. Yêu cầu AI chỉ đổi tên biến và hàm
-3. Yêu cầu AI tách một component lớn thành nhiều phần nhỏ
+## Prompt 2 - Nhờ AI luyện “sanitize trước khi hỏi”
+\`\`\`
+Tôi muốn luyện cách làm sạch dữ liệu trước khi gửi cho AI.
 
-## Bài tập thử thách
-- Đưa một đoạn code rối và yêu cầu AI refactor theo clean code cơ bản
+Hãy cho tôi 10 tình huống, ví dụ:
+- log chứa email thật
+- code có API key hard-coded
+- error response có token
+- screenshot có URL nội bộ
+- request body có thông tin khách hàng
+- file env bị paste nhầm
+- JSON có số điện thoại
+- header có authorization
+- config chứa tên miền nội bộ
+- file seed có dữ liệu thật
+
+Với mỗi tình huống:
+1. hỏi tôi dữ liệu nhạy cảm nằm ở đâu
+2. hỏi tôi nên ẩn/thay thế nó thế nào
+3. hỏi tôi phiên bản “safe to share” nên trông ra sao
+4. sau đó bạn mới chữa
+\`\`\`
+
+## Prompt 3 - Nhờ AI review quy trình an toàn của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn checklist hoặc quy trình tôi dùng trước khi hỏi AI về code/log.
+Bạn hãy review:
+1. Có dữ liệu nhạy cảm nào tôi đang quên bảo vệ không?
+2. Checklist có đủ thực tế không?
+3. Nếu tôi đang làm trong dự án khách hàng, tôi cần cẩn thận điểm nào hơn?
+4. 5 loại dữ liệu nào tôi phải luôn kiểm tra đầu tiên?
+5. Hãy tối ưu quy trình này cho tôi
+\`\`\`
+
+## Bài tập buổi này
+- Tạo checklist an toàn trước khi gửi code/log cho AI
+- Viết lại 5 prompt chứa dữ liệu nhạy cảm thành phiên bản an toàn hơn
+- Tạo quy tắc cá nhân về “safe to share”
+
+## Tiêu chuẩn hoàn thành
+- Hiểu rủi ro bảo mật khi dùng AI
+- Biết ẩn dữ liệu nhạy cảm
+- Có checklist an toàn riêng
       `
     },
     {
       id: 'ai-09',
-      title: 'Buổi 9: Dùng AI để tối ưu hiệu suất và tránh code thừa',
-      level: 'intermediate',
+      title: 'Buổi 9: Học cùng AI mà không lệ thuộc - tư duy tự làm trước, hỏi sau, tự kiểm chứng lại',
+      level: 'advanced',
       content: `
-# Buổi 9: Dùng AI để tối ưu hiệu suất và tránh code thừa
+# Buổi 9: Học cùng AI mà không lệ thuộc - tư duy tự làm trước, hỏi sau, tự kiểm chứng lại
 
 ## Mục tiêu
-- Biết nhờ AI phát hiện chỗ chậm hoặc dư thừa
-- Biết hỏi về re-render, bundle, query, vòng lặp
-- Không tối ưu mù quáng
+- Biết dùng AI để học nhanh mà không mất tư duy
+- Biết khi nào nên tự thử trước
+- Nhận ra dấu hiệu lệ thuộc AI
+- Xây thói quen học chủ động hơn
 
-## Nội dung chính
-- Hỏi AI:
-  - chỗ nào đang render thừa
-  - chỗ nào đang lặp tính toán
-  - chỗ nào đang tải dữ liệu quá nhiều
-  - có thể lazy load gì
-- Yêu cầu AI giải thích tác động hiệu suất
+## Prompt 1 - Nhờ AI dạy anti-dependence mindset
+\`\`\`
+Hãy dạy tôi buổi 9 về cách học cùng AI mà không bị lệ thuộc.
 
-## Ví dụ
-\`\`\`text
-Hãy xem component React này và chỉ ra các nguyên nhân có thể gây re-render thừa.
-Nếu cần, hãy đề xuất dùng memo, useMemo hoặc useCallback.
+Tôi muốn bạn dạy theo cấu trúc:
+1. Lệ thuộc AI trong lập trình thường biểu hiện như thế nào?
+2. Vì sao copy-paste không hiểu là rất nguy hiểm?
+3. Một quy trình học tốt cùng AI nên gồm những bước nào?
+4. Vì sao nên:
+   - tự nghĩ trước
+   - tự thử trước
+   - hỏi sau
+   - đọc lại
+   - giải thích lại
+5. Khi nào nên hỏi AI ngay?
+6. Khi nào nên tự vật lộn thêm một chút trước?
+7. Cho 5 ví dụ:
+   - học khái niệm
+   - sửa bug
+   - làm bài thuật toán
+   - refactor component
+   - học framework mới
+8. Chỉ ra lỗi phổ biến:
+   - hỏi AI trước cả khi chưa đọc đề
+   - paste code xong không hiểu
+   - không bao giờ tự viết lại bằng lời mình
+9. Tạo checklist “học cùng AI mà vẫn giữ tư duy”
+
+Dạy như mentor đang giúp tôi dùng AI để mạnh lên chứ không yếu đi.
 \`\`\`
 
-## Bài tập luyện tập
-1. Viết prompt nhờ AI kiểm tra re-render trong React
-2. Viết prompt nhờ AI tối ưu truy vấn API
-3. Viết prompt nhờ AI giảm code trùng lặp
+## Prompt 2 - Nhờ AI luyện self-first workflow
+\`\`\`
+Tôi muốn luyện workflow tự làm trước, hỏi sau.
 
-## Bài tập thử thách
-- Đưa một component danh sách và yêu cầu AI phân tích 3 điểm tối ưu quan trọng nhất
+Hãy cho tôi 8 tình huống học/làm code, ví dụ:
+- hiểu Promise
+- sửa bug React
+- viết form validation
+- refactor một hàm
+- học Next.js routing
+- xử lý API typing
+- viết test
+- tối ưu component
+
+Với mỗi tình huống:
+1. hỏi tôi tôi nên tự làm gì trước khi hỏi AI
+2. hỏi tôi nên ghi lại những gì trước khi hỏi
+3. hỏi tôi sau khi nhận câu trả lời thì nên kiểm chứng thế nào
+4. sau đó bạn mới chữa
+\`\`\`
+
+## Prompt 3 - Nhờ AI review mức độ lệ thuộc AI của tôi
+\`\`\`
+Tôi sẽ mô tả cách tôi thường dùng AI khi học code.
+Bạn hãy review:
+1. Tôi có dấu hiệu lệ thuộc AI ở đâu?
+2. Chỗ nào tôi đang dùng AI đúng cách?
+3. Tôi nên thêm bước nào để giữ tư duy chủ động?
+4. Nếu chỉ giữ 5 nguyên tắc quan trọng nhất khi học cùng AI, đó là gì?
+5. Hãy giúp tôi viết một “quy ước cá nhân” khi dùng AI
+\`\`\`
+
+## Bài tập buổi này
+- Viết quy trình 5 bước trước khi hỏi AI
+- Liệt kê 5 dấu hiệu lệ thuộc AI
+- Viết “quy ước cá nhân” khi học code cùng AI
+
+## Tiêu chuẩn hoàn thành
+- Nhận ra AI có thể làm mình yếu đi nếu dùng sai
+- Biết tự làm trước rồi mới hỏi
+- Có bộ nguyên tắc cá nhân khi học cùng AI
       `
     },
     {
       id: 'ai-10',
-      title: 'Buổi 10: Dùng AI để viết test và nghĩ thêm edge cases',
-      level: 'intermediate',
-      content: `
-# Buổi 10: Dùng AI để viết test và nghĩ thêm edge cases
-
-## Mục tiêu
-- Biết nhờ AI hỗ trợ viết test
-- Biết yêu cầu AI thêm trường hợp biên
-- Học tư duy test từ câu trả lời của AI
-
-## Nội dung chính
-- Nhờ AI viết:
-  - unit test
-  - test form
-  - test edge case
-- Yêu cầu AI giải thích lý do từng test case
-- Không dùng test AI viết ra mà không đọc
-
-## Ví dụ
-\`\`\`text
-Hãy viết unit test cho hàm này bằng Vitest,
-bao gồm cả trường hợp dữ liệu rỗng và dữ liệu không hợp lệ.
-\`\`\`
-
-## Bài tập luyện tập
-1. Đưa một hàm tính toán cho AI viết test
-2. Yêu cầu AI thêm edge cases
-3. Yêu cầu AI giải thích vì sao từng test quan trọng
-
-## Bài tập thử thách
-- Dùng AI viết test cho một form đăng ký có validation
-      `
-    },
-    {
-      id: 'ai-11',
-      title: 'Buổi 11: Dùng AI để học kiến trúc dự án và cấu trúc thư mục',
-      level: 'intermediate',
-      content: `
-# Buổi 11: Dùng AI để học kiến trúc dự án và cấu trúc thư mục
-
-## Mục tiêu
-- Biết thảo luận với AI trước khi code
-- Biết hỏi về cấu trúc thư mục, tách lớp và luồng dữ liệu
-- Tránh viết dự án rối ngay từ đầu
-
-## Nội dung chính
-- Hỏi AI về:
-  - cấu trúc thư mục
-  - chia component
-  - chia route
-  - chia service, controller, hook, utils
-- Đưa bối cảnh dự án cụ thể để AI tư vấn sát hơn
-
-## Ví dụ
-\`\`\`text
-Tôi muốn xây app học online bằng Next.js.
-Hãy gợi ý cấu trúc thư mục rõ ràng cho:
-- trang public
-- dashboard người dùng
-- API
-- components dùng chung
-\`\`\`
-
-## Bài tập luyện tập
-1. Hỏi AI cấu trúc cho app React nhỏ
-2. Hỏi AI cấu trúc cho app Node.js backend
-3. Hỏi AI nên tách phần nào thành component riêng
-
-## Bài tập thử thách
-- Viết prompt nhờ AI thiết kế sơ đồ thư mục cho app full-stack
-      `
-    },
-    {
-      id: 'ai-12',
-      title: 'Buổi 12: Phân rã bài toán lớn thành bước nhỏ với AI',
-      level: 'intermediate',
-      content: `
-# Buổi 12: Phân rã bài toán lớn thành bước nhỏ với AI
-
-## Mục tiêu
-- Biết nhờ AI chia task lớn thành task nhỏ
-- Giảm cảm giác quá tải khi bắt đầu tính năng mới
-- Có quy trình làm việc rõ hơn
-
-## Nội dung chính
-- Hỏi AI:
-  - cần làm những bước nào
-  - thứ tự ưu tiên ra sao
-  - phần nào dễ, phần nào khó
-  - chia task theo frontend / backend / database
-- Dùng AI để tạo checklist hành động
-
-## Ví dụ
-\`\`\`text
-Tôi muốn làm tính năng giỏ hàng cho app React + Node.js.
-Hãy chia thành các bước nhỏ theo thứ tự triển khai.
-\`\`\`
-
-## Bài tập luyện tập
-1. Chọn một tính năng và nhờ AI chia task
-2. Yêu cầu AI sắp xếp task theo thứ tự ưu tiên
-3. Yêu cầu AI ước lượng phần dễ và phần khó
-
-## Bài tập thử thách
-- Dùng AI phân rã tính năng "đăng ký + đăng nhập + hồ sơ người dùng"
-      `
-    },
-    {
-      id: 'ai-13',
-      title: 'Buổi 13: Kiểm chứng đầu ra của AI - không tin mù quáng',
+      title: 'Buổi 10: Project cuối khóa - xây workflow làm việc với AI hằng ngày như một pair programmer có trách nhiệm',
       level: 'advanced',
       content: `
-# Buổi 13: Kiểm chứng đầu ra của AI - không tin mù quáng
+# Buổi 10: Project cuối khóa - xây workflow làm việc với AI hằng ngày như một pair programmer có trách nhiệm
 
 ## Mục tiêu
-- Hiểu AI có thể sai hoặc bịa
-- Biết cách tự kiểm chứng câu trả lời
-- Tạo thói quen đọc lại trước khi dùng
-
-## Nội dung chính
-- Kiểm tra:
-  - code có chạy không
-  - tên hàm/thư viện có tồn tại không
-  - logic có khớp yêu cầu không
-  - có vi phạm bảo mật không
-- So sánh với docs chính thức khi cần
-- Hỏi AI nguồn, giả định và giới hạn
-
-## Ví dụ
-\`\`\`text
-Hãy kiểm tra lại xem đoạn code này có dùng API nào không tồn tại không.
-Nếu có, hãy sửa lại bằng cách đúng hơn.
-\`\`\`
-
-## Bài tập luyện tập
-1. Liệt kê 5 điều cần kiểm tra trước khi dùng code AI sinh ra
-2. Viết prompt yêu cầu AI tự rà lỗi trong chính câu trả lời trước
-3. So sánh 2 phiên bản AI trả lời và chọn phiên bản đáng tin hơn
-
-## Bài tập thử thách
-- Tạo checklist “đọc lại code AI trước khi paste vào dự án”
-      `
-    },
-    {
-      id: 'ai-14',
-      title: 'Buổi 14: Hallucination, ngữ cảnh thiếu và cách sửa prompt',
-      level: 'advanced',
-      content: `
-# Buổi 14: Hallucination, ngữ cảnh thiếu và cách sửa prompt
-
-## Mục tiêu
-- Hiểu hallucination là gì
-- Biết vì sao AI dễ bịa khi thiếu ngữ cảnh
-- Biết cách cải thiện prompt để giảm trả lời sai
-
-## Nội dung chính
-- Hallucination là trả lời nghe có vẻ đúng nhưng thực ra sai
-- Thiếu file, thiếu framework, thiếu log, thiếu mục tiêu sẽ làm AI đoán
-- Cách giảm hallucination:
-  - đưa code thật
-  - nói rõ stack
-  - nói rõ phiên bản nếu cần
-  - yêu cầu AI nêu giả định
-
-## Ví dụ
-\`\`\`text
-Nếu chưa đủ thông tin, hãy nói rõ bạn đang giả định điều gì trước khi đưa giải pháp.
-\`\`\`
-
-## Bài tập luyện tập
-1. Viết một prompt yêu cầu AI nêu giả định
-2. Sửa một prompt thiếu ngữ cảnh thành prompt đủ dữ kiện hơn
-3. Liệt kê 5 kiểu thông tin nên thêm để AI đỡ đoán
-
-## Bài tập thử thách
-- Tạo prompt chuẩn để AI trả lời "nếu thiếu dữ kiện thì hỏi rõ hoặc nêu giả định"
-      `
-    },
-    {
-      id: 'ai-15',
-      title: 'Buổi 15: Dùng AI để viết tài liệu, comment và commit message',
-      level: 'advanced',
-      content: `
-# Buổi 15: Dùng AI để viết tài liệu, comment và commit message
-
-## Mục tiêu
-- Biết dùng AI để cải thiện giao tiếp kỹ thuật
-- Biết tạo README, comment, changelog, commit message rõ hơn
-- Giảm thời gian viết tài liệu thủ công
-
-## Nội dung chính
-- Nhờ AI:
-  - viết README
-  - viết comment cho hàm khó
-  - tóm tắt thay đổi
-  - viết commit message
-  - viết mô tả Pull Request
-- Không nên để AI viết tài liệu sai với code thật
-
-## Ví dụ
-\`\`\`text
-Hãy viết README ngắn cho project này gồm:
-- Mô tả
-- Cài đặt
-- Cách chạy
-- Cấu trúc thư mục
-\`\`\`
-
-## Bài tập luyện tập
-1. Nhờ AI viết README cho app của bạn
-2. Nhờ AI tạo commit message rõ nghĩa
-3. Nhờ AI viết comment cho một hàm phức tạp
-
-## Bài tập thử thách
-- Dùng AI tạo mô tả Pull Request cho một tính năng mới
-      `
-    },
-    {
-      id: 'ai-16',
-      title: 'Buổi 16: Dùng AI để review code và tìm điểm yếu',
-      level: 'advanced',
-      content: `
-# Buổi 16: Dùng AI để review code và tìm điểm yếu
-
-## Mục tiêu
-- Biết dùng AI như người review sơ bộ
-- Biết yêu cầu AI chỉ ra lỗi tiềm ẩn
-- Biết xin góp ý về readability, performance, security
-
-## Nội dung chính
-- Hỏi AI review theo tiêu chí:
-  - dễ đọc
-  - dễ bảo trì
-  - bảo mật
-  - hiệu suất
-  - testability
-- Yêu cầu AI xếp mức nghiêm trọng từng vấn đề
-
-## Ví dụ
-\`\`\`text
-Hãy review đoạn code này như một senior developer.
-Chia vấn đề thành 4 nhóm:
-- bug
-- readability
-- performance
-- security
-\`\`\`
-
-## Bài tập luyện tập
-1. Đưa một hàm cho AI review
-2. Đưa một component React cho AI review
-3. Yêu cầu AI nêu top 3 vấn đề nghiêm trọng nhất
-
-## Bài tập thử thách
-- Dùng AI review một API backend theo góc nhìn bảo mật và validation
-      `
-    },
-    {
-      id: 'ai-17',
-      title: 'Buổi 17: Học song song với AI mà không lệ thuộc',
-      level: 'advanced',
-      content: `
-# Buổi 17: Học song song với AI mà không lệ thuộc
-
-## Mục tiêu
-- Biết dùng AI để học nhanh nhưng vẫn phát triển tư duy riêng
-- Biết khi nào nên tự làm trước, khi nào nên hỏi AI
-- Tránh copy-paste mà không hiểu
-
-## Nội dung chính
-- Quy tắc tốt:
-  - tự nghĩ trước
-  - thử trước
-  - hỏi sau
-  - đọc lại và giải thích lại
-- Dùng AI để:
-  - kiểm tra hướng nghĩ
-  - so sánh lời giải
-  - giải thích phần chưa hiểu
-- Không biến AI thành "máy làm bài hộ"
-
-## Ví dụ
-\`\`\`text
-Trước khi hỏi AI, hãy tự viết ra:
-- mình nghĩ lỗi nằm ở đâu
-- mình đã thử gì
-- mình đang không hiểu chỗ nào
-\`\`\`
-
-## Bài tập luyện tập
-1. Viết quy trình 4 bước trước khi hỏi AI
-2. Nêu 3 dấu hiệu cho thấy bạn đang lệ thuộc AI
-3. Nêu 3 dấu hiệu dùng AI đúng cách
-
-## Bài tập thử thách
-- Tạo “quy ước cá nhân” khi dùng AI trong quá trình học code
-      `
-    },
-    {
-      id: 'ai-18',
-      title: 'Buổi 18: Bảo mật và quyền riêng tư khi đưa dữ liệu cho AI',
-      level: 'advanced',
-      content: `
-# Buổi 18: Bảo mật và quyền riêng tư khi đưa dữ liệu cho AI
-
-## Mục tiêu
-- Biết không phải dữ liệu nào cũng nên đưa cho AI
-- Hiểu rủi ro khi paste secrets, token, thông tin nhạy cảm
-- Có thói quen ẩn dữ liệu trước khi hỏi
-
-## Nội dung chính
-- Không chia sẻ:
-  - mật khẩu
-  - token
-  - API key
-  - dữ liệu khách hàng thật
-  - thông tin nội bộ nhạy cảm
-- Thay dữ liệu thật bằng dữ liệu giả
-- Ẩn phần bí mật trước khi gửi prompt
-
-## Ví dụ
-\`\`\`text
-Không nên paste nguyên file .env hoặc token thật để hỏi lỗi.
-\`\`\`
-
-## Bài tập luyện tập
-1. Liệt kê 5 loại dữ liệu không nên gửi cho AI
-2. Viết lại một prompt có token thật thành prompt an toàn hơn
-3. Thay dữ liệu người dùng thật bằng dữ liệu giả
-
-## Bài tập thử thách
-- Tạo checklist an toàn trước khi gửi code hoặc log cho AI
-      `
-    },
-    {
-      id: 'ai-19',
-      title: 'Buổi 19: Xây workflow làm việc với AI hằng ngày',
-      level: 'advanced',
-      content: `
-# Buổi 19: Xây workflow làm việc với AI hằng ngày
-
-## Mục tiêu
-- Biết đưa AI vào quy trình học và làm việc hằng ngày
-- Tạo workflow nhất quán từ học, code, debug, test đến review
-- Tăng hiệu quả thay vì hỏi ngẫu hứng
-
-## Nội dung chính
-- Workflow gợi ý:
-  1. Hiểu bài toán
-  2. Tự nghĩ hướng làm
-  3. Hỏi AI để kiểm tra hướng
-  4. Viết code
-  5. Nhờ AI review
-  6. Nhờ AI viết test hoặc edge case
-  7. Tự kiểm chứng lại
-- Dùng prompt template cho từng loại việc
-
-## Ví dụ
-\`\`\`text
-Mỗi ngày bạn có thể dùng AI cho:
-- 1 lần học khái niệm
-- 1 lần debug
-- 1 lần review code
-- 1 lần tóm tắt điều đã học
-\`\`\`
-
-## Bài tập luyện tập
-1. Viết workflow AI cá nhân cho 1 buổi học code
-2. Tạo 3 prompt template cho:
-   - học khái niệm
-   - debug
-   - review code
-3. Chọn thời điểm nào nên hỏi AI, thời điểm nào nên tự làm trước
-
-## Bài tập thử thách
-- Thiết kế quy trình dùng AI cho một tuần tự học frontend hoặc backend
-      `
-    },
-    {
-      id: 'ai-20',
-      title: 'Buổi 20: Mini Project và dự án cuối khóa Tư duy sử dụng AI',
-      level: 'advanced',
-      content: `
-# Buổi 20: Mini Project và dự án cuối khóa Tư duy sử dụng AI
-
-## Mục tiêu
-- Kết hợp toàn bộ kỹ năng làm việc với AI đã học
-- Xây thói quen dùng AI có chiến lược
+- Tổng hợp toàn bộ kỹ năng làm việc cùng AI đã học
+- Xây workflow cá nhân để học, code, debug, review cùng AI
 - Tự đánh giá mức độ làm chủ AI trong lập trình
+- Biết dùng AI có chiến lược thay vì hỏi ngẫu hứng
+
+## Prompt 1 - Nhờ AI dẫn tôi thiết kế workflow cá nhân
+\`\`\`
+Hãy đóng vai mentor AI-for-coding và dẫn tôi xây workflow dùng AI hằng ngày.
+
+Tôi muốn bạn giúp tôi thiết kế một workflow cá nhân cho các nhóm việc:
+1. học khái niệm mới
+2. debug lỗi
+3. refactor code
+4. review code
+5. viết test
+6. viết tài liệu
+7. kiểm chứng đầu ra AI
+8. bảo vệ dữ liệu nhạy cảm
+
+Hãy dẫn tôi theo lộ trình:
+1. xác định mục tiêu dùng AI của tôi
+2. xác định rủi ro lớn nhất khi tôi dùng AI
+3. thiết kế template prompt cho từng nhóm việc
+4. thiết kế checklist kiểm chứng đầu ra
+5. thiết kế checklist an toàn dữ liệu
+6. thiết kế nguyên tắc tránh lệ thuộc
+7. giúp tôi ghép tất cả thành workflow hoàn chỉnh
+8. sau mỗi phần, review như mentor thật sự
+
+Mục tiêu là để tôi có một hệ thống làm việc với AI, không chỉ vài mẹo lẻ tẻ.
+\`\`\`
+
+## Prompt 2 - Nhờ AI audit workflow AI của tôi
+\`\`\`
+Tôi sẽ gửi cho bạn workflow dùng AI của tôi:
+- cách tôi học
+- cách tôi debug
+- cách tôi review code
+- cách tôi kiểm chứng đầu ra
+- cách tôi bảo vệ dữ liệu
+
+Bạn hãy audit như mentor kỹ tính.
+
+Đánh giá theo 8 nhóm tiêu chí:
+1. Cách tôi đặt câu hỏi
+2. Mức độ đủ ngữ cảnh
+3. Chất lượng template prompt
+4. Khả năng kiểm chứng đầu ra
+5. Khả năng tránh lệ thuộc
+6. Mức độ an toàn dữ liệu
+7. Tính thực dụng hằng ngày
+8. Mức độ trưởng thành khi dùng AI như pair programmer
+
+Với mỗi nhóm:
+- nêu điểm tốt
+- nêu lỗi cụ thể
+- giải thích vì sao là lỗi
+- cho hướng sửa cụ thể
+- ưu tiên lỗi nghiêm trọng trước
+
+Cuối cùng:
+- chấm điểm tổng trên thang 100
+- xếp loại: yếu / ổn / tốt / rất tốt
+- cho tôi 5 nguyên tắc dùng AI cần giữ lâu dài
+\`\`\`
+
+## Prompt 3 - Nhờ AI đóng vai reviewer cuối khóa
+\`\`\`
+Hãy đóng vai reviewer cuối khóa về Tư duy sử dụng AI trong lập trình.
+
+Tôi sẽ gửi cho bạn:
+- bộ prompt template của tôi
+- quy trình làm việc với AI của tôi
+- checklist kiểm chứng của tôi
+- checklist an toàn dữ liệu của tôi
+
+Bạn phải review như thật, không nể nang.
+
+Cách review mong muốn:
+- đánh giá cách tôi giao tiếp với AI
+- đánh giá cách tôi dùng AI để học/code/debug
+- đánh giá khả năng phản biện đầu ra
+- đánh giá khả năng tự giữ tư duy độc lập
+- đánh giá mức độ an toàn khi chia sẻ dữ liệu
+- chỉ rõ điểm nào chứng tỏ tôi đã hiểu cách dùng AI đúng
+- chỉ rõ điểm nào cho thấy tôi vẫn đang dùng AI theo kiểu cảm tính
+
+Cuối cùng, hãy nói thật:
+- tôi đã đủ nền tảng để dùng AI hiệu quả trong học tập và dự án thật chưa?
+- nếu chưa, tôi cần luyện thêm phần nào?
+\`\`\`
 
 ## Gợi ý project
-Chọn 1 trong các bài:
-1. Dùng AI để hỗ trợ làm một mini app từ đầu đến cuối
+Chọn 1 trong các hướng:
+1. Dùng AI hỗ trợ làm một mini app từ đầu đến cuối
 2. Dùng AI để debug và refactor một project cũ
 3. Dùng AI để học một công nghệ mới trong 3 ngày
 4. Dùng AI để viết test, review và tài liệu cho một app nhỏ
 
 ## Yêu cầu bắt buộc
-- Có ít nhất 3 prompt loại khác nhau:
-  - học khái niệm
-  - debug
-  - refactor hoặc review
-- Có ghi lại prompt trước và sau khi cải thiện
-- Có ghi lại ít nhất 3 lần AI trả lời chưa tốt và cách bạn sửa prompt
-- Có phần tự kiểm chứng đầu ra của AI
+- Có ít nhất 4 template prompt cho các nhóm việc khác nhau
+- Có checklist kiểm chứng đầu ra AI
+- Có checklist an toàn dữ liệu
+- Có nguyên tắc tránh lệ thuộc AI
+- Có ghi lại ít nhất 3 lần AI trả lời chưa tốt và cách bạn cải thiện prompt
+- Có phần tự đánh giá workflow của bạn
 
 ## Checklist tự đánh giá
-- Bạn có đưa đủ ngữ cảnh khi hỏi không?
-- Bạn có đang hỏi đúng mục tiêu không?
-- Bạn có đọc và hiểu code AI đưa ra không?
-- Bạn có kiểm chứng lại câu trả lời không?
-- Bạn có dùng AI để học tốt hơn, hay chỉ để làm nhanh hơn?
+- Tôi có đưa đủ ngữ cảnh khi hỏi không?
+- Tôi có hỏi đúng mục tiêu không?
+- Tôi có kiểm chứng đầu ra của AI không?
+- Tôi có đang giữ quyền kiểm soát tư duy không?
+- Tôi có bảo vệ dữ liệu nhạy cảm trước khi gửi không?
+- Tôi có workflow ổn định hay vẫn hỏi ngẫu hứng?
+- Tôi có thể giải thích vì sao từng template prompt của tôi tồn tại không?
 
 ## Bài tập cuối khóa
 - Chọn một project thật hoặc mini app
-- Ghi lại toàn bộ cách bạn dùng AI trong quá trình làm
-- Tóm tắt:
+- Dùng AI xuyên suốt theo workflow của bạn
+- Ghi lại:
   - prompt nào hiệu quả nhất
-  - lỗi nào AI giúp tốt nhất
-  - chỗ nào AI trả lời sai hoặc thiếu
-  - bài học lớn nhất bạn rút ra khi làm việc cùng AI
+  - prompt nào thất bại và vì sao
+  - AI giúp tốt nhất ở khâu nào
+  - chỗ nào bạn vẫn phải tự quyết định
+- Tự audit workflow bằng các prompt trên
+- Hoàn thiện bộ workflow final của bạn
       `
     }
   ]
